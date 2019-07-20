@@ -21,5 +21,15 @@ namespace Papeleria
         {
 
         }
+
+        private void flowLayoutPanel3_Click(object sender, EventArgs e)
+        {
+            inventario obj = new inventario();
+
+            if (obj.ShowDialog() == DialogResult.OK)
+            {
+                textBox3.Text = obj.dataGridViewProducto.Rows[obj.dataGridViewProducto.CurrentCell.RowIndex].Cells[0].Value.ToString();
+            }
+        }
     }
 }
