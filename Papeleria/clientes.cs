@@ -68,5 +68,10 @@ namespace Papeleria
             condicion += string.Format(" like '%{0}%'", textBox1.Text);
             llenarDataGrid(condicion);
         }
+
+        private void clientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
