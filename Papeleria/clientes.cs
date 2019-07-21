@@ -12,10 +12,11 @@ namespace Papeleria
 {
     public partial class clientes : Form
     {
+
         public clientes()
         {
             InitializeComponent();
-
+            comboBox1.SelectedIndex = 0;
             dataGridViewCliente.AutoGenerateColumns = false;
             codigo.DataPropertyName = "codigo_cli";
             nombre.DataPropertyName = "nombre_cli";
@@ -27,7 +28,9 @@ namespace Papeleria
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = "";
+            comboBox1.SelectedIndex = 0;
+            llenarDataGrid("no");
         }
 
         public void llenarDataGrid(string condicion)
@@ -72,6 +75,37 @@ namespace Papeleria
         private void clientes_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            modalCLientes modCli = new modalCLientes();
+            modCli.flowLayoutPanel2.Enabled = false;
+            modCli.flowLayoutPanel3.Enabled = false;
+            modCli.ShowDialog();
+            llenarDataGrid("no");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            modalCLientes modCli = new modalCLientes();
+            modCli.flowLayoutPanel1.Enabled = false;
+            modCli.codigoCli = dataGridViewCliente.Rows[dataGridViewCliente.CurrentCell.RowIndex].Cells[0].Value.ToString();
+            modCli.txt_nombre.Text = dataGridViewCliente.Rows[dataGridViewCliente.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            modCli.txt_telefono.Text = dataGridViewCliente.Rows[dataGridViewCliente.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            modCli.txt_direccion.Text = dataGridViewCliente.Rows[dataGridViewCliente.CurrentCell.RowIndex].Cells[3].Value.ToString();
+            modCli.txt_rnc.Text = dataGridViewCliente.Rows[dataGridViewCliente.CurrentCell.RowIndex].Cells[4].Value.ToString();
+            modCli.ShowDialog();
+            llenarDataGrid("no");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewCliente.Rows.Count > 0)
+            {
+                DialogResult = DialogResult.OK;
+                this.Hide();
+            }
         }
     }
 }

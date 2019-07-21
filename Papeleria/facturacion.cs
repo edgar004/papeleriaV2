@@ -267,5 +267,10 @@ namespace Papeleria
                 MessageBox.Show("Debe poner la cantidad que desea de este producto");
             }
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

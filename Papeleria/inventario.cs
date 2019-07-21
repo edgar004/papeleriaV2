@@ -15,25 +15,71 @@ namespace Papeleria
         public inventario()
         {
             InitializeComponent();
+            comboBusqueda.SelectedIndex = 0;
+            dataGridViewProducto.AutoGenerateColumns = false;
+            idPro.DataPropertyName = "id_pro";
+            nombreTable.DataPropertyName = "nom_pro";
+            codigoTable.DataPropertyName = "codigo_pro";
+            cantidadTable.DataPropertyName = "cantidad";
+            itbisTable.DataPropertyName = "itbis";
+            estanteTable.DataPropertyName = "estanteria";
+            precioTable.DataPropertyName = "precio";
+            tipoventaTable.DataPropertyName = "tipoVenta_pro";
+            llenarDataGrid("no");
+
+        }
+
+        public void llenarDataGrid(string condicion)
+        {
+            string cmd = "SELECT * from productos where estado =1 ";
+            if (condicion != "no")
+            {
+                cmd += condicion;
+            }
+            DataSet DS = new DataSet();
+            DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(cmd, "Error al traer los productos, por favor intente de nuevo.");
+            if (DS.Tables.Count > 0)
+            {
+                dataGridViewProducto.DataSource = DS.Tables[0];
+
+            }
+
 
         }
 
         private void inventario_Load(object sender, EventArgs e)
         {
-            dataGridViewProducto.Rows.Add("PRO00001", "Regla", "50", "18", "-------", "100", "Por unidad");
-            dataGridViewProducto.Rows.Add("PRO00002", "Saca punta", "25", "18", "-------", "25", "Por caja");
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ModalProducto modPro = new ModalProducto();
-            modPro.Show();
+            modPro.button2.Enabled = false;
+            modPro.button3.Enabled = false;
+            modPro.ShowDialog();
+            llenarDataGrid("no");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (dataGridViewProducto.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Debe selecionar un producto");
+                return;
+            }
+            ModalProducto modPro = new ModalProducto();
+            modPro.button1.Enabled = false;
+            modPro.idPro= dataGridViewProducto.Rows[dataGridViewProducto.CurrentCell.RowIndex].Cells[0].Value.ToString();
+            modPro.txt_codigo.Text = dataGridViewProducto.Rows[dataGridViewProducto.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            modPro.txt_nombre.Text = dataGridViewProducto.Rows[dataGridViewProducto.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            modPro.txt_cantidad.Text = dataGridViewProducto.Rows[dataGridViewProducto.CurrentCell.RowIndex].Cells[3].Value.ToString();
+            modPro.txt_itbis.Text = dataGridViewProducto.Rows[dataGridViewProducto.CurrentCell.RowIndex].Cells[4].Value.ToString();
+            modPro.txt_estanteria.Text = dataGridViewProducto.Rows[dataGridViewProducto.CurrentCell.RowIndex].Cells[5].Value.ToString();
+            modPro.txt_precio.Text = dataGridViewProducto.Rows[dataGridViewProducto.CurrentCell.RowIndex].Cells[6].Value.ToString();
+            modPro.comboTipoVenta.Text = dataGridViewProducto.Rows[dataGridViewProducto.CurrentCell.RowIndex].Cells[7].Value.ToString();
+            modPro.ShowDialog();
+            llenarDataGrid("no");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -43,6 +89,27 @@ namespace Papeleria
                 DialogResult = DialogResult.OK;
                 this.Hide();
             }
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                llenarDataGrid("no");
+                return;
+            }
+            string condicion = " and ";
+            if (comboBusqueda.SelectedIndex == 0)
+            {
+                condicion += "codigo_pro";
+            }
+            else
+            {
+                condicion += "nom_pro";
+            }
+
+            condicion += string.Format(" like '%{0}%'", textBox1.Text);
+            llenarDataGrid(condicion);
         }
     }
 }
