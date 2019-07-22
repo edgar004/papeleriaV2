@@ -52,15 +52,22 @@ namespace Papeleria
                 dato= obj.dataGridViewProducto.Rows[obj.dataGridViewProducto.CurrentCell.RowIndex].Cells[0].Value.ToString();
             }
 
-            DataSet DS = new DataSet();
+            if (!dato.Equals(""))
+            {
+                DataSet DS = new DataSet();
 
-            DS = SearchEnter(dato);
+                DS = SearchEnter(dato);
 
-            txtNomPro.Text = DS.Tables[0].Rows[0]["nom_pro"].ToString();
-            txtPrePro.Text = DS.Tables[0].Rows[0]["precio"].ToString();
+                if(DS.Tables.Count > 0)
+                {
+                    txtNomPro.Text = DS.Tables[0].Rows[0]["nom_pro"].ToString();
+                    txtPrePro.Text = DS.Tables[0].Rows[0]["precio"].ToString();
 
-            cantidadPro = Convert.ToInt32(DS.Tables[0].Rows[0]["cantidad"].ToString());
-            itbisPro = Convert.ToInt32(DS.Tables[0].Rows[0]["itbis"].ToString());
+                    cantidadPro = Convert.ToInt32(DS.Tables[0].Rows[0]["cantidad"].ToString());
+                    itbisPro = Convert.ToInt32(DS.Tables[0].Rows[0]["itbis"].ToString());
+                }
+            }
+
         }
 
         private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
@@ -115,23 +122,37 @@ namespace Papeleria
         {
             if (e.KeyChar==Convert.ToChar(Keys.Enter))
             {
-                DataSet DS = new DataSet();
 
-                DS = SearchEnter(textBox3.Text);
+                if (!textBox3.Text.Equals(""))
+                {
+                    DataSet DS = new DataSet();
 
-                txtNomPro.Text =  DS.Tables[0].Rows[0]["nom_pro"].ToString();
-                txtPrePro.Text =  DS.Tables[0].Rows[0]["precio"].ToString();
+                    DS = SearchEnter(textBox3.Text);
 
-                cantidadPro = Convert.ToInt32(DS.Tables[0].Rows[0]["cantidad"].ToString());
-                itbisPro = Convert.ToInt32(DS.Tables[0].Rows[0]["itbis"].ToString());
+                    if(DS.Tables.Count > 0)
+                    {
+                        txtNomPro.Text = DS.Tables[0].Rows[0]["nom_pro"].ToString();
+                        txtPrePro.Text = DS.Tables[0].Rows[0]["precio"].ToString();
+
+                        cantidadPro = Convert.ToInt32(DS.Tables[0].Rows[0]["cantidad"].ToString());
+                        itbisPro = Convert.ToInt32(DS.Tables[0].Rows[0]["itbis"].ToString());
+                    }
+
+                }
 
             }
         }
 
         private void txtCantPro_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.')){
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.') || e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
                 e.Handled = true;
+
+                if(e.KeyChar == Convert.ToChar(Keys.Enter))
+                {
+                    SetDatosDataGrid();
+                }
             }
         }
 
@@ -171,77 +192,32 @@ namespace Papeleria
         public static double sumSubTotal = 0;
         public static double sumTotal = 0;
 
-        private void flowLayoutPanel4_Click(object sender, EventArgs e)
+        private void SetDatosDataGrid()
         {
-            if (!txtCantPro.Text.Equals(""))
+            if (!txtNomPro.Text.Equals(""))
             {
-                int canti = Convert.ToInt32(txtCantPro.Text);
-
-                if(canti > cantidadPro)
+                if (!txtCantPro.Text.Equals(""))
                 {
-                    MessageBox.Show("La cantidad de productos que requiere sobrepasa a la cantidad que esta en el inventario");
-                }
-                else
-                {
-                    Boolean key = false;
-                    int num_fila = 0;
+                    int canti = Convert.ToInt32(txtCantPro.Text);
 
-                    int precioPro = Convert.ToInt32(txtPrePro.Text) * Convert.ToInt32(txtCantPro.Text);
-                    Double calItbis = precioPro * (itbisPro / 100);
-
-                    if (cont_fila == 0)
+                    if (canti > cantidadPro)
                     {
-                        dataGridViewFacturacion.Rows.Add(textBox3.Text, txtNomPro.Text, txtPrePro.Text, canti, itbisPro+"%");
-
-                        
-                        dataGridViewFacturacion.Rows[cont_fila].Cells[5].Value = calItbis;
-                        dataGridViewFacturacion.Rows[cont_fila].Cells[6].Value = precioPro;
-
-                        sumItbis += calItbis;
-                        sumSubTotal += precioPro;
-                        sumTotal = 0;
-                        sumTotal = sumItbis + sumSubTotal;
-
-                        txtTotalItbis.Text = "$ "+sumItbis;
-                        txtSubTotal.Text = "$ " + sumSubTotal;
-                        txtTotal.Text = "$ " + sumTotal;
-
-                        cont_fila++;
+                        MessageBox.Show("La cantidad de productos que requiere sobrepasa a la cantidad que esta en el inventario");
                     }
-
                     else
                     {
-                        foreach(DataGridViewRow fila in dataGridViewFacturacion.Rows)
-                        {
-                            if(fila.Cells[0].Value.ToString() == textBox3.Text)
-                            {
-                                key = true;
-                                num_fila = fila.Index;
-                            }
-                        }
+                        Boolean key = false;
+                        int num_fila = 0;
 
-                        if (key)
-                        {
-                            dataGridViewFacturacion.Rows[num_fila].Cells[3].Value = (Convert.ToDouble(txtCantPro.Text) + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[3].Value)).ToString();
-                            dataGridViewFacturacion.Rows[num_fila].Cells[6].Value = (precioPro + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[6].Value)).ToString();
-                            dataGridViewFacturacion.Rows[num_fila].Cells[5].Value = (calItbis + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[5].Value)).ToString();
+                        int precioPro = Convert.ToInt32(txtPrePro.Text) * Convert.ToInt32(txtCantPro.Text);
+                        Double calItbis = precioPro * (itbisPro / 100);
 
-                            sumItbis += calItbis;
-                            sumSubTotal += precioPro;
-                            sumTotal = 0;
-                            sumTotal = sumItbis + sumSubTotal;
-
-                            txtTotalItbis.Text = "$ " + sumItbis;
-                            txtSubTotal.Text = "$ " + sumSubTotal;
-                            txtTotal.Text = "$ " + sumTotal;
-                        }
-                        else
+                        if (cont_fila == 0)
                         {
                             dataGridViewFacturacion.Rows.Add(textBox3.Text, txtNomPro.Text, txtPrePro.Text, canti, itbisPro + "%");
 
-
-                            dataGridViewFacturacion.Rows[cont_fila].Cells[5].Value = calItbis;
-                            dataGridViewFacturacion.Rows[cont_fila].Cells[6].Value = precioPro;
+                            dataGridViewFacturacion.Rows[cont_fila].Cells[5].Value = calItbis.ToString("N");
+                            dataGridViewFacturacion.Rows[cont_fila].Cells[6].Value = precioPro.ToString("N");
 
                             sumItbis += calItbis;
                             sumSubTotal += precioPro;
@@ -251,21 +227,119 @@ namespace Papeleria
                             txtTotalItbis.Text = "$ " + sumItbis;
                             txtSubTotal.Text = "$ " + sumSubTotal;
                             txtTotal.Text = "$ " + sumTotal;
+
+                            cont_fila++;
                         }
+
+                        else
+                        {
+                            foreach (DataGridViewRow fila in dataGridViewFacturacion.Rows)
+                            {
+                                if (fila.Cells[0].Value.ToString() == textBox3.Text)
+                                {
+                                    key = true;
+                                    num_fila = fila.Index;
+                                }
+                            }
+
+                            if (key)
+                            {
+                                dataGridViewFacturacion.Rows[num_fila].Cells[3].Value = (Convert.ToDouble(txtCantPro.Text) + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[3].Value)).ToString();
+                                dataGridViewFacturacion.Rows[num_fila].Cells[6].Value = (precioPro + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[6].Value)).ToString("N");
+                                dataGridViewFacturacion.Rows[num_fila].Cells[5].Value = (calItbis + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[5].Value)).ToString("N");
+
+                                sumItbis += calItbis;
+                                sumSubTotal += precioPro;
+                                sumTotal = 0;
+                                sumTotal = sumItbis + sumSubTotal;
+
+                                txtTotalItbis.Text = "$ " + sumItbis;
+                                txtSubTotal.Text = "$ " + sumSubTotal;
+                                txtTotal.Text = "$ " + sumTotal;
+
+                                cont_fila++;
+                            }
+                            else
+                            {
+                                dataGridViewFacturacion.Rows.Add(textBox3.Text, txtNomPro.Text, txtPrePro.Text, canti, itbisPro + "%");
+
+                                dataGridViewFacturacion.Rows[cont_fila].Cells[5].Value = calItbis.ToString("N");
+                                dataGridViewFacturacion.Rows[cont_fila].Cells[6].Value = precioPro.ToString("N");
+
+                                sumItbis += calItbis;
+                                sumSubTotal += precioPro;
+                                sumTotal = 0;
+                                sumTotal = sumItbis + sumSubTotal;
+
+                                txtTotalItbis.Text = "RD$ " + sumItbis;
+                                txtSubTotal.Text = "RD$ " + sumSubTotal;
+                                txtTotal.Text = "RD$ " + sumTotal;
+
+                                cont_fila++;
+                            }
+                        }
+
+                        txtCantPro.Text = "";
+                        textBox3.Text = "";
+                        txtNomPro.Text = "";
+                        txtPrePro.Text = "";
+
+                        textBox3.Focus();
                     }
-
-                    txtCantPro.Text = "";
-                    textBox3.Text = "";
-                    txtNomPro.Text = "";
-                    txtPrePro.Text = "";
-
-                    textBox3.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Debe poner la cantidad que desea de este producto");
                 }
             }
             else
             {
-                MessageBox.Show("Debe poner la cantidad que desea de este producto");
+                MessageBox.Show("Debe Buscar el producto que va a ser vendido!!");
             }
+        }
+
+ 
+        private void flowLayoutPanel4_Click(object sender, EventArgs e)
+        {
+            SetDatosDataGrid();
+        }
+
+        private void flowLayoutPanel6_Click(object sender, EventArgs e)
+        {
+            FuncionesGenerales.FuncionesGenerales.limpiarCOntroles(this);
+            sumItbis = 0;
+            sumSubTotal = 0;
+            sumTotal = 0;
+            cont_fila = 0;
+        }
+
+        private void flowLayoutPanel7_Click(object sender, EventArgs e)
+        {
+            if(cont_fila > 0)
+            {
+
+                sumItbis -= Convert.ToDouble(dataGridViewFacturacion.Rows[dataGridViewFacturacion.CurrentRow.Index].Cells[5].Value);
+                sumSubTotal -= Convert.ToDouble(dataGridViewFacturacion.Rows[dataGridViewFacturacion.CurrentRow.Index].Cells[6].Value);
+                dataGridViewFacturacion.Rows.RemoveAt(dataGridViewFacturacion.CurrentRow.Index);
+
+                sumTotal = 0;
+                sumTotal = sumItbis + sumSubTotal;
+
+                txtTotalItbis.Text = "RD$ " + sumItbis;
+                txtSubTotal.Text = "RD$ " + sumSubTotal;
+                txtTotal.Text = "RD$ " + sumTotal;
+
+                cont_fila--;
+            }
+            else
+            {
+                MessageBox.Show("No tiene productos el para eliminar");
+            }
+        }
+
+        private void flowLayoutPanel8_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
