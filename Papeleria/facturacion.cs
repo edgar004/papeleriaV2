@@ -23,14 +23,14 @@ namespace Papeleria
 
             DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(sql, "Error al traer sus comprobantes");
 
-            if(DS.Tables.Count > 0)
+            if (DS.Tables.Count > 0)
             {
 
-                for(int i = 0; i < DS.Tables[0].Rows.Count; i++)
+                for (int i = 0; i < DS.Tables[0].Rows.Count; i++)
                 {
                     comboComprobante.Items.Add(DS.Tables[0].Rows[i]["tipo_com"].ToString());
                 }
-                
+
             }
         }
 
@@ -49,7 +49,7 @@ namespace Papeleria
 
             if (obj.ShowDialog() == DialogResult.OK)
             {
-                dato= obj.dataGridViewProducto.Rows[obj.dataGridViewProducto.CurrentCell.RowIndex].Cells[0].Value.ToString();
+                dato = obj.dataGridViewProducto.Rows[obj.dataGridViewProducto.CurrentCell.RowIndex].Cells[0].Value.ToString();
             }
 
             if (!dato.Equals(""))
@@ -58,7 +58,7 @@ namespace Papeleria
 
                 DS = SearchEnter(dato);
 
-                if(DS.Tables.Count > 0)
+                if (DS.Tables.Count > 0)
                 {
                     txtNomPro.Text = DS.Tables[0].Rows[0]["nom_pro"].ToString();
                     txtPrePro.Text = DS.Tables[0].Rows[0]["precio"].ToString();
@@ -85,7 +85,7 @@ namespace Papeleria
                 codcli = cli.dataGridViewCliente.Rows[cli.dataGridViewCliente.CurrentCell.RowIndex].Cells[0].Value.ToString();
             }
 
-            if(!codcli.Equals(""))
+            if (!codcli.Equals(""))
             {
 
                 String sql = "select nombre_cli ,rnc_cli from clientes where codigo_cli = '" + codcli + "'";
@@ -107,12 +107,12 @@ namespace Papeleria
         }
 
 
-        public DataSet SearchEnter (String dato)
+        public DataSet SearchEnter(String dato)
         {
             DataSet DS = new DataSet();
 
-            String sql = "select * from productos where codigo_pro = '" + dato+"' and estado = 1";
-             
+            String sql = "select * from productos where codigo_pro = '" + dato + "' and estado = 1";
+
             DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(sql, "Error al traer el producto.");
 
             return DS;
@@ -120,7 +120,7 @@ namespace Papeleria
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar==Convert.ToChar(Keys.Enter))
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
 
                 if (!textBox3.Text.Equals(""))
@@ -129,7 +129,7 @@ namespace Papeleria
 
                     DS = SearchEnter(textBox3.Text);
 
-                    if(DS.Tables.Count > 0)
+                    if (DS.Tables.Count > 0)
                     {
                         txtNomPro.Text = DS.Tables[0].Rows[0]["nom_pro"].ToString();
                         txtPrePro.Text = DS.Tables[0].Rows[0]["precio"].ToString();
@@ -149,7 +149,7 @@ namespace Papeleria
             {
                 e.Handled = true;
 
-                if(e.KeyChar == Convert.ToChar(Keys.Enter))
+                if (e.KeyChar == Convert.ToChar(Keys.Enter))
                 {
                     SetDatosDataGrid();
                 }
@@ -167,9 +167,9 @@ namespace Papeleria
 
                 DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(sql, "Error al traer la serie de este comprobante");
 
-                if(DS.Tables.Count > 0)
+                if (DS.Tables.Count > 0)
                 {
-                   
+
 
                     int usados = Convert.ToInt32(DS.Tables[0].Rows[0]["usados_com"].ToString());
 
@@ -298,7 +298,7 @@ namespace Papeleria
             }
         }
 
- 
+
         private void flowLayoutPanel4_Click(object sender, EventArgs e)
         {
             SetDatosDataGrid();
@@ -315,7 +315,7 @@ namespace Papeleria
 
         private void flowLayoutPanel7_Click(object sender, EventArgs e)
         {
-            if(cont_fila > 0)
+            if (cont_fila > 0)
             {
 
                 sumItbis -= Convert.ToDouble(dataGridViewFacturacion.Rows[dataGridViewFacturacion.CurrentRow.Index].Cells[5].Value);
@@ -336,6 +336,7 @@ namespace Papeleria
                 MessageBox.Show("No tiene productos el para eliminar");
             }
         }
+
 
         private void flowLayoutPanel8_Click(object sender, EventArgs e)
         {

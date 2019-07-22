@@ -66,5 +66,15 @@ namespace Papeleria
             cli.Visible = true;
             contenedor.Controls.Add(cli);
         }
+
+        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

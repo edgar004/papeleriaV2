@@ -29,6 +29,7 @@ namespace FuncionesGenerales
                 catch (Exception)
                 {
                     MessageBox.Show("La base de datos no está encendida, por favor comunicarse con soporte.");
+                    db.Close();
                     return ds;
                 }
                 MySqlDataAdapter DL = new MySqlDataAdapter(cmd, db);
@@ -41,6 +42,42 @@ namespace FuncionesGenerales
             }
             db.Close();
             return ds;
+
+        }
+
+        public static string GenerarCodigoTabla(string prefijo, string tabla,string mensaje)
+        {
+            DataSet DS = new DataSet();
+
+            try
+            {
+                try
+                {
+                    db.Open();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("La base de datos no está encendida, por favor comunicarse con soporte.");
+                    db.Close();
+                    return "";
+                }
+                string cmd = $"select CONCAT('{prefijo}', LPAD(COUNT(*)+1, 8, 0)) from {tabla}";
+                MySqlDataAdapter DL = new MySqlDataAdapter(cmd, db);
+                DL.Fill(DS);
+                if (DS.Tables.Count == 0) return "";
+                if (DS.Tables[0].Rows.Count > 0)
+                {
+                    db.Close();
+                    return DS.Tables[0].Rows[0][0].ToString();
+                }
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show(mensaje);
+            }
+            db.Close();
+            return "";
 
         }
 
@@ -58,6 +95,7 @@ namespace FuncionesGenerales
                 catch (Exception)
                 {
                     MessageBox.Show("La base de datos no está encendida, por favor comunicarse con soporte");
+                    db.Close();
                     return resp;
                 }
 

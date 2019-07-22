@@ -40,6 +40,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewProducto = new System.Windows.Forms.DataGridView();
+            this.idPro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidadTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,7 +71,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-1, 15);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -99,7 +100,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(916, 84);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -122,10 +123,11 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox1.Location = new System.Drawing.Point(189, 13);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(237, 22);
             this.textBox1.TabIndex = 1;
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
             // tableLayoutPanel3
             // 
@@ -136,7 +138,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.dataGridViewProducto, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(16, 161);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -168,6 +170,7 @@
             this.dataGridViewProducto.ColumnHeadersHeight = 41;
             this.dataGridViewProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idPro,
             this.codigoTable,
             this.nombreTable,
             this.cantidadTable,
@@ -190,6 +193,7 @@
             this.dataGridViewProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewProducto.MultiSelect = false;
             this.dataGridViewProducto.Name = "dataGridViewProducto";
+            this.dataGridViewProducto.ReadOnly = true;
             this.dataGridViewProducto.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
@@ -206,6 +210,13 @@
             this.dataGridViewProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewProducto.Size = new System.Drawing.Size(1337, 595);
             this.dataGridViewProducto.TabIndex = 69;
+            // 
+            // idPro
+            // 
+            this.idPro.HeaderText = "idPro";
+            this.idPro.Name = "idPro";
+            this.idPro.ReadOnly = true;
+            this.idPro.Visible = false;
             // 
             // codigoTable
             // 
@@ -264,7 +275,7 @@
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.comboBusqueda, 1, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(413, 84);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -286,9 +297,13 @@
             // comboBusqueda
             // 
             this.comboBusqueda.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBusqueda.FormattingEnabled = true;
+            this.comboBusqueda.Items.AddRange(new object[] {
+            "Código",
+            "Nombre"});
             this.comboBusqueda.Location = new System.Drawing.Point(191, 12);
-            this.comboBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.comboBusqueda.Name = "comboBusqueda";
             this.comboBusqueda.Size = new System.Drawing.Size(284, 24);
             this.comboBusqueda.TabIndex = 3;
@@ -303,7 +318,7 @@
             this.tableLayoutPanel5.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnAdd, 0, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(81, 84);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -317,7 +332,7 @@
             this.button2.Font = new System.Drawing.Font("Lucida Sans Typewriter", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(147, 4);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 40);
             this.button2.TabIndex = 1;
@@ -332,7 +347,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Lucida Sans Typewriter", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(28, 5);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(111, 38);
             this.btnAdd.TabIndex = 0;
@@ -351,7 +366,7 @@
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "inventario";
             this.Text = " ";
             this.Load += new System.EventHandler(this.inventario_Load);
@@ -379,6 +394,9 @@
         public System.Windows.Forms.DataGridView dataGridViewProducto;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.ComboBox comboBusqueda;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idPro;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidadTable;
@@ -386,9 +404,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn estanteTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoventaTable;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ComboBox comboBusqueda;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button btnAdd;
     }
 }
