@@ -17,7 +17,10 @@ namespace Papeleria
         {
             InitializeComponent();
 
-            String sql = "select tipo_com from comprobantes";
+            lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            lblMiRNC.Text = "1-31906567";
+
+            String sql = "select * from comprobantes";
 
             DataSet DS = new DataSet();
 
@@ -28,10 +31,19 @@ namespace Papeleria
 
                 for (int i = 0; i < DS.Tables[0].Rows.Count; i++)
                 {
-                    comboComprobante.Items.Add(DS.Tables[0].Rows[i]["tipo_com"].ToString());
+
+                    int limite = Convert.ToInt32(DS.Tables[0].Rows[i]["cantidadLimite_com"].ToString());
+                    int usado = Convert.ToInt32(DS.Tables[0].Rows[i]["usados_com"].ToString());
+
+                    if (usado <= limite)
+                    {
+                        comboComprobante.Items.Add(DS.Tables[0].Rows[i]["tipo_com"].ToString());
+                    }
                 }
 
             }
+
+            txtDescuento.ReadOnly = true;
         }
 
         private void facturacion_Load(object sender, EventArgs e)
@@ -39,6 +51,7 @@ namespace Papeleria
 
         }
 
+        String idProSelect = "";
         int cantidadPro = 0;
         Double itbisPro = 0;
 
@@ -60,11 +73,13 @@ namespace Papeleria
 
                 if (DS.Tables.Count > 0)
                 {
+                    textBox3.Text = dato;
                     txtNomPro.Text = DS.Tables[0].Rows[0]["nom_pro"].ToString();
                     txtPrePro.Text = DS.Tables[0].Rows[0]["precio"].ToString();
 
                     cantidadPro = Convert.ToInt32(DS.Tables[0].Rows[0]["cantidad"].ToString());
                     itbisPro = Convert.ToInt32(DS.Tables[0].Rows[0]["itbis"].ToString());
+                    idProSelect = DS.Tables[0].Rows[0]["id_pro"].ToString();
                 }
             }
 
@@ -75,6 +90,7 @@ namespace Papeleria
 
         }
 
+        public string idCliente = "";
         private void flowLayoutPanel1_Click(object sender, EventArgs e)
         {
             clientes cli = new clientes();
@@ -88,7 +104,7 @@ namespace Papeleria
             if (!codcli.Equals(""))
             {
 
-                String sql = "select nombre_cli ,rnc_cli from clientes where codigo_cli = '" + codcli + "'";
+                String sql = "select * from clientes where codigo_cli = '" + codcli + "'";
 
                 DataSet DS = new DataSet();
                 DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(sql, "Error al traer los datos del cliente.");
@@ -96,10 +112,10 @@ namespace Papeleria
 
                 if (DS.Tables.Count > 0)
                 {
-                    MessageBox.Show("hola");
+
                     txtCli.Text = DS.Tables[0].Rows[0]["nombre_cli"].ToString().Trim();
                     txtRncCli.Text = DS.Tables[0].Rows[0]["rnc_cli"].ToString();
-
+                    idCliente = DS.Tables[0].Rows[0]["codigo_cli"].ToString();
                 }
 
             }
@@ -136,6 +152,9 @@ namespace Papeleria
 
                         cantidadPro = Convert.ToInt32(DS.Tables[0].Rows[0]["cantidad"].ToString());
                         itbisPro = Convert.ToInt32(DS.Tables[0].Rows[0]["itbis"].ToString());
+                        idProSelect = DS.Tables[0].Rows[0]["id_pro"].ToString();
+
+                        txtCantPro.Focus();
                     }
 
                 }
@@ -156,12 +175,14 @@ namespace Papeleria
             }
         }
 
+        public String idComprobante = "";
+        public String CantComprobanteUsados = "";
         private void comboComprobante_SelectedValueChanged(object sender, EventArgs e)
         {
             if (!comboComprobante.Text.Equals(""))
             {
 
-                String sql = "select serie_com, usados_com from comprobantes where tipo_com = '" + comboComprobante.Text + "'";
+                String sql = "select * from comprobantes where tipo_com = '" + comboComprobante.Text + "'";
 
                 DataSet DS = new DataSet();
 
@@ -177,7 +198,9 @@ namespace Papeleria
 
                     String usadost = Convert.ToString(usados).PadLeft(8, '0');
 
-                    txtserieComprobante.Text = usadost;
+                    txtserieComprobante.Text = DS.Tables[0].Rows[0]["serie_com"].ToString() + "" + usadost;
+                    idComprobante = DS.Tables[0].Rows[0]["id_com"].ToString();
+                    CantComprobanteUsados = DS.Tables[0].Rows[0]["usados_com"].ToString();
                 }
             }
 
@@ -218,6 +241,7 @@ namespace Papeleria
 
                             dataGridViewFacturacion.Rows[cont_fila].Cells[5].Value = calItbis.ToString("N");
                             dataGridViewFacturacion.Rows[cont_fila].Cells[6].Value = precioPro.ToString("N");
+                            dataGridViewFacturacion.Rows[cont_fila].Cells[7].Value = idProSelect;
 
                             sumItbis += calItbis;
                             sumSubTotal += precioPro;
@@ -226,7 +250,7 @@ namespace Papeleria
 
                             txtTotalItbis.Text = "$ " + sumItbis;
                             txtSubTotal.Text = "$ " + sumSubTotal;
-                            txtTotal.Text = "$ " + sumTotal;
+                            txtTotal.Text = "$ " + sumTotal.ToString().Replace(',', '.');
 
                             cont_fila++;
                         }
@@ -255,7 +279,7 @@ namespace Papeleria
 
                                 txtTotalItbis.Text = "$ " + sumItbis;
                                 txtSubTotal.Text = "$ " + sumSubTotal;
-                                txtTotal.Text = "$ " + sumTotal;
+                                txtTotal.Text = "$ " + sumTotal.ToString().Replace(',','.');
 
                                 cont_fila++;
                             }
@@ -265,6 +289,7 @@ namespace Papeleria
 
                                 dataGridViewFacturacion.Rows[cont_fila].Cells[5].Value = calItbis.ToString("N");
                                 dataGridViewFacturacion.Rows[cont_fila].Cells[6].Value = precioPro.ToString("N");
+                                dataGridViewFacturacion.Rows[cont_fila].Cells[7].Value = idProSelect;
 
                                 sumItbis += calItbis;
                                 sumSubTotal += precioPro;
@@ -273,7 +298,7 @@ namespace Papeleria
 
                                 txtTotalItbis.Text = "RD$ " + sumItbis;
                                 txtSubTotal.Text = "RD$ " + sumSubTotal;
-                                txtTotal.Text = "RD$ " + sumTotal;
+                                txtTotal.Text = "RD$ " + sumTotal.ToString().Replace(',', '.');
 
                                 cont_fila++;
                             }
@@ -337,10 +362,200 @@ namespace Papeleria
             }
         }
 
-
+        public double totalsindescuento = 0;
         private void flowLayoutPanel8_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void checkDescuento_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (checkDescuento.Checked)
+            {
+                if (txtTotal.Text.Equals("") || txtTotal.Text.Equals("$ 0"))
+                {
+                    checkDescuento.Checked = false;
+                    MessageBox.Show("No tiene productos para realizar descuentos!!");
+                }
+                else
+                {
+                    txtDescuento.ReadOnly = false;
+                    totalsindescuento = sumTotal;
+                }
+            }
+            else
+            {
+                txtDescuento.Text = "";
+                txtDescuento.ReadOnly = true;
+                txtTotal.Text = "$ " + totalsindescuento;
+            }
+        }
+
+        private void txtDescuento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            Boolean key = false;
+
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                key = true;
+
+            }
+
+            if (key)
+            {
+                if (!txtTotal.Text.Equals(""))
+                {
+
+                    double total = totalsindescuento;
+                    double desc = Convert.ToDouble(txtDescuento.Text);
+                    double aux = total - (total * (desc / 100));
+
+                    txtTotal.Text = "";
+                    txtTotal.Text = "$ " + aux.ToString().Replace(',','.');
+                }
+            }
+        }
+
+        private void txtDescuento_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel6_Click_1(object sender, EventArgs e)
+        {
+            FuncionesGenerales.FuncionesGenerales.limpiarCOntroles(this);
+            sumItbis = 0;
+            sumSubTotal = 0;
+            sumTotal = 0;
+            cont_fila = 0;
+        }
+
+        private void flowLayoutPanel8_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void flowLayoutPanel7_Click_1(object sender, EventArgs e)
+        {
+            if (cont_fila > 0)
+            {
+
+                sumItbis -= Convert.ToDouble(dataGridViewFacturacion.Rows[dataGridViewFacturacion.CurrentRow.Index].Cells[5].Value);
+                sumSubTotal -= Convert.ToDouble(dataGridViewFacturacion.Rows[dataGridViewFacturacion.CurrentRow.Index].Cells[6].Value);
+                dataGridViewFacturacion.Rows.RemoveAt(dataGridViewFacturacion.CurrentRow.Index);
+
+                sumTotal = 0;
+                sumTotal = sumItbis + sumSubTotal;
+
+                txtTotalItbis.Text = "RD$ " + sumItbis;
+                txtSubTotal.Text = "RD$ " + sumSubTotal;
+                txtTotal.Text = "RD$ " + sumTotal;
+
+                cont_fila--;
+            }
+            else
+            {
+                MessageBox.Show("No tiene productos el para eliminar");
+            }
+        }
+
+        private void flowLayoutPanel5_Click(object sender, EventArgs e)
+        {
+            if(cont_fila > 0 && !txtCli.Text.Equals("") && !txtserieComprobante.Text.Equals(""))
+            {
+                //INGRESAR PRIMERO LA FACTURA
+                String totalfact = txtTotal.Text.Replace('$', ' ');
+                int respuesta = 0;
+
+                String fechaFormato = DateTime.Now.ToString("yyyy-MM-dd");
+
+                if(checkDescuento.Checked && !txtDescuento.Equals(""))
+                {
+                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}','{idComprobante}','{totalfact}','{sumItbis.ToString().Replace(',','.')}','{sumSubTotal.ToString().Replace(',', '.')}','{txtDescuento.Text}')";
+
+                   respuesta= FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql, "Error al guardar la factura");
+                }
+                else
+                {
+                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}','{idComprobante}','{totalfact}','{sumItbis.ToString().Replace(',', '.')}','{sumSubTotal.ToString().Replace(',', '.')}','{"0"}')";
+                    respuesta = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql, "Error al guardar la factura");
+                }
+
+                //INGRESAMOS LOS DETALLES
+
+                if(respuesta > 0)
+                {
+                    String sql = "select max(id_fac) as id_fac  from facturas";
+
+                    DataSet DS = new DataSet();
+
+                    DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(sql, "Error al traer la serie de este comprobante");
+
+                    if(DS.Tables.Count > 0)
+                    {
+                        String idFact = DS.Tables[0].Rows[0]["id_fac"].ToString();
+
+                        Boolean key = true;
+
+                        foreach (DataGridViewRow fila in dataGridViewFacturacion.Rows)
+                        {
+                            if (key)
+                            {
+                                String idPro = fila.Cells[7].Value.ToString();
+                                String cantpro = fila.Cells[3].Value.ToString();
+                                String precioPro = fila.Cells[2].Value.ToString();
+                                String poritbis = fila.Cells[4].Value.ToString();
+                                int res = 0;
+
+                                String sql2 = $"INSERT INTO detalles_facturas(id_fac, id_pro, cantidad_pro, precio_pro, porcientoItbis_pro) VALUES ('{idFact}','{idPro}','{cantpro}','{precioPro}','{poritbis}')";
+
+                                res = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql2, "Error al guardar el detalle con id " + idPro + ".");
+
+                                if(res < 1)
+                                {
+                                    key = false;
+                                }
+                            }
+                        }
+
+                        if (key)
+                        {
+                            FuncionesGenerales.FuncionesGenerales.limpiarCOntroles(this);
+                            sumItbis = 0;
+                            sumSubTotal = 0;
+                            sumTotal = 0;
+                            cont_fila = 0;
+
+                            comboComprobante.SelectedIndex = -1;
+
+                            int usado = Convert.ToInt32(CantComprobanteUsados), res3 =0;
+                            usado++;
+
+                            string sql3 = $"update comprobantes set usados_com = '{usado}' where id_com = '{idComprobante}'";
+
+                            res3 = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql3, "Error al aumentar la secuencia del comprobante usado");
+
+                            if (res3 > 0)
+                            {
+                                MessageBox.Show("Realizado correctamente!!");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error al aumentar la secuencia del comprobante usado");
+                            }
+                        }
+                    }
+
+                    
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("No puede generar una factura antes de eleguir los productos");
+            }
+        }
     }
 }
+
