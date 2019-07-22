@@ -101,6 +101,11 @@ namespace Papeleria
 
         private void label1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             if (dataGridViewCliente.Rows.Count > 0)
             {
                 DialogResult = DialogResult.OK;

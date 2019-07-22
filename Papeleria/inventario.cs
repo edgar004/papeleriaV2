@@ -84,11 +84,7 @@ namespace Papeleria
 
         private void label1_Click(object sender, EventArgs e)
         {
-            if (dataGridViewProducto.Rows.Count > 0)
-            {
-                DialogResult = DialogResult.OK;
-                this.Hide();
-            }
+            
         }
 
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
@@ -110,6 +106,15 @@ namespace Papeleria
 
             condicion += string.Format(" like '%{0}%'", textBox1.Text);
             llenarDataGrid(condicion);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridViewProducto.Rows.Count > 0)
+            {
+                DialogResult = DialogResult.OK;
+                this.Hide();
+            }
         }
     }
 }
