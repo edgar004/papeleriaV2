@@ -36,9 +36,12 @@
     <Reference Include="FuncionesGenerales">
       <HintPath>..\FuncionesGenerales\bin\Debug\FuncionesGenerales.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +70,17 @@
     </Compile>
     <Compile Include="cotizacion.Designer.cs">
       <DependentUpon>cotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cotizacionReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cotizacionReporte.Designer.cs">
+      <DependentUpon>cotizacionReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCotizacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCotizacion.xsd</DependentUpon>
     </Compile>
     <Compile Include="facturacion.cs">
       <SubType>Form</SubType>
@@ -114,12 +128,16 @@
     <EmbeddedResource Include="cotizacion.resx">
       <DependentUpon>cotizacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cotizacionReporte.resx">
+      <DependentUpon>cotizacionReporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="facturacion.resx">
       <DependentUpon>facturacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="informeCotizacion.rdlc" />
     <EmbeddedResource Include="inventario.resx">
       <DependentUpon>inventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +157,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSetCotizacion.xsc">
+      <DependentUpon>DataSetCotizacion.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCotizacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCotizacion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetCotizacion.xss">
+      <DependentUpon>DataSetCotizacion.xsd</DependentUpon>
+    </None>
     <None Include="papeleriaDataSet.xsc">
       <DependentUpon>papeleriaDataSet.xsd</DependentUpon>
     </None>

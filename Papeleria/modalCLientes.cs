@@ -89,5 +89,11 @@ namespace Papeleria
             }
 
         }
+
+        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+            DialogResult res = MessageBox.Show("¿Seguro que quieres eliminar el producto?", "Eliminar", MessageBoxButtons.YesNo);
+            if (res == DialogResult.No) return;
+        }
     }
 }

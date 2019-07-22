@@ -217,6 +217,7 @@
             this.flowLayoutPanel3.Size = new System.Drawing.Size(191, 141);
             this.flowLayoutPanel3.TabIndex = 2;
             this.flowLayoutPanel3.Click += new System.EventHandler(this.flowLayoutPanel3_Click);
+            this.flowLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel3_Paint);
             // 
             // flowLayoutPanel2
             // 

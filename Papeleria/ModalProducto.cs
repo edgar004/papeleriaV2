@@ -69,6 +69,8 @@ namespace Papeleria
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DialogResult res = MessageBox.Show("¿Seguro que quieres eliminar el producto?", "Eliminar", MessageBoxButtons.YesNo);
+            if (res == DialogResult.No) return;
             try
             {
                 string cmd = $"update productos set estado=0 where id_pro = {idPro}";

@@ -302,7 +302,7 @@
             this.comboBusqueda.Items.AddRange(new object[] {
             "Código",
             "Nombre"});
-            this.comboBusqueda.Location = new System.Drawing.Point(191, 12);
+            this.comboBusqueda.Location = new System.Drawing.Point(191, 11);
             this.comboBusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.comboBusqueda.Name = "comboBusqueda";
             this.comboBusqueda.Size = new System.Drawing.Size(284, 24);
