@@ -71,11 +71,8 @@
     <Compile Include="cotizacion.Designer.cs">
       <DependentUpon>cotizacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="cotizacionReporte.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cotizacionReporte.Designer.cs">
-      <DependentUpon>cotizacionReporte.cs</DependentUpon>
+    <Compile Include="DataSetCotizacion.cs">
+      <DependentUpon>DataSetCotizacion.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSetCotizacion.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -119,6 +116,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reporteCOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporteCOT.Designer.cs">
+      <DependentUpon>reporteCOT.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="clientes.resx">
       <DependentUpon>clientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,16 +131,13 @@
     <EmbeddedResource Include="cotizacion.resx">
       <DependentUpon>cotizacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cotizacionReporte.resx">
-      <DependentUpon>cotizacionReporte.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="facturacion.resx">
       <DependentUpon>facturacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="informeCotizacion.rdlc" />
+    <EmbeddedResource Include="informeCOT.rdlc" />
     <EmbeddedResource Include="inventario.resx">
       <DependentUpon>inventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +157,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reporteCOT.resx">
+      <DependentUpon>reporteCOT.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataSetCotizacion.xsc">
       <DependentUpon>DataSetCotizacion.xsd</DependentUpon>
     </None>

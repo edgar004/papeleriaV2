@@ -8,13 +8,14 @@ using System.Windows;
 using System.Data;
 using System.Globalization;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace FuncionesGenerales
 {
     public class FuncionesGenerales
     {
-        public static string con = "datasource=localhost;port=3000;username=root;password=;database=papeleria";
-        public static MySqlConnection db = new MySqlConnection(con);
+        public static string con = "Data Source=.;Initial Catalog=papeleria;Integrated Security=True";
+        public static SqlConnection db = new SqlConnection(con);
 
         public static DataSet ExecuteReader(string cmd, string mensaje)
         {
@@ -26,13 +27,13 @@ namespace FuncionesGenerales
                 {
                     db.Open();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     MessageBox.Show("La base de datos no está encendida, por favor comunicarse con soporte.");
                     db.Close();
                     return ds;
                 }
-                MySqlDataAdapter DL = new MySqlDataAdapter(cmd, db);
+                SqlDataAdapter DL = new SqlDataAdapter(cmd, db);
                 DL.Fill(ds);
 
             }
@@ -61,8 +62,8 @@ namespace FuncionesGenerales
                     db.Close();
                     return "";
                 }
-                string cmd = $"select CONCAT('{prefijo}', LPAD(COUNT(*)+1, 8, 0)) from {tabla}";
-                MySqlDataAdapter DL = new MySqlDataAdapter(cmd, db);
+                string cmd = $"select CONCAT('{prefijo}', RIGHT(COUNT(*)+1, 8)) from {tabla}";
+                SqlDataAdapter DL = new SqlDataAdapter(cmd, db);
                 DL.Fill(DS);
                 if (DS.Tables.Count == 0) return "";
                 if (DS.Tables[0].Rows.Count > 0)
@@ -83,8 +84,9 @@ namespace FuncionesGenerales
 
         public static int EjecutarQuery(string cmd, string mensaje)
         {
+            DataSet Ds = new DataSet();
             int resp = 0;
-            MySqlCommand DL = new MySqlCommand(cmd, db);
+            SqlDataAdapter DL = new SqlDataAdapter(cmd, db);
 
             try
             {
@@ -99,9 +101,9 @@ namespace FuncionesGenerales
                     return resp;
                 }
 
+                DL.Fill(Ds);
 
-
-                resp = DL.ExecuteNonQuery();
+                resp = 1;
 
             }
             catch (MySqlException)

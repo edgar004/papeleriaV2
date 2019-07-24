@@ -62,7 +62,7 @@ namespace Papeleria
 
             if (obj.ShowDialog() == DialogResult.OK)
             {
-                dato = obj.dataGridViewProducto.Rows[obj.dataGridViewProducto.CurrentCell.RowIndex].Cells[0].Value.ToString();
+                dato = obj.dataGridViewProducto.Rows[obj.dataGridViewProducto.CurrentCell.RowIndex].Cells[1].Value.ToString();
             }
 
             if (!dato.Equals(""))
@@ -472,14 +472,17 @@ namespace Papeleria
 
                 if(checkDescuento.Checked && !txtDescuento.Equals(""))
                 {
-                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}','{idComprobante}','{totalfact}','{sumItbis.ToString().Replace(',','.')}','{sumSubTotal.ToString().Replace(',', '.')}','{txtDescuento.Text}')";
+                    
 
-                   respuesta= FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql, "Error al guardar la factura");
+                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}',{idComprobante},{totalfact},{sumItbis.ToString().Replace(',','.')},{sumSubTotal.ToString().Replace(',', '.')},{txtDescuento.Text})";
+                    
+                    respuesta = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql, "Error al guardar la factura");
                 }
                 else
                 {
-                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}','{idComprobante}','{totalfact}','{sumItbis.ToString().Replace(',', '.')}','{sumSubTotal.ToString().Replace(',', '.')}','{"0"}')";
+                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}',{idComprobante},{totalfact},{sumItbis.ToString().Replace(',', '.')},{sumSubTotal.ToString().Replace(',', '.')},0)";
                     respuesta = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql, "Error al guardar la factura");
+                    
                 }
 
                 //INGRESAMOS LOS DETALLES
@@ -487,6 +490,7 @@ namespace Papeleria
                 if(respuesta > 0)
                 {
                     String sql = "select max(id_fac) as id_fac  from facturas";
+                    
 
                     DataSet DS = new DataSet();
 
@@ -505,17 +509,23 @@ namespace Papeleria
                                 String idPro = fila.Cells[7].Value.ToString();
                                 String cantpro = fila.Cells[3].Value.ToString();
                                 String precioPro = fila.Cells[2].Value.ToString();
-                                String poritbis = fila.Cells[4].Value.ToString();
+                                String poritbis = fila.Cells[4].Value.ToString().Replace('%',' ');
                                 int res = 0;
 
-                                String sql2 = $"INSERT INTO detalles_facturas(id_fac, id_pro, cantidad_pro, precio_pro, porcientoItbis_pro) VALUES ('{idFact}','{idPro}','{cantpro}','{precioPro}','{poritbis}')";
-
+                                String sql2 = $"INSERT INTO detalles_facturas(id_fac, id_pro, cantidad_pro, precio_pro, porcientoItbis_pro) VALUES ({idFact},{idPro},{cantpro},{precioPro},{poritbis})";
+                                
                                 res = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql2, "Error al guardar el detalle con id " + idPro + ".");
 
                                 if(res < 1)
                                 {
                                     key = false;
                                 }
+
+                                String sqlUpdate = $"update productos set cantidad = cantidad - {cantpro} where id_pro = {idPro}";
+                                int resUpdate = 0;
+                                
+
+                                resUpdate = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sqlUpdate, "Error al actualizar la cantidad del producto con el id " + idPro + ".");
                             }
                         }
 
@@ -532,7 +542,7 @@ namespace Papeleria
                             int usado = Convert.ToInt32(CantComprobanteUsados), res3 =0;
                             usado++;
 
-                            string sql3 = $"update comprobantes set usados_com = '{usado}' where id_com = '{idComprobante}'";
+                            string sql3 = $"update comprobantes set usados_com = {usado} where id_com = {idComprobante}";
 
                             res3 = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql3, "Error al aumentar la secuencia del comprobante usado");
 

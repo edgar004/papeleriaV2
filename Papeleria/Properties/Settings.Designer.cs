@@ -32,5 +32,15 @@ namespace Papeleria.Properties {
                 return ((string)(this["papeleriaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=papeleria;Integrated Security=True")]
+        public string papeleriaConnectionString1 {
+            get {
+                return ((string)(this["papeleriaConnectionString1"]));
+            }
+        }
     }
 }

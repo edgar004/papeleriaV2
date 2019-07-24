@@ -156,14 +156,10 @@ namespace Papeleria
             txt_codigoPro.Focus();
             txtSubTotal.Text = totalFact.ToString();
             txtTotalItbis.Text = totalItbis.ToString();
-            txt_totalFactura.Text = txtSubTotal.Text;
-            /*if (string.IsNullOrEmpty(txtPorciento.Text.Trim()) == false)
-            {
-                txtDescuento.Text = ((Convert.ToInt16(txtSubTotalFact.Text) * Convert.ToInt16(txtPorciento.Text.Trim()) / 100).ToString());
+            txt_totalFactura.Text = (totalFact + totalItbis).ToString();
 
-                txtTotalFact.Text = (Convert.ToInt16(txtSubTotalFact.Text) - Convert.ToInt16(txtDescuento.Text)).ToString();
-
-            }*/
+          
+       
         }
 
         private void cotizacion_Load(object sender, EventArgs e)
@@ -260,13 +256,18 @@ namespace Papeleria
                         cmd =$"insert into detalles_cotizacion values ('{codigoCot}',{productos.Cells[7].Value},{productos.Cells[3].Value},{productos.Cells[2].Value},{productos.Cells[4].Value})";
                         DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(cmd,$"Error al agregar el producto {productos.Cells[1].Value} a la cotización.");
                     }
-                    FuncionesGenerales.FuncionesGenerales.limpiarCOntroles(this);
-                  /*  reportesVentas obj = new reportesVentas();
-                    cmd = "EXEC datosFacturas " + codigoFact;
-                    DS = utilidades.utilidades.ejecutar(cmd);
+
+               
+                cmd = $"EXEC COT  '{codigoCot}'";
+                DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(cmd, "Error al crear EL PDF de la cotización");
+                    reporteCOT obj = new reporteCOT();
                     obj.reportViewer1.LocalReport.DataSources[0].Value = DS.Tables[0];
                     obj.ShowDialog();
-                    metodoPago.SelectedIndex = 0;*/
+                    FuncionesGenerales.FuncionesGenerales.limpiarCOntroles(this);
+
+              
+                
+
 
             }
         }

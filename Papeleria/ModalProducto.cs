@@ -50,6 +50,8 @@ namespace Papeleria
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            
             string cmd = $"update productos set nom_pro = '{txt_nombre.Text}', codigo_pro='{txt_codigo.Text}', cantidad={txt_cantidad.Text}, itbis={txt_itbis.Text},estanteria='{txt_estanteria.Text}',precio={txt_precio.Text}, tipoVenta_pro = '{comboTipoVenta.SelectedItem}' where id_pro={idPro}";
             int resp = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(cmd, "Error al modificar el producto.");
             if (resp > 0)
