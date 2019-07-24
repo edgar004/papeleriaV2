@@ -21,6 +21,7 @@ namespace Papeleria
         {
             // TODO: esta línea de código carga datos en la tabla 'DataSetCotizacion.COT' Puede moverla o quitarla según sea necesario.
             // TODO: esta línea de código carga datos en la tabla 'DataSetCotizacion.COT' Puede moverla o quitarla según sea necesario.
+            // TODO: esta línea de código carga datos en la tabla 'DataSetCotizacion.COT' Puede moverla o quitarla según sea necesario.
 
             this.reportViewer1.RefreshReport();
         }

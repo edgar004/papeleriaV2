@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.COTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.COTTableAdapter = new Papeleria.DataSetCotizacionTableAdapters.COTTableAdapter();
             this.DataSetCotizacion = new Papeleria.DataSetCotizacion();
             ((System.ComponentModel.ISupportInitialize)(this.COTBindingSource)).BeginInit();
@@ -41,7 +41,7 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DatasetCotizacion";
+            reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.COTBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Papeleria.informeCOT.rdlc";
