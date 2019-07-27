@@ -25,3 +25,10 @@ C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGene
 C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\bin\Debug\MySql.Data.xml
 C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\obj\Debug\FuncionesGenerales.dll
 C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\obj\Debug\FuncionesGenerales.pdb
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Debug\FuncionesGenerales.dll
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Debug\FuncionesGenerales.pdb
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Debug\MySql.Data.dll
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Debug\Google.Protobuf.dll
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Debug\MySql.Data.xml
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\obj\Debug\FuncionesGenerales.dll
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\obj\Debug\FuncionesGenerales.pdb

@@ -16,5 +16,12 @@ namespace Papeleria
         {
             InitializeComponent();
         }
+
+        private void reporteFac_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'DataSetFACT.FACT' Puede moverla o quitarla según sea necesario.
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

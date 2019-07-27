@@ -295,6 +295,8 @@ namespace Papeleria {
             
             private global::System.Data.DataColumn columnnom_pro;
             
+            private global::System.Data.DataColumn columnrnc_cli;
+            
             private global::System.Data.DataColumn columnitbis;
             
             private global::System.Data.DataColumn columntotal;
@@ -404,6 +406,14 @@ namespace Papeleria {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn rnc_cliColumn {
+                get {
+                    return this.columnrnc_cli;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn itbisColumn {
                 get {
                     return this.columnitbis;
@@ -479,7 +489,7 @@ namespace Papeleria {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public COTRow AddCOTRow(string nombre_cli, System.DateTime fecha_cot, string codigo_cot, int cantidad_pro, string tipoVenta_pro, decimal precio_pro, decimal porcientoItbis_pro, string nom_pro, decimal itbis, decimal total, decimal subtotal_fac, decimal itbisTotal_cot, decimal total_cot) {
+            public COTRow AddCOTRow(string nombre_cli, System.DateTime fecha_cot, string codigo_cot, int cantidad_pro, string tipoVenta_pro, decimal precio_pro, decimal porcientoItbis_pro, string nom_pro, string rnc_cli, decimal itbis, decimal total, decimal subtotal_fac, decimal itbisTotal_cot, decimal total_cot) {
                 COTRow rowCOTRow = ((COTRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         nombre_cli,
@@ -490,6 +500,7 @@ namespace Papeleria {
                         precio_pro,
                         porcientoItbis_pro,
                         nom_pro,
+                        rnc_cli,
                         itbis,
                         total,
                         subtotal_fac,
@@ -532,6 +543,7 @@ namespace Papeleria {
                 this.columnprecio_pro = base.Columns["precio_pro"];
                 this.columnporcientoItbis_pro = base.Columns["porcientoItbis_pro"];
                 this.columnnom_pro = base.Columns["nom_pro"];
+                this.columnrnc_cli = base.Columns["rnc_cli"];
                 this.columnitbis = base.Columns["itbis"];
                 this.columntotal = base.Columns["total"];
                 this.columnsubtotal_fac = base.Columns["subtotal_fac"];
@@ -558,6 +570,8 @@ namespace Papeleria {
                 base.Columns.Add(this.columnporcientoItbis_pro);
                 this.columnnom_pro = new global::System.Data.DataColumn("nom_pro", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnom_pro);
+                this.columnrnc_cli = new global::System.Data.DataColumn("rnc_cli", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnrnc_cli);
                 this.columnitbis = new global::System.Data.DataColumn("itbis", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnitbis);
                 this.columntotal = new global::System.Data.DataColumn("total", typeof(decimal), null, global::System.Data.MappingType.Element);
@@ -583,6 +597,8 @@ namespace Papeleria {
                 this.columnporcientoItbis_pro.AllowDBNull = false;
                 this.columnnom_pro.AllowDBNull = false;
                 this.columnnom_pro.MaxLength = 15;
+                this.columnrnc_cli.AllowDBNull = false;
+                this.columnrnc_cli.MaxLength = 15;
                 this.columnitbis.ReadOnly = true;
                 this.columntotal.ReadOnly = true;
                 this.columnsubtotal_fac.AllowDBNull = false;
@@ -813,6 +829,17 @@ namespace Papeleria {
                 }
                 set {
                     this[this.tableCOT.nom_proColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string rnc_cli {
+                get {
+                    return ((string)(this[this.tableCOT.rnc_cliColumn]));
+                }
+                set {
+                    this[this.tableCOT.rnc_cliColumn] = value;
                 }
             }
             
@@ -1073,6 +1100,7 @@ namespace Papeleria.DataSetCotizacionTableAdapters {
             tableMapping.ColumnMappings.Add("precio_pro", "precio_pro");
             tableMapping.ColumnMappings.Add("porcientoItbis_pro", "porcientoItbis_pro");
             tableMapping.ColumnMappings.Add("nom_pro", "nom_pro");
+            tableMapping.ColumnMappings.Add("rnc_cli", "rnc_cli");
             tableMapping.ColumnMappings.Add("itbis", "itbis");
             tableMapping.ColumnMappings.Add("total", "total");
             tableMapping.ColumnMappings.Add("subtotal_fac", "subtotal_fac");

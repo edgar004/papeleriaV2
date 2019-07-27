@@ -58,6 +58,8 @@ namespace Papeleria
         private void flowLayoutPanel3_Click(object sender, EventArgs e)
         {
             inventario obj = new inventario();
+            obj.button2.Visible = false;
+            obj.btnAdd.Visible = false;
             String dato = "";
 
             if (obj.ShowDialog() == DialogResult.OK)
@@ -94,6 +96,8 @@ namespace Papeleria
         private void flowLayoutPanel1_Click(object sender, EventArgs e)
         {
             clientes cli = new clientes();
+            cli.button2.Visible = false;
+            cli.btnAdd.Visible = false;
             String codcli = "";
 
             if (cli.ShowDialog() == DialogResult.OK)
@@ -466,6 +470,8 @@ namespace Papeleria
             {
                 //INGRESAR PRIMERO LA FACTURA
                 String totalfact = txtTotal.Text.Replace('$', ' ');
+                totalfact = totalfact.Replace('R', ' ');
+                totalfact = totalfact.Replace('D', ' ');
                 int respuesta = 0;
 
                 String fechaFormato = DateTime.Now.ToString("yyyy-MM-dd");
@@ -481,6 +487,7 @@ namespace Papeleria
                 else
                 {
                     String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}',{idComprobante},{totalfact},{sumItbis.ToString().Replace(',', '.')},{sumSubTotal.ToString().Replace(',', '.')},0)";
+                    
                     respuesta = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql, "Error al guardar la factura");
                     
                 }
@@ -513,7 +520,7 @@ namespace Papeleria
                                 int res = 0;
 
                                 String sql2 = $"INSERT INTO detalles_facturas(id_fac, id_pro, cantidad_pro, precio_pro, porcientoItbis_pro) VALUES ({idFact},{idPro},{cantpro},{precioPro},{poritbis})";
-                                
+                               
                                 res = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql2, "Error al guardar el detalle con id " + idPro + ".");
 
                                 if(res < 1)
@@ -543,12 +550,20 @@ namespace Papeleria
                             usado++;
 
                             string sql3 = $"update comprobantes set usados_com = {usado} where id_com = {idComprobante}";
-
+                            
                             res3 = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql3, "Error al aumentar la secuencia del comprobante usado");
 
                             if (res3 > 0)
                             {
+                               
+
+                               string  cmd = $"EXEC FACT  {idFact}";
+                                DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(cmd, "Error al crear EL PDF de la factución");
+                                reporteFac obj = new reporteFac();
+                                obj.reportViewer1.LocalReport.DataSources[0].Value = DS.Tables[0];
+                                obj.ShowDialog();
                                 MessageBox.Show("Realizado correctamente!!");
+                                FuncionesGenerales.FuncionesGenerales.limpiarCOntroles(this);
                             }
                             else
                             {
@@ -565,6 +580,11 @@ namespace Papeleria
             {
                 MessageBox.Show("No puede generar una factura antes de eleguir los productos");
             }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

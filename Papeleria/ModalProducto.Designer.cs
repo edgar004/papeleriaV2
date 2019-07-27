@@ -117,6 +117,7 @@
             this.txt_itbis.Name = "txt_itbis";
             this.txt_itbis.Size = new System.Drawing.Size(319, 35);
             this.txt_itbis.TabIndex = 10;
+            this.txt_itbis.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_itbis_KeyPress);
             // 
             // txt_cantidad
             // 
@@ -127,6 +128,7 @@
             this.txt_cantidad.Name = "txt_cantidad";
             this.txt_cantidad.Size = new System.Drawing.Size(319, 35);
             this.txt_cantidad.TabIndex = 9;
+            this.txt_cantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_cantidad_KeyPress);
             // 
             // txt_codigo
             // 

@@ -30,6 +30,7 @@
               <Mapping SourceColumn="precio_pro" DataSetColumn="precio_pro" />
               <Mapping SourceColumn="porcientoItbis_pro" DataSetColumn="porcientoItbis_pro" />
               <Mapping SourceColumn="nom_pro" DataSetColumn="nom_pro" />
+              <Mapping SourceColumn="rnc_cli" DataSetColumn="rnc_cli" />
               <Mapping SourceColumn="itbis" DataSetColumn="itbis" />
               <Mapping SourceColumn="total" DataSetColumn="total" />
               <Mapping SourceColumn="subtotal_fac" DataSetColumn="subtotal_fac" />
@@ -75,6 +76,13 @@
               <xs:element name="precio_pro" msprop:Generator_ColumnVarNameInTable="columnprecio_pro" msprop:Generator_ColumnPropNameInRow="precio_pro" msprop:Generator_ColumnPropNameInTable="precio_proColumn" msprop:Generator_UserColumnName="precio_pro" type="xs:decimal" />
               <xs:element name="porcientoItbis_pro" msprop:Generator_ColumnVarNameInTable="columnporcientoItbis_pro" msprop:Generator_ColumnPropNameInRow="porcientoItbis_pro" msprop:Generator_ColumnPropNameInTable="porcientoItbis_proColumn" msprop:Generator_UserColumnName="porcientoItbis_pro" type="xs:decimal" />
               <xs:element name="nom_pro" msprop:Generator_ColumnVarNameInTable="columnnom_pro" msprop:Generator_ColumnPropNameInRow="nom_pro" msprop:Generator_ColumnPropNameInTable="nom_proColumn" msprop:Generator_UserColumnName="nom_pro">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rnc_cli" msprop:Generator_ColumnVarNameInTable="columnrnc_cli" msprop:Generator_ColumnPropNameInRow="rnc_cli" msprop:Generator_ColumnPropNameInTable="rnc_cliColumn" msprop:Generator_UserColumnName="rnc_cli">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="15" />

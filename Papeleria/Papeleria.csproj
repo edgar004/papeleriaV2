@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FuncionesGenerales">
       <HintPath>..\FuncionesGenerales\bin\Debug\FuncionesGenerales.dll</HintPath>
@@ -79,6 +82,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetCotizacion.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetFACT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFACT.xsd</DependentUpon>
+    </Compile>
     <Compile Include="facturacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +130,12 @@
     <Compile Include="reporteCOT.Designer.cs">
       <DependentUpon>reporteCOT.cs</DependentUpon>
     </Compile>
+    <Compile Include="reporteFac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporteFac.Designer.cs">
+      <DependentUpon>reporteFac.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="clientes.resx">
       <DependentUpon>clientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +152,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="informeCOT.rdlc" />
+    <EmbeddedResource Include="informeFact.rdlc" />
     <EmbeddedResource Include="inventario.resx">
       <DependentUpon>inventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +175,9 @@
     <EmbeddedResource Include="reporteCOT.resx">
       <DependentUpon>reporteCOT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reporteFac.resx">
+      <DependentUpon>reporteFac.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataSetCotizacion.xsc">
       <DependentUpon>DataSetCotizacion.xsd</DependentUpon>
     </None>
@@ -170,6 +188,17 @@
     </None>
     <None Include="DataSetCotizacion.xss">
       <DependentUpon>DataSetCotizacion.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFACT.xsc">
+      <DependentUpon>DataSetFACT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFACT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFACT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFACT.xss">
+      <DependentUpon>DataSetFACT.xsd</DependentUpon>
     </None>
     <None Include="papeleriaDataSet.xsc">
       <DependentUpon>papeleriaDataSet.xsd</DependentUpon>
@@ -314,6 +343,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\backREd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono.ico" />
+    <None Include="Resources\icono.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

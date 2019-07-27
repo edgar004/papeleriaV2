@@ -1,0 +1,7 @@
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Release\FuncionesGenerales.dll
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Release\FuncionesGenerales.pdb
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Release\MySql.Data.dll
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Release\Google.Protobuf.dll
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Release\MySql.Data.xml
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\obj\Release\FuncionesGenerales.dll
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\obj\Release\FuncionesGenerales.pdb

@@ -112,5 +112,15 @@ namespace Papeleria
         {
 
         }
+
+        private void txt_usados_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            FuncionesGenerales.FuncionesGenerales.SoloNumeros(e);
+        }
+
+        private void txt_cantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            FuncionesGenerales.FuncionesGenerales.SoloNumeros(e);
+        }
     }
 }

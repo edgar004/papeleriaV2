@@ -69,6 +69,13 @@ namespace Papeleria
 
         private void flowLayoutPanel3_Click(object sender, EventArgs e)
         {
+
+            {
+                DialogResult res = MessageBox.Show("¿Seguro que quieres eliminar el cliente?", "Eliminar", MessageBoxButtons.YesNo);
+                if (res == DialogResult.No) return;
+            }
+
+
             try
             {
                 string cmd = $"update clientes set estado=0 where codigo_cli = '{codigoCli}'";
@@ -91,9 +98,10 @@ namespace Papeleria
         }
 
         private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+
         {
-            DialogResult res = MessageBox.Show("¿Seguro que quieres eliminar el producto?", "Eliminar", MessageBoxButtons.YesNo);
-            if (res == DialogResult.No) return;
+
         }
+        
     }
 }

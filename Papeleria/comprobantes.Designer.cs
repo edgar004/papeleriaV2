@@ -121,6 +121,7 @@
             this.txt_cantidad.Name = "txt_cantidad";
             this.txt_cantidad.Size = new System.Drawing.Size(443, 22);
             this.txt_cantidad.TabIndex = 9;
+            this.txt_cantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_cantidad_KeyPress);
             // 
             // txt_usados
             // 
@@ -131,6 +132,7 @@
             this.txt_usados.ReadOnly = true;
             this.txt_usados.Size = new System.Drawing.Size(443, 22);
             this.txt_usados.TabIndex = 8;
+            this.txt_usados.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_usados_KeyPress);
             // 
             // label2
             // 
@@ -196,7 +198,7 @@
             // 
             this.comboCom.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboCom.FormattingEnabled = true;
-            this.comboCom.Location = new System.Drawing.Point(429, 35);
+            this.comboCom.Location = new System.Drawing.Point(429, 36);
             this.comboCom.Margin = new System.Windows.Forms.Padding(4);
             this.comboCom.Name = "comboCom";
             this.comboCom.Size = new System.Drawing.Size(443, 24);

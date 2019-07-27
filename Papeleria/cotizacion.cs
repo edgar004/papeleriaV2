@@ -64,7 +64,7 @@ namespace Papeleria
                     txt_nombrePro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[2].Value.ToString();
                     txt_precioPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[6].Value.ToString();
                     txt_cantidadPro.Text = "1";
-                    impuestoPro = Convert.ToInt32(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[4].Value.ToString());
+                    impuestoPro = Convert.ToDouble(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[4].Value.ToString());
                     maximaCant = Convert.ToInt32(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[3].Value.ToString());
 
                 }
@@ -200,52 +200,10 @@ namespace Papeleria
 
 
 
-                if ((Convert.ToDouble(txt_totalFactura.Text) % 1) < 0.5)
-                {
-                    txt_totalFactura.Text = Math.Round(Convert.ToDouble(txt_totalFactura.Text)).ToString();
-                }
-                else
-                {
-                    txt_totalFactura.Text = Math.Round(Convert.ToDouble(txt_totalFactura.Text)).ToString();
-
-                }
 
 
-                if ((Convert.ToDouble(txt_totalFactura.Text) % 1) < 0.5)
-                {
-                    txt_totalFactura.Text = Math.Round(Convert.ToDouble(txt_totalFactura.Text)).ToString();
-                }
-                else
-                {
-                    txt_totalFactura.Text = Math.Round(Convert.ToDouble(txt_totalFactura.Text)).ToString();
+                string cmd = $"insert into cotizaciones values('{codigoCot}','{txt_codigoCliente.Text}','{fecha.ToString("yyyy-MM-dd")}',{txt_totalFactura.Text.Replace(',','.')},{txtTotalItbis.Text.Replace(',','.')},{txtSubTotal.Text.Replace(',', '.')})";
 
-                }
-
-
-
-                if ((Convert.ToDouble(txtTotalItbis.Text) % 1) < 0.5)
-                {
-                    txtTotalItbis.Text = Math.Round(Convert.ToDouble(txtTotalItbis.Text)).ToString();
-                }
-                else
-                {
-                    txtTotalItbis.Text = Math.Round(Convert.ToDouble(txtTotalItbis.Text)).ToString();
-
-                }
-
-
-                if ((Convert.ToDouble(txtSubTotal.Text) % 1) < 0.5)
-                {
-                    txtSubTotal.Text = Math.Round(Convert.ToDouble(txtSubTotal.Text)).ToString();
-                }
-                else
-                {
-                    txtSubTotal.Text = Math.Round(Convert.ToDouble(txtSubTotal.Text)).ToString();
-
-                }
-
-
-                string cmd = $"insert into cotizaciones values('{codigoCot}','{txt_codigoCliente.Text}','{fecha.ToString("yyyy-MM-dd")}',{txt_totalFactura.Text},{txtTotalItbis.Text},{txtSubTotal.Text})";
                 int res = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(cmd, "Error al crear la cotización.");
                 if (res == 0)
                 {
@@ -274,6 +232,50 @@ namespace Papeleria
 
         private void flowLayoutPanel6_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void flowLayoutPanel4_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
+        }
+
+        private void txt_cantidadPro_KeyUp(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void txt_cantidadPro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            FuncionesGenerales.FuncionesGenerales.SoloNumeros(e);
+
+        }
+
+        private void txt_codigoPro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                try
+                {
+                    inventario pro = new inventario();
+                    pro.btnAdd.Visible = false;
+                    pro.button2.Visible = false;
+                    if (pro.ShowDialog() == DialogResult.OK)
+                    {
+                        idPro = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[0].Value.ToString();
+                        txt_codigoPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[1].Value.ToString();
+                        txt_nombrePro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[2].Value.ToString();
+                        txt_precioPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[6].Value.ToString();
+                        txt_cantidadPro.Text = "1";
+                        impuestoPro = Convert.ToDouble(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[4].Value.ToString());
+                        maximaCant = Convert.ToInt32(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[3].Value.ToString());
+
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Erro al traer el producto, por favor intente de nuevo.");
+                }
+            }
 
         }
     }
