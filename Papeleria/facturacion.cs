@@ -78,6 +78,7 @@ namespace Papeleria
                     textBox3.Text = dato;
                     txtNomPro.Text = DS.Tables[0].Rows[0]["nom_pro"].ToString();
                     txtPrePro.Text = DS.Tables[0].Rows[0]["precio"].ToString();
+                    txtCantPro.Text = "1";
 
                     cantidadPro = Convert.ToInt32(DS.Tables[0].Rows[0]["cantidad"].ToString());
                     itbisPro = Convert.ToInt32(DS.Tables[0].Rows[0]["itbis"].ToString());
@@ -218,6 +219,8 @@ namespace Papeleria
         public static double sumItbis = 0;
         public static double sumSubTotal = 0;
         public static double sumTotal = 0;
+        public static double sumtotalSinDes = 0;
+        public static double subtotalSinDes = 0;
 
         private void SetDatosDataGrid()
         {
@@ -236,7 +239,7 @@ namespace Papeleria
                         Boolean key = false;
                         int num_fila = 0;
 
-                        int precioPro = Convert.ToInt32(txtPrePro.Text) * Convert.ToInt32(txtCantPro.Text);
+                        Double precioPro = Convert.ToDouble(txtPrePro.Text) * Convert.ToInt32(txtCantPro.Text);
                         Double calItbis = precioPro * (itbisPro / 100);
 
                         if (cont_fila == 0)
@@ -249,8 +252,10 @@ namespace Papeleria
 
                             sumItbis += calItbis;
                             sumSubTotal += precioPro;
+                            subtotalSinDes = sumSubTotal;
                             sumTotal = 0;
                             sumTotal = sumItbis + sumSubTotal;
+                            sumtotalSinDes = sumTotal;
 
                             txtTotalItbis.Text = "$ " + sumItbis;
                             txtSubTotal.Text = "$ " + sumSubTotal;
@@ -366,7 +371,7 @@ namespace Papeleria
             }
         }
 
-        public double totalsindescuento = 0;
+        
         private void flowLayoutPanel8_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -384,14 +389,14 @@ namespace Papeleria
                 else
                 {
                     txtDescuento.ReadOnly = false;
-                    totalsindescuento = sumTotal;
                 }
             }
             else
             {
                 txtDescuento.Text = "";
                 txtDescuento.ReadOnly = true;
-                txtTotal.Text = "$ " + totalsindescuento;
+                txtTotal.Text = "$ " + (subtotalSinDes+sumItbis);
+                txtSubTotal.Text = "$ "+subtotalSinDes.ToString();
             }
         }
 
@@ -410,13 +415,26 @@ namespace Papeleria
             {
                 if (!txtTotal.Text.Equals(""))
                 {
+                    double num = Convert.ToDouble(txtTotal.Text);
 
-                    double total = totalsindescuento;
-                    double desc = Convert.ToDouble(txtDescuento.Text);
-                    double aux = total - (total * (desc / 100));
+                    if(num <= 99)
+                    {
+                        double totalaDesc = subtotalSinDes;
+                        double desc = Convert.ToDouble(txtDescuento.Text);
+                        sumSubTotal = totalaDesc - (totalaDesc * (desc / 100));
 
-                    txtTotal.Text = "";
-                    txtTotal.Text = "$ " + aux.ToString().Replace(',','.');
+                        txtSubTotal.Text = "";
+                        txtSubTotal.Text = "$ " + sumSubTotal.ToString().Replace(',', '.');
+
+                        txtTotal.Text = "";
+                        sumtotalSinDes = sumTotal;
+
+                        sumTotal = 0;
+                        sumTotal = sumSubTotal + sumItbis;
+
+                        txtTotal.Text = "$ " + sumTotal.ToString().Replace(',', '.');
+                    }
+                    
                 }
             }
         }
@@ -486,7 +504,7 @@ namespace Papeleria
                 }
                 else
                 {
-                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}',{idComprobante},{totalfact},{sumItbis.ToString().Replace(',', '.')},{sumSubTotal.ToString().Replace(',', '.')},0)";
+                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}',{idComprobante},{totalfact},{sumItbis.ToString().Replace(',', '.')},{subtotalSinDes.ToString().Replace(',', '.')},0)";
                     
                     respuesta = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql, "Error al guardar la factura");
                     

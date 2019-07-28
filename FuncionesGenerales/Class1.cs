@@ -29,6 +29,7 @@ namespace FuncionesGenerales
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show(ex.ToString());
                     MessageBox.Show("La base de datos no está encendida, por favor comunicarse con soporte.");
                     db.Close();
                     return ds;

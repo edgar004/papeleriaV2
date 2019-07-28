@@ -198,7 +198,7 @@
             // 
             this.comboCom.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboCom.FormattingEnabled = true;
-            this.comboCom.Location = new System.Drawing.Point(429, 36);
+            this.comboCom.Location = new System.Drawing.Point(429, 35);
             this.comboCom.Margin = new System.Windows.Forms.Padding(4);
             this.comboCom.Name = "comboCom";
             this.comboCom.Size = new System.Drawing.Size(443, 24);
