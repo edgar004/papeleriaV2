@@ -83,14 +83,14 @@
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.checkDescuento = new System.Windows.Forms.CheckBox();
             this.txtDescuento = new System.Windows.Forms.TextBox();
-            this.idPro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itbisTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.impuestoTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidadTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precioTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidadTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.impuestoTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itbisTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -831,41 +831,11 @@
             this.txtDescuento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescuento_KeyPress);
             this.txtDescuento.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtDescuento_KeyUp);
             // 
-            // idPro
+            // codigo
             // 
-            this.idPro.HeaderText = "IDProducto";
-            this.idPro.Name = "idPro";
-            this.idPro.ReadOnly = true;
-            this.idPro.Visible = false;
-            // 
-            // totalTable
-            // 
-            this.totalTable.HeaderText = "Total";
-            this.totalTable.Name = "totalTable";
-            // 
-            // itbisTable
-            // 
-            this.itbisTable.HeaderText = "Itbis";
-            this.itbisTable.Name = "itbisTable";
-            this.itbisTable.Width = 65;
-            // 
-            // impuestoTable
-            // 
-            this.impuestoTable.HeaderText = "Imp%";
-            this.impuestoTable.Name = "impuestoTable";
-            this.impuestoTable.Width = 65;
-            // 
-            // cantidadTable
-            // 
-            this.cantidadTable.HeaderText = "Cant";
-            this.cantidadTable.Name = "cantidadTable";
-            this.cantidadTable.Width = 60;
-            // 
-            // precioTable
-            // 
-            this.precioTable.HeaderText = "Precio";
-            this.precioTable.Name = "precioTable";
-            this.precioTable.Width = 150;
+            this.codigo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.codigo.HeaderText = "Código";
+            this.codigo.Name = "codigo";
             // 
             // nombre
             // 
@@ -873,11 +843,41 @@
             this.nombre.HeaderText = "Nombre";
             this.nombre.Name = "nombre";
             // 
-            // codigo
+            // precioTable
             // 
-            this.codigo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.codigo.HeaderText = "Código";
-            this.codigo.Name = "codigo";
+            this.precioTable.HeaderText = "Precio";
+            this.precioTable.Name = "precioTable";
+            this.precioTable.Width = 150;
+            // 
+            // cantidadTable
+            // 
+            this.cantidadTable.HeaderText = "Cant";
+            this.cantidadTable.Name = "cantidadTable";
+            this.cantidadTable.Width = 60;
+            // 
+            // impuestoTable
+            // 
+            this.impuestoTable.HeaderText = "Imp%";
+            this.impuestoTable.Name = "impuestoTable";
+            this.impuestoTable.Width = 65;
+            // 
+            // itbisTable
+            // 
+            this.itbisTable.HeaderText = "Itbis";
+            this.itbisTable.Name = "itbisTable";
+            this.itbisTable.Width = 65;
+            // 
+            // totalTable
+            // 
+            this.totalTable.HeaderText = "Total";
+            this.totalTable.Name = "totalTable";
+            // 
+            // idPro
+            // 
+            this.idPro.HeaderText = "IDProducto";
+            this.idPro.Name = "idPro";
+            this.idPro.ReadOnly = true;
+            this.idPro.Visible = false;
             // 
             // facturacion
             // 
