@@ -71,7 +71,7 @@ namespace Papeleria
             }
             catch (Exception)
             {
-                MessageBox.Show("Erro al traer el producto, por favor intente de nuevo.");
+                MessageBox.Show("Error al traer el producto, por favor intente de nuevo.");
             }
            
         }
@@ -276,6 +276,33 @@ namespace Papeleria
                     MessageBox.Show("Erro al traer el producto, por favor intente de nuevo.");
                 }
             }
+
+        }
+
+        private void flowLayoutPanel7_Click(object sender, EventArgs e)
+        {
+
+            if(dataGridViewProducto.Rows.Count > 0)
+            {
+                double rItbis = Convert.ToDouble(txtTotalItbis.Text);
+                double rSubTotal = Convert.ToDouble(txtSubTotal.Text);
+                double rTotal = 0;
+
+                rItbis -= Convert.ToDouble(dataGridViewProducto.Rows[dataGridViewProducto.CurrentRow.Index].Cells[5].Value);
+                rSubTotal -= Convert.ToDouble(dataGridViewProducto.Rows[dataGridViewProducto.CurrentRow.Index].Cells[6].Value);
+                dataGridViewProducto.Rows.RemoveAt(dataGridViewProducto.CurrentRow.Index);
+
+                rTotal = rItbis + rSubTotal;
+
+                txt_totalFactura.Text = rTotal.ToString();
+                txtSubTotal.Text = rSubTotal.ToString();
+                txtTotalItbis.Text = rItbis.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Debe de tener por lo menos un producto para poder borrar.... Lo sentimos!!!");
+            }
+           
 
         }
     }
