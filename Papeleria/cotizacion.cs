@@ -141,7 +141,7 @@ namespace Papeleria
 
             if (!existePro)
             {
-                Double importe = Convert.ToDouble(txt_precioPro.Text.Trim()) * Convert.ToDouble(txt_cantidadPro.Text.Trim());
+                Double importe = (Convert.ToDouble(txt_precioPro.Text.Trim()) * Convert.ToDouble(txt_cantidadPro.Text.Trim());
                 Double itbis = importe * (Convert.ToDouble(impuestoPro / 100)) ;
                 dataGridViewProducto.Rows.Add(txt_codigoPro.Text.Trim(), txt_nombrePro.Text.Trim(), txt_precioPro.Text.Trim(), txt_cantidadPro.Text.Trim(), impuestoPro, itbis, importe, idPro);
                 seleciono = false;
@@ -189,6 +189,11 @@ namespace Papeleria
 }
             if (dataGridViewProducto.Rows.Count > 0)
             {
+                if (txt_nombreCliente.Text.Trim().Equals(""))
+                {
+                    MessageBox.Show("Debe elegir un cliente.");
+                    return;
+                }
                 string codigoCot = FuncionesGenerales.FuncionesGenerales.GenerarCodigoTabla("COT", "cotizaciones", "Error al registrar la cotización, por favor intente de nuevo.");
                 if (codigoCot == "")
                 {
@@ -291,18 +296,31 @@ namespace Papeleria
                 rItbis -= Convert.ToDouble(dataGridViewProducto.Rows[dataGridViewProducto.CurrentRow.Index].Cells[5].Value);
                 rSubTotal -= Convert.ToDouble(dataGridViewProducto.Rows[dataGridViewProducto.CurrentRow.Index].Cells[6].Value);
                 dataGridViewProducto.Rows.RemoveAt(dataGridViewProducto.CurrentRow.Index);
+                if (dataGridViewProducto.Rows.Count == 0)
+                {
+                    txtSubTotal.Text = "0";
+                    txt_totalFactura.Text = "0";
+                    txtTotalItbis.Text = "0";
+                    return;
+                }
 
                 rTotal = rItbis + rSubTotal;
 
                 txt_totalFactura.Text = rTotal.ToString();
                 txtSubTotal.Text = rSubTotal.ToString();
                 txtTotalItbis.Text = rItbis.ToString();
+               
             }
             else
             {
                 MessageBox.Show("Debe de tener por lo menos un producto para poder borrar.... Lo sentimos!!!");
             }
            
+
+        }
+
+        private void flowLayoutPanel7_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

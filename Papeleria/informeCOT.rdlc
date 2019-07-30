@@ -509,7 +509,7 @@
         <Width>15.46681cm</Width>
         <Style>
           <Border>
-            <Style>None</Style>
+            <Style>Solid</Style>
           </Border>
         </Style>
       </Tablix>
@@ -1130,7 +1130,16 @@
       </Textbox>
     </ReportItems>
     <Height>5.27694in</Height>
-    <Style />
+    <Style>
+      <Border>
+        <Style>None</Style>
+      </Border>
+      <TopBorder>
+        <Color>Black</Color>
+        <Style>Solid</Style>
+        <Width>1.5pt</Width>
+      </TopBorder>
+    </Style>
   </Body>
   <Width>7.25in</Width>
   <Page>

@@ -467,6 +467,14 @@ namespace Papeleria
                 sumSubTotal -= Convert.ToDouble(dataGridViewFacturacion.Rows[dataGridViewFacturacion.CurrentRow.Index].Cells[6].Value);
                 dataGridViewFacturacion.Rows.RemoveAt(dataGridViewFacturacion.CurrentRow.Index);
 
+                if (dataGridViewFacturacion.Rows.Count == 0)
+                {
+                    sumTotal = 0;
+                    sumItbis = 0;
+                    sumSubTotal=0;
+                }
+
+
                 sumTotal = 0;
                 sumTotal = sumItbis + sumSubTotal;
 
