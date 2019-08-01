@@ -35,4 +35,3 @@ C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\RdlComp
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\RdlCompile.compiled
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\Papeleria.exe
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\Papeleria.pdb
-C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\Papeleria.csprojResolveAssemblyReference.cache
