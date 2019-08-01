@@ -702,7 +702,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Correo Electronico: DISTRIBUIDORAGENAOHOEPELMAN@GMAIL.COM
+                <Value>Correo Electronico: DISTGENAOHOEPELMAN@GMAIL.COM
 829-842-6655/829-575-6083</Value>
                 <Style />
               </TextRun>
@@ -871,7 +871,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>FACTURACIÓN</Value>
+                <Value>FACTURA</Value>
                 <Style>
                   <FontSize>14pt</FontSize>
                   <Color>#c8e6c9</Color>
