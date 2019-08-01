@@ -122,6 +122,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>papeleriaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="papeleriaDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>papeleriaDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="reporteCOT.cs">
@@ -210,6 +215,17 @@
     </None>
     <None Include="papeleriaDataSet.xss">
       <DependentUpon>papeleriaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="papeleriaDataSet11.xsc">
+      <DependentUpon>papeleriaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="papeleriaDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>papeleriaDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="papeleriaDataSet11.xss">
+      <DependentUpon>papeleriaDataSet11.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

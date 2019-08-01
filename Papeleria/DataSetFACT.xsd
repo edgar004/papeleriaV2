@@ -9,7 +9,7 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FACTTableAdapter" GeneratorDataComponentClassName="FACTTableAdapter" Name="FACT" UserDataComponentName="FACTTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="papeleriaConnectionString1 (Settings)" DbObjectName="papeleria.dbo.FACT" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="papeleriaConnectionString1 (Settings)" DbObjectName="papeleria.dbo.FACT" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.FACT</CommandText>
@@ -27,18 +27,42 @@
               <Mapping SourceColumn="id_fac" DataSetColumn="id_fac" />
               <Mapping SourceColumn="cantidad_pro" DataSetColumn="cantidad_pro" />
               <Mapping SourceColumn="tipoVenta_pro" DataSetColumn="tipoVenta_pro" />
-              <Mapping SourceColumn="precio_pro" DataSetColumn="precio_pro" />
               <Mapping SourceColumn="porcientoItbis_pro" DataSetColumn="porcientoItbis_pro" />
               <Mapping SourceColumn="nom_pro" DataSetColumn="nom_pro" />
               <Mapping SourceColumn="rnc_cli" DataSetColumn="rnc_cli" />
               <Mapping SourceColumn="NFC_com" DataSetColumn="NFC_com" />
               <Mapping SourceColumn="tipo_com" DataSetColumn="tipo_com" />
               <Mapping SourceColumn="fechaVencimiento_com" DataSetColumn="fechaVencimiento_com" />
-              <Mapping SourceColumn="itbis" DataSetColumn="itbis" />
-              <Mapping SourceColumn="total" DataSetColumn="total" />
-              <Mapping SourceColumn="subtotal_fac" DataSetColumn="subtotal_fac" />
-              <Mapping SourceColumn="itbisTotal_fac" DataSetColumn="itbisTotal_fac" />
-              <Mapping SourceColumn="total_fac" DataSetColumn="total_fac" />
+              <Mapping SourceColumn="id_cli" DataSetColumn="id_cli" />
+              <Mapping SourceColumn="id_com" DataSetColumn="id_com" />
+              <Mapping SourceColumn="total_fac" DataSetColumn="total_fac1" />
+              <Mapping SourceColumn="itbisTotal_fac" DataSetColumn="itbisTotal_fac1" />
+              <Mapping SourceColumn="subtotal_fac" DataSetColumn="subtotal_fac1" />
+              <Mapping SourceColumn="descuento" DataSetColumn="descuento" />
+              <Mapping SourceColumn="id_fac1" DataSetColumn="id_fac1" />
+              <Mapping SourceColumn="id_pro" DataSetColumn="id_pro" />
+              <Mapping SourceColumn="precio_pro" DataSetColumn="precio_pro1" />
+              <Mapping SourceColumn="codigo_cli" DataSetColumn="codigo_cli" />
+              <Mapping SourceColumn="direccion_cli" DataSetColumn="direccion_cli" />
+              <Mapping SourceColumn="telefono_cli" DataSetColumn="telefono_cli" />
+              <Mapping SourceColumn="estado" DataSetColumn="estado" />
+              <Mapping SourceColumn="id_pro1" DataSetColumn="id_pro1" />
+              <Mapping SourceColumn="codigo_pro" DataSetColumn="codigo_pro" />
+              <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
+              <Mapping SourceColumn="itbis" DataSetColumn="itbis1" />
+              <Mapping SourceColumn="estanteria" DataSetColumn="estanteria" />
+              <Mapping SourceColumn="precio" DataSetColumn="precio" />
+              <Mapping SourceColumn="estado1" DataSetColumn="estado1" />
+              <Mapping SourceColumn="id_com1" DataSetColumn="id_com1" />
+              <Mapping SourceColumn="serie_com" DataSetColumn="serie_com" />
+              <Mapping SourceColumn="usados_com" DataSetColumn="usados_com" />
+              <Mapping SourceColumn="cantidadLimite_com" DataSetColumn="cantidadLimite_com" />
+              <Mapping SourceColumn="estado2" DataSetColumn="estado2" />
+              <Mapping SourceColumn="itbis1" DataSetColumn="itbis11" />
+              <Mapping SourceColumn="total" DataSetColumn="total1" />
+              <Mapping SourceColumn="subtotal_fac1" DataSetColumn="subtotal_fac1" />
+              <Mapping SourceColumn="itbisTotal_fac1" DataSetColumn="itbisTotal_fac1" />
+              <Mapping SourceColumn="total_fac1" DataSetColumn="total_fac1" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -50,7 +74,7 @@
   <xs:element name="DataSetFACT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetFACT" msprop:Generator_UserDSName="DataSetFACT">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FACT" msprop:Generator_TableClassName="FACTDataTable" msprop:Generator_TableVarName="tableFACT" msprop:Generator_TablePropName="FACT" msprop:Generator_RowDeletingName="FACTRowDeleting" msprop:Generator_RowChangingName="FACTRowChanging" msprop:Generator_RowEvHandlerName="FACTRowChangeEventHandler" msprop:Generator_RowDeletedName="FACTRowDeleted" msprop:Generator_UserTableName="FACT" msprop:Generator_RowChangedName="FACTRowChanged" msprop:Generator_RowEvArgName="FACTRowChangeEvent" msprop:Generator_RowClassName="FACTRow">
+        <xs:element name="FACT" msprop:Generator_TableClassName="FACTDataTable" msprop:Generator_TableVarName="tableFACT" msprop:Generator_RowChangedName="FACTRowChanged" msprop:Generator_TablePropName="FACT" msprop:Generator_RowDeletingName="FACTRowDeleting" msprop:Generator_RowChangingName="FACTRowChanging" msprop:Generator_RowEvHandlerName="FACTRowChangeEventHandler" msprop:Generator_RowDeletedName="FACTRowDeleted" msprop:Generator_RowClassName="FACTRow" msprop:Generator_UserTableName="FACT" msprop:Generator_RowEvArgName="FACTRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="nombre_cli" msprop:Generator_ColumnVarNameInTable="columnnombre_cli" msprop:Generator_ColumnPropNameInRow="nombre_cli" msprop:Generator_ColumnPropNameInTable="nombre_cliColumn" msprop:Generator_UserColumnName="nombre_cli">
@@ -106,6 +130,75 @@
               <xs:element name="subtotal_fac" msprop:Generator_ColumnVarNameInTable="columnsubtotal_fac" msprop:Generator_ColumnPropNameInRow="subtotal_fac" msprop:Generator_ColumnPropNameInTable="subtotal_facColumn" msprop:Generator_UserColumnName="subtotal_fac" type="xs:int" />
               <xs:element name="itbisTotal_fac" msprop:Generator_ColumnVarNameInTable="columnitbisTotal_fac" msprop:Generator_ColumnPropNameInRow="itbisTotal_fac" msprop:Generator_ColumnPropNameInTable="itbisTotal_facColumn" msprop:Generator_UserColumnName="itbisTotal_fac" type="xs:int" />
               <xs:element name="total_fac" msprop:Generator_ColumnVarNameInTable="columntotal_fac" msprop:Generator_ColumnPropNameInRow="total_fac" msprop:Generator_ColumnPropNameInTable="total_facColumn" msprop:Generator_UserColumnName="total_fac" type="xs:int" />
+              <xs:element name="id_cli" msprop:Generator_ColumnVarNameInTable="columnid_cli" msprop:Generator_ColumnPropNameInRow="id_cli" msprop:Generator_ColumnPropNameInTable="id_cliColumn" msprop:Generator_UserColumnName="id_cli">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_com" msprop:Generator_ColumnVarNameInTable="columnid_com" msprop:Generator_ColumnPropNameInRow="id_com" msprop:Generator_ColumnPropNameInTable="id_comColumn" msprop:Generator_UserColumnName="id_com" type="xs:int" />
+              <xs:element name="total_fac1" msdata:Caption="total_fac" msprop:Generator_ColumnVarNameInTable="columntotal_fac1" msprop:Generator_ColumnPropNameInRow="total_fac1" msprop:Generator_ColumnPropNameInTable="total_fac1Column" msprop:Generator_UserColumnName="total_fac1" type="xs:double" />
+              <xs:element name="itbisTotal_fac1" msdata:Caption="itbisTotal_fac" msprop:Generator_ColumnVarNameInTable="columnitbisTotal_fac1" msprop:Generator_ColumnPropNameInRow="itbisTotal_fac1" msprop:Generator_ColumnPropNameInTable="itbisTotal_fac1Column" msprop:Generator_UserColumnName="itbisTotal_fac1" type="xs:double" />
+              <xs:element name="subtotal_fac1" msdata:Caption="subtotal_fac" msprop:Generator_ColumnVarNameInTable="columnsubtotal_fac1" msprop:Generator_ColumnPropNameInRow="subtotal_fac1" msprop:Generator_ColumnPropNameInTable="subtotal_fac1Column" msprop:Generator_UserColumnName="subtotal_fac1" type="xs:double" />
+              <xs:element name="descuento" msprop:Generator_ColumnVarNameInTable="columndescuento" msprop:Generator_ColumnPropNameInRow="descuento" msprop:Generator_ColumnPropNameInTable="descuentoColumn" msprop:Generator_UserColumnName="descuento" type="xs:double" />
+              <xs:element name="id_fac1" msprop:Generator_ColumnVarNameInTable="columnid_fac1" msprop:Generator_ColumnPropNameInRow="id_fac1" msprop:Generator_ColumnPropNameInTable="id_fac1Column" msprop:Generator_UserColumnName="id_fac1" type="xs:int" />
+              <xs:element name="id_pro" msprop:Generator_ColumnVarNameInTable="columnid_pro" msprop:Generator_ColumnPropNameInRow="id_pro" msprop:Generator_ColumnPropNameInTable="id_proColumn" msprop:Generator_UserColumnName="id_pro" type="xs:int" />
+              <xs:element name="precio_pro1" msdata:Caption="precio_pro" msprop:Generator_ColumnVarNameInTable="columnprecio_pro1" msprop:Generator_ColumnPropNameInRow="precio_pro1" msprop:Generator_ColumnPropNameInTable="precio_pro1Column" msprop:Generator_UserColumnName="precio_pro1" type="xs:double" />
+              <xs:element name="codigo_cli" msprop:Generator_ColumnVarNameInTable="columncodigo_cli" msprop:Generator_ColumnPropNameInRow="codigo_cli" msprop:Generator_ColumnPropNameInTable="codigo_cliColumn" msprop:Generator_UserColumnName="codigo_cli">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="direccion_cli" msprop:Generator_ColumnVarNameInTable="columndireccion_cli" msprop:Generator_ColumnPropNameInRow="direccion_cli" msprop:Generator_ColumnPropNameInTable="direccion_cliColumn" msprop:Generator_UserColumnName="direccion_cli">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefono_cli" msprop:Generator_ColumnVarNameInTable="columntelefono_cli" msprop:Generator_ColumnPropNameInRow="telefono_cli" msprop:Generator_ColumnPropNameInTable="telefono_cliColumn" msprop:Generator_UserColumnName="telefono_cli">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="estado" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_UserColumnName="estado" type="xs:boolean" />
+              <xs:element name="id_pro1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_pro1" msprop:Generator_ColumnPropNameInRow="id_pro1" msprop:Generator_ColumnPropNameInTable="id_pro1Column" msprop:Generator_UserColumnName="id_pro1" type="xs:int" />
+              <xs:element name="codigo_pro" msprop:Generator_ColumnVarNameInTable="columncodigo_pro" msprop:Generator_ColumnPropNameInRow="codigo_pro" msprop:Generator_ColumnPropNameInTable="codigo_proColumn" msprop:Generator_UserColumnName="codigo_pro">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" />
+              <xs:element name="itbis1" msdata:Caption="itbis" msprop:Generator_ColumnVarNameInTable="columnitbis1" msprop:Generator_ColumnPropNameInRow="itbis1" msprop:Generator_ColumnPropNameInTable="itbis1Column" msprop:Generator_UserColumnName="itbis1" type="xs:int" />
+              <xs:element name="estanteria" msprop:Generator_ColumnVarNameInTable="columnestanteria" msprop:Generator_ColumnPropNameInRow="estanteria" msprop:Generator_ColumnPropNameInTable="estanteriaColumn" msprop:Generator_UserColumnName="estanteria">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="precio" msprop:Generator_ColumnVarNameInTable="columnprecio" msprop:Generator_ColumnPropNameInRow="precio" msprop:Generator_ColumnPropNameInTable="precioColumn" msprop:Generator_UserColumnName="precio" type="xs:double" />
+              <xs:element name="estado1" msprop:Generator_ColumnVarNameInTable="columnestado1" msprop:Generator_ColumnPropNameInRow="estado1" msprop:Generator_ColumnPropNameInTable="estado1Column" msprop:Generator_UserColumnName="estado1" type="xs:boolean" />
+              <xs:element name="id_com1" msprop:Generator_ColumnVarNameInTable="columnid_com1" msprop:Generator_ColumnPropNameInRow="id_com1" msprop:Generator_ColumnPropNameInTable="id_com1Column" msprop:Generator_UserColumnName="id_com1" type="xs:int" />
+              <xs:element name="serie_com" msprop:Generator_ColumnVarNameInTable="columnserie_com" msprop:Generator_ColumnPropNameInRow="serie_com" msprop:Generator_ColumnPropNameInTable="serie_comColumn" msprop:Generator_UserColumnName="serie_com">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usados_com" msprop:Generator_ColumnVarNameInTable="columnusados_com" msprop:Generator_ColumnPropNameInRow="usados_com" msprop:Generator_ColumnPropNameInTable="usados_comColumn" msprop:Generator_UserColumnName="usados_com" type="xs:int" />
+              <xs:element name="cantidadLimite_com" msprop:Generator_ColumnVarNameInTable="columncantidadLimite_com" msprop:Generator_ColumnPropNameInRow="cantidadLimite_com" msprop:Generator_ColumnPropNameInTable="cantidadLimite_comColumn" msprop:Generator_UserColumnName="cantidadLimite_com" type="xs:int" />
+              <xs:element name="estado2" msprop:Generator_ColumnVarNameInTable="columnestado2" msprop:Generator_ColumnPropNameInRow="estado2" msprop:Generator_ColumnPropNameInTable="estado2Column" msprop:Generator_UserColumnName="estado2" type="xs:boolean" />
+              <xs:element name="itbis11" msdata:ReadOnly="true" msdata:Caption="itbis1" msprop:Generator_ColumnVarNameInTable="columnitbis11" msprop:Generator_ColumnPropNameInRow="itbis11" msprop:Generator_ColumnPropNameInTable="itbis11Column" msprop:Generator_UserColumnName="itbis11" type="xs:decimal" minOccurs="0" />
+              <xs:element name="total1" msdata:ReadOnly="true" msdata:Caption="total" msprop:Generator_ColumnVarNameInTable="columntotal1" msprop:Generator_ColumnPropNameInRow="total1" msprop:Generator_ColumnPropNameInTable="total1Column" msprop:Generator_UserColumnName="total1" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

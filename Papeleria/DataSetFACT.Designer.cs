@@ -313,6 +313,60 @@ namespace Papeleria {
             
             private global::System.Data.DataColumn columntotal_fac;
             
+            private global::System.Data.DataColumn columnid_cli;
+            
+            private global::System.Data.DataColumn columnid_com;
+            
+            private global::System.Data.DataColumn columntotal_fac1;
+            
+            private global::System.Data.DataColumn columnitbisTotal_fac1;
+            
+            private global::System.Data.DataColumn columnsubtotal_fac1;
+            
+            private global::System.Data.DataColumn columndescuento;
+            
+            private global::System.Data.DataColumn columnid_fac1;
+            
+            private global::System.Data.DataColumn columnid_pro;
+            
+            private global::System.Data.DataColumn columnprecio_pro1;
+            
+            private global::System.Data.DataColumn columncodigo_cli;
+            
+            private global::System.Data.DataColumn columndireccion_cli;
+            
+            private global::System.Data.DataColumn columntelefono_cli;
+            
+            private global::System.Data.DataColumn columnestado;
+            
+            private global::System.Data.DataColumn columnid_pro1;
+            
+            private global::System.Data.DataColumn columncodigo_pro;
+            
+            private global::System.Data.DataColumn columncantidad;
+            
+            private global::System.Data.DataColumn columnitbis1;
+            
+            private global::System.Data.DataColumn columnestanteria;
+            
+            private global::System.Data.DataColumn columnprecio;
+            
+            private global::System.Data.DataColumn columnestado1;
+            
+            private global::System.Data.DataColumn columnid_com1;
+            
+            private global::System.Data.DataColumn columnserie_com;
+            
+            private global::System.Data.DataColumn columnusados_com;
+            
+            private global::System.Data.DataColumn columncantidadLimite_com;
+            
+            private global::System.Data.DataColumn columnestado2;
+            
+            private global::System.Data.DataColumn columnitbis11;
+            
+            private global::System.Data.DataColumn columntotal1;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FACTDataTable() {
@@ -484,6 +538,222 @@ namespace Papeleria {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn id_cliColumn {
+                get {
+                    return this.columnid_cli;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn id_comColumn {
+                get {
+                    return this.columnid_com;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn total_fac1Column {
+                get {
+                    return this.columntotal_fac1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn itbisTotal_fac1Column {
+                get {
+                    return this.columnitbisTotal_fac1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn subtotal_fac1Column {
+                get {
+                    return this.columnsubtotal_fac1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn descuentoColumn {
+                get {
+                    return this.columndescuento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn id_fac1Column {
+                get {
+                    return this.columnid_fac1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn id_proColumn {
+                get {
+                    return this.columnid_pro;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn precio_pro1Column {
+                get {
+                    return this.columnprecio_pro1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn codigo_cliColumn {
+                get {
+                    return this.columncodigo_cli;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn direccion_cliColumn {
+                get {
+                    return this.columndireccion_cli;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn telefono_cliColumn {
+                get {
+                    return this.columntelefono_cli;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn estadoColumn {
+                get {
+                    return this.columnestado;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn id_pro1Column {
+                get {
+                    return this.columnid_pro1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn codigo_proColumn {
+                get {
+                    return this.columncodigo_pro;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn cantidadColumn {
+                get {
+                    return this.columncantidad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn itbis1Column {
+                get {
+                    return this.columnitbis1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn estanteriaColumn {
+                get {
+                    return this.columnestanteria;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn precioColumn {
+                get {
+                    return this.columnprecio;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn estado1Column {
+                get {
+                    return this.columnestado1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn id_com1Column {
+                get {
+                    return this.columnid_com1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn serie_comColumn {
+                get {
+                    return this.columnserie_com;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn usados_comColumn {
+                get {
+                    return this.columnusados_com;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn cantidadLimite_comColumn {
+                get {
+                    return this.columncantidadLimite_com;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn estado2Column {
+                get {
+                    return this.columnestado2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn itbis11Column {
+                get {
+                    return this.columnitbis11;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn total1Column {
+                get {
+                    return this.columntotal1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -535,7 +805,33 @@ namespace Papeleria {
                         int total, 
                         int subtotal_fac, 
                         int itbisTotal_fac, 
-                        int total_fac) {
+                        int total_fac, 
+                        string id_cli, 
+                        int id_com, 
+                        double total_fac1, 
+                        double itbisTotal_fac1, 
+                        double subtotal_fac1, 
+                        double descuento, 
+                        int id_fac1, 
+                        int id_pro, 
+                        double precio_pro1, 
+                        string codigo_cli, 
+                        string direccion_cli, 
+                        string telefono_cli, 
+                        bool estado, 
+                        string codigo_pro, 
+                        int cantidad, 
+                        int itbis1, 
+                        string estanteria, 
+                        double precio, 
+                        bool estado1, 
+                        int id_com1, 
+                        string serie_com, 
+                        int usados_com, 
+                        int cantidadLimite_com, 
+                        bool estado2, 
+                        decimal itbis11, 
+                        double total1) {
                 FACTRow rowFACTRow = ((FACTRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         nombre_cli,
@@ -554,7 +850,34 @@ namespace Papeleria {
                         total,
                         subtotal_fac,
                         itbisTotal_fac,
-                        total_fac};
+                        total_fac,
+                        id_cli,
+                        id_com,
+                        total_fac1,
+                        itbisTotal_fac1,
+                        subtotal_fac1,
+                        descuento,
+                        id_fac1,
+                        id_pro,
+                        precio_pro1,
+                        codigo_cli,
+                        direccion_cli,
+                        telefono_cli,
+                        estado,
+                        null,
+                        codigo_pro,
+                        cantidad,
+                        itbis1,
+                        estanteria,
+                        precio,
+                        estado1,
+                        id_com1,
+                        serie_com,
+                        usados_com,
+                        cantidadLimite_com,
+                        estado2,
+                        itbis11,
+                        total1};
                 rowFACTRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFACTRow);
                 return rowFACTRow;
@@ -601,6 +924,33 @@ namespace Papeleria {
                 this.columnsubtotal_fac = base.Columns["subtotal_fac"];
                 this.columnitbisTotal_fac = base.Columns["itbisTotal_fac"];
                 this.columntotal_fac = base.Columns["total_fac"];
+                this.columnid_cli = base.Columns["id_cli"];
+                this.columnid_com = base.Columns["id_com"];
+                this.columntotal_fac1 = base.Columns["total_fac1"];
+                this.columnitbisTotal_fac1 = base.Columns["itbisTotal_fac1"];
+                this.columnsubtotal_fac1 = base.Columns["subtotal_fac1"];
+                this.columndescuento = base.Columns["descuento"];
+                this.columnid_fac1 = base.Columns["id_fac1"];
+                this.columnid_pro = base.Columns["id_pro"];
+                this.columnprecio_pro1 = base.Columns["precio_pro1"];
+                this.columncodigo_cli = base.Columns["codigo_cli"];
+                this.columndireccion_cli = base.Columns["direccion_cli"];
+                this.columntelefono_cli = base.Columns["telefono_cli"];
+                this.columnestado = base.Columns["estado"];
+                this.columnid_pro1 = base.Columns["id_pro1"];
+                this.columncodigo_pro = base.Columns["codigo_pro"];
+                this.columncantidad = base.Columns["cantidad"];
+                this.columnitbis1 = base.Columns["itbis1"];
+                this.columnestanteria = base.Columns["estanteria"];
+                this.columnprecio = base.Columns["precio"];
+                this.columnestado1 = base.Columns["estado1"];
+                this.columnid_com1 = base.Columns["id_com1"];
+                this.columnserie_com = base.Columns["serie_com"];
+                this.columnusados_com = base.Columns["usados_com"];
+                this.columncantidadLimite_com = base.Columns["cantidadLimite_com"];
+                this.columnestado2 = base.Columns["estado2"];
+                this.columnitbis11 = base.Columns["itbis11"];
+                this.columntotal1 = base.Columns["total1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -640,6 +990,60 @@ namespace Papeleria {
                 base.Columns.Add(this.columnitbisTotal_fac);
                 this.columntotal_fac = new global::System.Data.DataColumn("total_fac", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntotal_fac);
+                this.columnid_cli = new global::System.Data.DataColumn("id_cli", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_cli);
+                this.columnid_com = new global::System.Data.DataColumn("id_com", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_com);
+                this.columntotal_fac1 = new global::System.Data.DataColumn("total_fac1", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntotal_fac1);
+                this.columnitbisTotal_fac1 = new global::System.Data.DataColumn("itbisTotal_fac1", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnitbisTotal_fac1);
+                this.columnsubtotal_fac1 = new global::System.Data.DataColumn("subtotal_fac1", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsubtotal_fac1);
+                this.columndescuento = new global::System.Data.DataColumn("descuento", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndescuento);
+                this.columnid_fac1 = new global::System.Data.DataColumn("id_fac1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_fac1);
+                this.columnid_pro = new global::System.Data.DataColumn("id_pro", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_pro);
+                this.columnprecio_pro1 = new global::System.Data.DataColumn("precio_pro1", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnprecio_pro1);
+                this.columncodigo_cli = new global::System.Data.DataColumn("codigo_cli", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodigo_cli);
+                this.columndireccion_cli = new global::System.Data.DataColumn("direccion_cli", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndireccion_cli);
+                this.columntelefono_cli = new global::System.Data.DataColumn("telefono_cli", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntelefono_cli);
+                this.columnestado = new global::System.Data.DataColumn("estado", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnestado);
+                this.columnid_pro1 = new global::System.Data.DataColumn("id_pro1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_pro1);
+                this.columncodigo_pro = new global::System.Data.DataColumn("codigo_pro", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodigo_pro);
+                this.columncantidad = new global::System.Data.DataColumn("cantidad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncantidad);
+                this.columnitbis1 = new global::System.Data.DataColumn("itbis1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnitbis1);
+                this.columnestanteria = new global::System.Data.DataColumn("estanteria", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnestanteria);
+                this.columnprecio = new global::System.Data.DataColumn("precio", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnprecio);
+                this.columnestado1 = new global::System.Data.DataColumn("estado1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnestado1);
+                this.columnid_com1 = new global::System.Data.DataColumn("id_com1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_com1);
+                this.columnserie_com = new global::System.Data.DataColumn("serie_com", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnserie_com);
+                this.columnusados_com = new global::System.Data.DataColumn("usados_com", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnusados_com);
+                this.columncantidadLimite_com = new global::System.Data.DataColumn("cantidadLimite_com", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncantidadLimite_com);
+                this.columnestado2 = new global::System.Data.DataColumn("estado2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnestado2);
+                this.columnitbis11 = new global::System.Data.DataColumn("itbis11", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnitbis11);
+                this.columntotal1 = new global::System.Data.DataColumn("total1", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntotal1);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_fac}, true));
                 this.columnnombre_cli.AllowDBNull = false;
@@ -670,6 +1074,51 @@ namespace Papeleria {
                 this.columnsubtotal_fac.AllowDBNull = false;
                 this.columnitbisTotal_fac.AllowDBNull = false;
                 this.columntotal_fac.AllowDBNull = false;
+                this.columnid_cli.AllowDBNull = false;
+                this.columnid_cli.MaxLength = 12;
+                this.columnid_com.AllowDBNull = false;
+                this.columntotal_fac1.AllowDBNull = false;
+                this.columntotal_fac1.Caption = "total_fac";
+                this.columnitbisTotal_fac1.AllowDBNull = false;
+                this.columnitbisTotal_fac1.Caption = "itbisTotal_fac";
+                this.columnsubtotal_fac1.AllowDBNull = false;
+                this.columnsubtotal_fac1.Caption = "subtotal_fac";
+                this.columndescuento.AllowDBNull = false;
+                this.columnid_fac1.AllowDBNull = false;
+                this.columnid_pro.AllowDBNull = false;
+                this.columnprecio_pro1.AllowDBNull = false;
+                this.columnprecio_pro1.Caption = "precio_pro";
+                this.columncodigo_cli.AllowDBNull = false;
+                this.columncodigo_cli.MaxLength = 50;
+                this.columndireccion_cli.AllowDBNull = false;
+                this.columndireccion_cli.MaxLength = 50;
+                this.columntelefono_cli.AllowDBNull = false;
+                this.columntelefono_cli.MaxLength = 50;
+                this.columnestado.AllowDBNull = false;
+                this.columnid_pro1.AutoIncrement = true;
+                this.columnid_pro1.AutoIncrementSeed = -1;
+                this.columnid_pro1.AutoIncrementStep = -1;
+                this.columnid_pro1.AllowDBNull = false;
+                this.columnid_pro1.ReadOnly = true;
+                this.columncodigo_pro.AllowDBNull = false;
+                this.columncodigo_pro.MaxLength = 50;
+                this.columncantidad.AllowDBNull = false;
+                this.columnitbis1.AllowDBNull = false;
+                this.columnitbis1.Caption = "itbis";
+                this.columnestanteria.AllowDBNull = false;
+                this.columnestanteria.MaxLength = 50;
+                this.columnprecio.AllowDBNull = false;
+                this.columnestado1.AllowDBNull = false;
+                this.columnid_com1.AllowDBNull = false;
+                this.columnserie_com.AllowDBNull = false;
+                this.columnserie_com.MaxLength = 50;
+                this.columnusados_com.AllowDBNull = false;
+                this.columncantidadLimite_com.AllowDBNull = false;
+                this.columnestado2.AllowDBNull = false;
+                this.columnitbis11.ReadOnly = true;
+                this.columnitbis11.Caption = "itbis1";
+                this.columntotal1.ReadOnly = true;
+                this.columntotal1.Caption = "total";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1009,6 +1458,313 @@ namespace Papeleria {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string id_cli {
+                get {
+                    return ((string)(this[this.tableFACT.id_cliColumn]));
+                }
+                set {
+                    this[this.tableFACT.id_cliColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id_com {
+                get {
+                    return ((int)(this[this.tableFACT.id_comColumn]));
+                }
+                set {
+                    this[this.tableFACT.id_comColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double total_fac1 {
+                get {
+                    return ((double)(this[this.tableFACT.total_fac1Column]));
+                }
+                set {
+                    this[this.tableFACT.total_fac1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double itbisTotal_fac1 {
+                get {
+                    return ((double)(this[this.tableFACT.itbisTotal_fac1Column]));
+                }
+                set {
+                    this[this.tableFACT.itbisTotal_fac1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double subtotal_fac1 {
+                get {
+                    return ((double)(this[this.tableFACT.subtotal_fac1Column]));
+                }
+                set {
+                    this[this.tableFACT.subtotal_fac1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double descuento {
+                get {
+                    return ((double)(this[this.tableFACT.descuentoColumn]));
+                }
+                set {
+                    this[this.tableFACT.descuentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id_fac1 {
+                get {
+                    return ((int)(this[this.tableFACT.id_fac1Column]));
+                }
+                set {
+                    this[this.tableFACT.id_fac1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id_pro {
+                get {
+                    return ((int)(this[this.tableFACT.id_proColumn]));
+                }
+                set {
+                    this[this.tableFACT.id_proColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double precio_pro1 {
+                get {
+                    return ((double)(this[this.tableFACT.precio_pro1Column]));
+                }
+                set {
+                    this[this.tableFACT.precio_pro1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string codigo_cli {
+                get {
+                    return ((string)(this[this.tableFACT.codigo_cliColumn]));
+                }
+                set {
+                    this[this.tableFACT.codigo_cliColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string direccion_cli {
+                get {
+                    return ((string)(this[this.tableFACT.direccion_cliColumn]));
+                }
+                set {
+                    this[this.tableFACT.direccion_cliColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string telefono_cli {
+                get {
+                    return ((string)(this[this.tableFACT.telefono_cliColumn]));
+                }
+                set {
+                    this[this.tableFACT.telefono_cliColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool estado {
+                get {
+                    return ((bool)(this[this.tableFACT.estadoColumn]));
+                }
+                set {
+                    this[this.tableFACT.estadoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id_pro1 {
+                get {
+                    return ((int)(this[this.tableFACT.id_pro1Column]));
+                }
+                set {
+                    this[this.tableFACT.id_pro1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string codigo_pro {
+                get {
+                    return ((string)(this[this.tableFACT.codigo_proColumn]));
+                }
+                set {
+                    this[this.tableFACT.codigo_proColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int cantidad {
+                get {
+                    return ((int)(this[this.tableFACT.cantidadColumn]));
+                }
+                set {
+                    this[this.tableFACT.cantidadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int itbis1 {
+                get {
+                    return ((int)(this[this.tableFACT.itbis1Column]));
+                }
+                set {
+                    this[this.tableFACT.itbis1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string estanteria {
+                get {
+                    return ((string)(this[this.tableFACT.estanteriaColumn]));
+                }
+                set {
+                    this[this.tableFACT.estanteriaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double precio {
+                get {
+                    return ((double)(this[this.tableFACT.precioColumn]));
+                }
+                set {
+                    this[this.tableFACT.precioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool estado1 {
+                get {
+                    return ((bool)(this[this.tableFACT.estado1Column]));
+                }
+                set {
+                    this[this.tableFACT.estado1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id_com1 {
+                get {
+                    return ((int)(this[this.tableFACT.id_com1Column]));
+                }
+                set {
+                    this[this.tableFACT.id_com1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string serie_com {
+                get {
+                    return ((string)(this[this.tableFACT.serie_comColumn]));
+                }
+                set {
+                    this[this.tableFACT.serie_comColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int usados_com {
+                get {
+                    return ((int)(this[this.tableFACT.usados_comColumn]));
+                }
+                set {
+                    this[this.tableFACT.usados_comColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int cantidadLimite_com {
+                get {
+                    return ((int)(this[this.tableFACT.cantidadLimite_comColumn]));
+                }
+                set {
+                    this[this.tableFACT.cantidadLimite_comColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool estado2 {
+                get {
+                    return ((bool)(this[this.tableFACT.estado2Column]));
+                }
+                set {
+                    this[this.tableFACT.estado2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal itbis11 {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableFACT.itbis11Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'itbis11\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.itbis11Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double total1 {
+                get {
+                    try {
+                        return ((double)(this[this.tableFACT.total1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'total1\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.total1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsitbisNull() {
                 return this.IsNull(this.tableFACT.itbisColumn);
             }
@@ -1029,6 +1785,30 @@ namespace Papeleria {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SettotalNull() {
                 this[this.tableFACT.totalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isitbis11Null() {
+                return this.IsNull(this.tableFACT.itbis11Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setitbis11Null() {
+                this[this.tableFACT.itbis11Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Istotal1Null() {
+                return this.IsNull(this.tableFACT.total1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Settotal1Null() {
+                this[this.tableFACT.total1Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -1196,18 +1976,42 @@ namespace Papeleria.DataSetFACTTableAdapters {
             tableMapping.ColumnMappings.Add("id_fac", "id_fac");
             tableMapping.ColumnMappings.Add("cantidad_pro", "cantidad_pro");
             tableMapping.ColumnMappings.Add("tipoVenta_pro", "tipoVenta_pro");
-            tableMapping.ColumnMappings.Add("precio_pro", "precio_pro");
             tableMapping.ColumnMappings.Add("porcientoItbis_pro", "porcientoItbis_pro");
             tableMapping.ColumnMappings.Add("nom_pro", "nom_pro");
             tableMapping.ColumnMappings.Add("rnc_cli", "rnc_cli");
             tableMapping.ColumnMappings.Add("NFC_com", "NFC_com");
             tableMapping.ColumnMappings.Add("tipo_com", "tipo_com");
             tableMapping.ColumnMappings.Add("fechaVencimiento_com", "fechaVencimiento_com");
-            tableMapping.ColumnMappings.Add("itbis", "itbis");
-            tableMapping.ColumnMappings.Add("total", "total");
-            tableMapping.ColumnMappings.Add("subtotal_fac", "subtotal_fac");
-            tableMapping.ColumnMappings.Add("itbisTotal_fac", "itbisTotal_fac");
-            tableMapping.ColumnMappings.Add("total_fac", "total_fac");
+            tableMapping.ColumnMappings.Add("id_cli", "id_cli");
+            tableMapping.ColumnMappings.Add("id_com", "id_com");
+            tableMapping.ColumnMappings.Add("total_fac", "total_fac1");
+            tableMapping.ColumnMappings.Add("itbisTotal_fac", "itbisTotal_fac1");
+            tableMapping.ColumnMappings.Add("subtotal_fac", "subtotal_fac1");
+            tableMapping.ColumnMappings.Add("descuento", "descuento");
+            tableMapping.ColumnMappings.Add("id_fac1", "id_fac1");
+            tableMapping.ColumnMappings.Add("id_pro", "id_pro");
+            tableMapping.ColumnMappings.Add("precio_pro", "precio_pro1");
+            tableMapping.ColumnMappings.Add("codigo_cli", "codigo_cli");
+            tableMapping.ColumnMappings.Add("direccion_cli", "direccion_cli");
+            tableMapping.ColumnMappings.Add("telefono_cli", "telefono_cli");
+            tableMapping.ColumnMappings.Add("estado", "estado");
+            tableMapping.ColumnMappings.Add("id_pro1", "id_pro1");
+            tableMapping.ColumnMappings.Add("codigo_pro", "codigo_pro");
+            tableMapping.ColumnMappings.Add("cantidad", "cantidad");
+            tableMapping.ColumnMappings.Add("itbis", "itbis1");
+            tableMapping.ColumnMappings.Add("estanteria", "estanteria");
+            tableMapping.ColumnMappings.Add("precio", "precio");
+            tableMapping.ColumnMappings.Add("estado1", "estado1");
+            tableMapping.ColumnMappings.Add("id_com1", "id_com1");
+            tableMapping.ColumnMappings.Add("serie_com", "serie_com");
+            tableMapping.ColumnMappings.Add("usados_com", "usados_com");
+            tableMapping.ColumnMappings.Add("cantidadLimite_com", "cantidadLimite_com");
+            tableMapping.ColumnMappings.Add("estado2", "estado2");
+            tableMapping.ColumnMappings.Add("itbis1", "itbis11");
+            tableMapping.ColumnMappings.Add("total", "total1");
+            tableMapping.ColumnMappings.Add("subtotal_fac1", "subtotal_fac1");
+            tableMapping.ColumnMappings.Add("itbisTotal_fac1", "itbisTotal_fac1");
+            tableMapping.ColumnMappings.Add("total_fac1", "total_fac1");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
