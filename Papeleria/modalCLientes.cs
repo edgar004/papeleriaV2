@@ -38,7 +38,7 @@ namespace Papeleria
                     MessageBox.Show("Error al registrar el cliente, por favor intente de nuevo.");
                     return;
                 }
-                string cmd = $"insert into clientes  (codigo_cli,nombre_cli,direccion_cli,rnc_cli,telefono_cli)  values ('{codigoCli}', '{txt_nombre.Text}','{txt_nombre.Text}','{txt_direccion.Text}','{txt_rnc.Text}')";
+                string cmd = $"insert into clientes  (codigo_cli,nombre_cli,direccion_cli,rnc_cli,telefono_cli)  values ('{codigoCli}', '{txt_nombre.Text}','{txt_direccion.Text}','{txt_rnc.Text}','{txt_telefono.Text}')";
                 int resp = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(cmd, "Error al registrar el cliente.");
                 if (resp > 0)
                 {

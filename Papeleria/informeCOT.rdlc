@@ -73,7 +73,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Cant.</Value>
+                              <Value>TipoVe.</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -299,21 +299,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="cantidad_pro">
+                    <Textbox Name="tipoVenta_pro">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!cantidad_pro.Value</Value>
+                              <Value>=Fields!tipoVenta_pro.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>cantidad_pro</rd:DefaultName>
+                      <rd:DefaultName>tipoVenta_pro</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>

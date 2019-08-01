@@ -141,7 +141,7 @@ namespace Papeleria
 
             if (!existePro)
             {
-                Double importe = (Convert.ToDouble(txt_precioPro.Text.Trim()) * Convert.ToDouble(txt_cantidadPro.Text.Trim());
+                Double importe = (Convert.ToDouble(txt_precioPro.Text.Trim()) * Convert.ToDouble(txt_cantidadPro.Text.Trim()));
                 Double itbis = importe * (Convert.ToDouble(impuestoPro / 100)) ;
                 dataGridViewProducto.Rows.Add(txt_codigoPro.Text.Trim(), txt_nombrePro.Text.Trim(), txt_precioPro.Text.Trim(), txt_cantidadPro.Text.Trim(), impuestoPro, itbis, importe, idPro);
                 seleciono = false;
@@ -261,18 +261,29 @@ namespace Papeleria
             {
                 try
                 {
-                    inventario pro = new inventario();
-                    pro.btnAdd.Visible = false;
-                    pro.button2.Visible = false;
-                    if (pro.ShowDialog() == DialogResult.OK)
+
+                    if (!txt_codigoPro.Text.Equals(""))
                     {
-                        idPro = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[0].Value.ToString();
-                        txt_codigoPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[1].Value.ToString();
-                        txt_nombrePro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[2].Value.ToString();
-                        txt_precioPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[6].Value.ToString();
-                        txt_cantidadPro.Text = "1";
-                        impuestoPro = Convert.ToDouble(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[4].Value.ToString());
-                        maximaCant = Convert.ToInt32(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[3].Value.ToString());
+                        string cmd = $"select * from productos where estado=1 and codigo_pro = '{txt_codigoPro.Text.Trim()}'";
+                        DataSet DS = new DataSet();
+
+                        DS = FuncionesGenerales.FuncionesGenerales.ExecuteReader(cmd, "Error al buscar el producto.");
+
+                        if (DS.Tables.Count > 0 && DS.Tables[0].Rows.Count > 0)
+                        {
+                            idPro = DS.Tables[0].Rows[0][0].ToString();
+                            txt_codigoPro.Text = DS.Tables[0].Rows[0][3].ToString();
+                            txt_nombrePro.Text = DS.Tables[0].Rows[0][1].ToString();
+                            txt_precioPro.Text = DS.Tables[0].Rows[0][6].ToString();
+                            txt_cantidadPro.Text = "1";
+                            impuestoPro = Convert.ToDouble(DS.Tables[0].Rows[0][4].ToString());
+                            maximaCant = Convert.ToInt32(DS.Tables[0].Rows[0][3].ToString());
+                            txt_codigoPro.Focus();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No existe un producto con dicho código.");
+                        }
 
                     }
                 }
@@ -322,6 +333,63 @@ namespace Papeleria
         private void flowLayoutPanel7_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void flowLayoutPanel8_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cotizacion_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
+
+        private void cotizacion_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult res = MessageBox.Show("¿Seguro que desea salir?", "Salir", MessageBoxButtons.YesNo);
+            if (res == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void txt_codigoCliente_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txt_codigoCliente_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txt_codigoCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                try
+                {
+                    inventario pro = new inventario();
+                    pro.btnAdd.Visible = false;
+                    pro.button2.Visible = false;
+                    if (pro.ShowDialog() == DialogResult.OK)
+                    {
+                        idPro = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[0].Value.ToString();
+                        txt_codigoPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[1].Value.ToString();
+                        txt_nombrePro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[2].Value.ToString();
+                        txt_precioPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[6].Value.ToString();
+                        txt_cantidadPro.Text = "1";
+                        impuestoPro = Convert.ToDouble(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[4].Value.ToString());
+                        maximaCant = Convert.ToInt32(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[3].Value.ToString());
+
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Erro al traer el producto, por favor intente de nuevo.");
+                }
+            }
         }
     }
 }

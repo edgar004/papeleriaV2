@@ -612,6 +612,15 @@ namespace Papeleria
         {
 
         }
+
+        private void facturacion_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult res = MessageBox.Show("¿Seguro que desea salir?", "Salir", MessageBoxButtons.YesNo);
+            if (res == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
 

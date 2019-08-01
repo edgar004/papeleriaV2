@@ -242,7 +242,10 @@
             this.comboTipoVenta.FormattingEnabled = true;
             this.comboTipoVenta.Items.AddRange(new object[] {
             "UND",
-            "CAJA"});
+            "CAJA",
+            "12 (DOCENA)",
+            "36",
+            "48"});
             this.comboTipoVenta.Location = new System.Drawing.Point(253, 543);
             this.comboTipoVenta.Margin = new System.Windows.Forms.Padding(4);
             this.comboTipoVenta.Name = "comboTipoVenta";
