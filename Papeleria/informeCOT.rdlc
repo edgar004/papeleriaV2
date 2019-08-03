@@ -6,25 +6,25 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.12674cm</Width>
+              <Width>1.58409cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.25347cm</Width>
+              <Width>2.71082cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.34752cm</Width>
+              <Width>4.80487cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.78806cm</Width>
+              <Width>2.24541cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.51799cm</Width>
+              <Width>1.97534cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.21458cm</Width>
+              <Width>2.67193cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.21458cm</Width>
+              <Width>2.67193cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -254,10 +254,6 @@
                           <Style>Solid</Style>
                           <Width>2pt</Width>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -476,10 +472,6 @@
                           <Style>Solid</Style>
                           <Width>2pt</Width>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -513,7 +505,7 @@
         <Top>5.71986cm</Top>
         <Left>0.78817cm</Left>
         <Height>1.2cm</Height>
-        <Width>15.46294cm</Width>
+        <Width>18.6644cm</Width>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -544,8 +536,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox21</rd:DefaultName>
-        <Top>2.81452cm</Top>
-        <Left>11.6164cm</Left>
+        <Top>1.78265cm</Top>
+        <Left>14.70571cm</Left>
         <Height>0.6cm</Height>
         <Width>1.39153cm</Width>
         <ZIndex>1</ZIndex>
@@ -567,15 +559,17 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!nombre_cli.Value</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_cli</rd:DefaultName>
-        <Top>2.63813cm</Top>
-        <Left>2.64871cm</Left>
+        <Top>2.92063cm</Top>
+        <Left>3.65413cm</Left>
         <Height>0.56472cm</Height>
         <Width>4.12736cm</Width>
         <ZIndex>2</ZIndex>
@@ -584,7 +578,7 @@
             <Color>LightGrey</Color>
             <Style>None</Style>
           </Border>
-          <BackgroundColor>#c8e6c9</BackgroundColor>
+          <BackgroundColor>#0288d1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -606,8 +600,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>fecha_cot</rd:DefaultName>
-        <Top>2.81452cm</Top>
-        <Left>13.00793cm</Left>
+        <Top>1.78265cm</Top>
+        <Left>16.09724cm</Left>
         <Height>0.6cm</Height>
         <Width>2.38813cm</Width>
         <ZIndex>3</ZIndex>
@@ -640,9 +634,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox31</rd:DefaultName>
         <Top>10.09513cm</Top>
-        <Left>12.61812cm</Left>
+        <Left>14.49424cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.09771cm</Width>
+        <Width>1.89388cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -672,9 +666,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox33</rd:DefaultName>
         <Top>8.54236cm</Top>
-        <Left>12.03342cm</Left>
+        <Left>14.49424cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.7706cm</Width>
+        <Width>1.98207cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -704,7 +698,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox34</rd:DefaultName>
         <Top>9.31874cm</Top>
-        <Left>11.82195cm</Left>
+        <Left>14.49424cm</Left>
         <Height>0.6cm</Height>
         <Width>2.07667cm</Width>
         <ZIndex>6</ZIndex>
@@ -728,6 +722,7 @@
                 <Value>DISTRIBUIDORA GENAO HOEPELMAN, S.R.L</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -739,6 +734,7 @@
                 <Value />
                 <Style>
                   <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -748,7 +744,9 @@
             <TextRuns>
               <TextRun>
                 <Value>1-31906567</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -757,7 +755,9 @@
             <TextRuns>
               <TextRun>
                 <Value>C/ PRINCIPAL SABANETA LAS PALOMAS, SANTIAGO</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -767,22 +767,25 @@
               <TextRun>
                 <Value>Correo Electronico:  DISTGENAOHOEPELMAN@GMAIL.COM
 829-842-6655/829-575-6083</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox35</rd:DefaultName>
-        <Left>0.23391cm</Left>
+        <Top>0.2825cm</Top>
+        <Left>1.23933cm</Left>
         <Height>2.63813cm</Height>
-        <Width>11.59737cm</Width>
+        <Width>12.6667cm</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
-          <BackgroundColor>#c8e6c9</BackgroundColor>
+          <BackgroundColor>#027ed1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -807,7 +810,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox36</rd:DefaultName>
         <Top>11.58479cm</Top>
-        <Left>0.78817cm</Left>
+        <Left>1.23933cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>8</ZIndex>
@@ -837,7 +840,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox37</rd:DefaultName>
         <Top>12.36118cm</Top>
-        <Left>0.78817cm</Left>
+        <Left>1.23933cm</Left>
         <Height>0.6cm</Height>
         <Width>5.08757cm</Width>
         <ZIndex>9</ZIndex>
@@ -862,6 +865,7 @@
                 <Style>
                   <FontSize>11pt</FontSize>
                   <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -874,6 +878,7 @@
                 <Style>
                   <FontSize>11pt</FontSize>
                   <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -881,14 +886,14 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox38</rd:DefaultName>
-        <Top>2.63813cm</Top>
-        <Left>0.51141cm</Left>
+        <Top>2.92063cm</Top>
+        <Left>1.51683cm</Left>
         <Height>1.02361cm</Height>
         <Width>2.16833cm</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border />
-          <BackgroundColor>#c8e6c9</BackgroundColor>
+          <BackgroundColor>#0288d1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -911,15 +916,15 @@
         </Paragraphs>
         <rd:DefaultName>Textbox39</rd:DefaultName>
         <Top>1.11209cm</Top>
-        <Left>11.82195cm</Left>
+        <Left>13.90603cm</Left>
         <Height>0.20312cm</Height>
-        <Width>0.8128cm</Width>
+        <Width>1.78318cm</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
-          <BackgroundColor>#c8e6c9</BackgroundColor>
+          <BackgroundColor>#0288d1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -936,7 +941,8 @@
                 <Value>COTIZACIÓN</Value>
                 <Style>
                   <FontSize>14pt</FontSize>
-                  <Color>#c8e6c9</Color>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>#0288d1</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -945,9 +951,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox40</rd:DefaultName>
         <Top>0.79459cm</Top>
-        <Left>12.63474cm</Left>
+        <Left>15.68921cm</Left>
         <Height>0.81167cm</Height>
-        <Width>3.36431cm</Width>
+        <Width>3.62225cm</Width>
         <ZIndex>12</ZIndex>
         <Style>
           <Border />
@@ -972,8 +978,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>codigo_cot</rd:DefaultName>
-        <Top>3.52036cm</Top>
-        <Left>14.13018cm</Left>
+        <Top>2.48849cm</Top>
+        <Left>17.21949cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>13</ZIndex>
@@ -1005,8 +1011,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>3.48508cm</Top>
-        <Left>11.58113cm</Left>
+        <Top>2.45321cm</Top>
+        <Left>14.67044cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>14</ZIndex>
@@ -1028,15 +1034,17 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!rnc_cli.Value</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>rnc_cli</rd:DefaultName>
-        <Top>3.09702cm</Top>
-        <Left>2.64871cm</Left>
+        <Top>3.37952cm</Top>
+        <Left>3.65413cm</Left>
         <Height>0.6cm</Height>
         <Width>4.12736cm</Width>
         <ZIndex>15</ZIndex>
@@ -1045,7 +1053,7 @@
             <Color>LightGrey</Color>
             <Style>None</Style>
           </Border>
-          <BackgroundColor>#c8e6c9</BackgroundColor>
+          <BackgroundColor>#0288d1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -1070,7 +1078,7 @@
         </Paragraphs>
         <rd:DefaultName>subtotal_fac1</rd:DefaultName>
         <Top>8.54236cm</Top>
-        <Left>13.80403cm</Left>
+        <Left>16.47632cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>16</ZIndex>
@@ -1103,7 +1111,7 @@
         </Paragraphs>
         <rd:DefaultName>itbisTotal_cot1</rd:DefaultName>
         <Top>9.31874cm</Top>
-        <Left>13.80403cm</Left>
+        <Left>16.47632cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>17</ZIndex>
@@ -1136,7 +1144,7 @@
         </Paragraphs>
         <rd:DefaultName>total_cot</rd:DefaultName>
         <Top>10.09513cm</Top>
-        <Left>13.75111cm</Left>
+        <Left>16.4234cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>18</ZIndex>
@@ -1159,15 +1167,17 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!direccion_cli.Value</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>direccion_cli</rd:DefaultName>
-        <Top>3.66174cm</Top>
-        <Left>0.51142cm</Left>
+        <Top>3.94424cm</Top>
+        <Left>1.51683cm</Left>
         <Height>0.65292cm</Height>
         <Width>6.26466cm</Width>
         <ZIndex>19</ZIndex>
@@ -1176,7 +1186,7 @@
             <Color>LightGrey</Color>
             <Style>None</Style>
           </Border>
-          <BackgroundColor>#c8e6c9</BackgroundColor>
+          <BackgroundColor>#0288d1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -1191,12 +1201,12 @@
       </Border>
     </Style>
   </Body>
-  <Width>7.89583in</Width>
+  <Width>8.1875in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
     <TopMargin>2cm</TopMargin>
     <BottomMargin>2cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>

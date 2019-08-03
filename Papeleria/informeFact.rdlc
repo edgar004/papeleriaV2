@@ -6,25 +6,25 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.12674cm</Width>
+              <Width>1.65969cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.25347cm</Width>
+              <Width>2.78642cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.34752cm</Width>
+              <Width>4.88047cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.78806cm</Width>
+              <Width>2.32101cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.51799cm</Width>
+              <Width>2.05094cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.21458cm</Width>
+              <Width>2.74753cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.21458cm</Width>
+              <Width>2.74753cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -510,10 +510,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>6.82894cm</Top>
+        <Top>6.32623cm</Top>
         <Left>0.8014cm</Left>
         <Height>1.2cm</Height>
-        <Width>15.46294cm</Width>
+        <Width>19.19356cm</Width>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -544,8 +544,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox21</rd:DefaultName>
-        <Top>2.97539cm</Top>
-        <Left>11.23518cm</Left>
+        <Top>2.16985cm</Top>
+        <Left>14.24193cm</Left>
         <Height>0.6cm</Height>
         <Width>1.39153cm</Width>
         <ZIndex>1</ZIndex>
@@ -576,10 +576,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox31</rd:DefaultName>
-        <Top>11.09839cm</Top>
-        <Left>12.58967cm</Left>
+        <Top>11.00887cm</Top>
+        <Left>14.49991cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.22758cm</Width>
+        <Width>2.32409cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -608,10 +608,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox33</rd:DefaultName>
-        <Top>9.65144cm</Top>
-        <Left>11.74058cm</Left>
+        <Top>9.56192cm</Top>
+        <Left>14.49991cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.07667cm</Width>
+        <Width>2.32409cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -640,10 +640,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox34</rd:DefaultName>
-        <Top>10.42783cm</Top>
-        <Left>11.8742cm</Left>
+        <Top>10.33831cm</Top>
+        <Left>14.49991cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.07667cm</Width>
+        <Width>2.45771cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -665,6 +665,7 @@
                 <Value>DISTRIBUIDORA GENAO HOEPELMAN, S.R.L</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -676,6 +677,7 @@
                 <Value />
                 <Style>
                   <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -685,7 +687,9 @@
             <TextRuns>
               <TextRun>
                 <Value>1-31906567</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -694,7 +698,9 @@
             <TextRuns>
               <TextRun>
                 <Value>C/ PRINCIPAL SABANETA LAS PALOMAS, SANTIAGO</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -704,15 +710,17 @@
               <TextRun>
                 <Value>Correo Electronico: DISTGENAOHOEPELMAN@GMAIL.COM
 829-842-6655/829-575-6083</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox35</rd:DefaultName>
-        <Top>0.19614cm</Top>
-        <Left>0.15254cm</Left>
+        <Top>0.23755cm</Top>
+        <Left>1.39182cm</Left>
         <Height>2.63813cm</Height>
         <Width>11.59737cm</Width>
         <ZIndex>5</ZIndex>
@@ -720,7 +728,7 @@
           <Border>
             <Style>None</Style>
           </Border>
-          <BackgroundColor>#c8e6c9</BackgroundColor>
+          <BackgroundColor>#027ed1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -745,7 +753,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox36</rd:DefaultName>
         <Top>11.78093cm</Top>
-        <Left>0.7068cm</Left>
+        <Left>1.63298cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>6</ZIndex>
@@ -775,7 +783,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox37</rd:DefaultName>
         <Top>12.55732cm</Top>
-        <Left>0.7068cm</Left>
+        <Left>1.63298cm</Left>
         <Height>0.6cm</Height>
         <Width>5.08757cm</Width>
         <ZIndex>7</ZIndex>
@@ -783,50 +791,6 @@
           <Border>
             <Style>None</Style>
           </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox38">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Facturar a:</Value>
-                <Style>
-                  <FontSize>11pt</FontSize>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>RNC:</Value>
-                <Style>
-                  <FontSize>11pt</FontSize>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox38</rd:DefaultName>
-        <Top>2.83427cm</Top>
-        <Left>0.43004cm</Left>
-        <Height>1.05889cm</Height>
-        <Width>2.51229cm</Width>
-        <ZIndex>8</ZIndex>
-        <Style>
-          <Border />
-          <BackgroundColor>#c8e6c9</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -849,15 +813,15 @@
         </Paragraphs>
         <rd:DefaultName>Textbox39</rd:DefaultName>
         <Top>1.30823cm</Top>
-        <Left>11.74058cm</Left>
+        <Left>12.98919cm</Left>
         <Height>0.20312cm</Height>
-        <Width>0.8128cm</Width>
-        <ZIndex>9</ZIndex>
+        <Width>1.28568cm</Width>
+        <ZIndex>8</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
-          <BackgroundColor>#c8e6c9</BackgroundColor>
+          <BackgroundColor>#0288d1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -874,7 +838,8 @@
                 <Value>FACTURA</Value>
                 <Style>
                   <FontSize>14pt</FontSize>
-                  <Color>#c8e6c9</Color>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>#0288d1</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -883,10 +848,10 @@
         </Paragraphs>
         <rd:DefaultName>Textbox40</rd:DefaultName>
         <Top>0.99073cm</Top>
-        <Left>12.55337cm</Left>
+        <Left>14.27487cm</Left>
         <Height>0.81167cm</Height>
         <Width>3.83408cm</Width>
-        <ZIndex>10</ZIndex>
+        <ZIndex>9</ZIndex>
         <Style>
           <Border />
           <PaddingLeft>2pt</PaddingLeft>
@@ -912,11 +877,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>3.68122cm</Top>
-        <Left>11.23518cm</Left>
+        <Top>2.87568cm</Top>
+        <Left>14.24193cm</Left>
         <Height>0.6cm</Height>
         <Width>2.76458cm</Width>
-        <ZIndex>11</ZIndex>
+        <ZIndex>10</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -942,11 +907,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>total_fac</rd:DefaultName>
-        <Top>11.04414cm</Top>
-        <Left>14.0567cm</Left>
+        <Top>10.95462cm</Top>
+        <Left>17.06345cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
-        <ZIndex>12</ZIndex>
+        <ZIndex>11</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
@@ -973,11 +938,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>itbisTotal_fac</rd:DefaultName>
-        <Top>10.33831cm</Top>
-        <Left>14.0567cm</Left>
+        <Top>10.24879cm</Top>
+        <Left>17.06345cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
-        <ZIndex>13</ZIndex>
+        <ZIndex>12</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
@@ -1004,11 +969,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subtotal_fac</rd:DefaultName>
-        <Top>9.63247cm</Top>
-        <Left>14.03434cm</Left>
+        <Top>9.54295cm</Top>
+        <Left>17.04109cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
-        <ZIndex>14</ZIndex>
+        <ZIndex>13</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
@@ -1035,11 +1000,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>fecha_fac</rd:DefaultName>
-        <Top>2.95162cm</Top>
-        <Left>12.58967cm</Left>
+        <Top>2.14608cm</Top>
+        <Left>15.59642cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
-        <ZIndex>15</ZIndex>
+        <Width>3.67468cm</Width>
+        <ZIndex>14</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
@@ -1066,112 +1031,16 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>id_fac</rd:DefaultName>
-        <Top>3.65745cm</Top>
-        <Left>13.93974cm</Left>
+        <Top>2.85191cm</Top>
+        <Left>16.94649cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.70625cm</Width>
-        <ZIndex>16</ZIndex>
+        <Width>2.32461cm</Width>
+        <ZIndex>15</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
             <Style>None</Style>
           </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="rnc_cli">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!rnc_cli.Value</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>rnc_cli</rd:DefaultName>
-        <Top>3.27552cm</Top>
-        <Left>2.94233cm</Left>
-        <Height>0.61764cm</Height>
-        <Width>2.5cm</Width>
-        <ZIndex>17</ZIndex>
-        <Style>
-          <Border>
-            <Color>LightGrey</Color>
-            <Style>Solid</Style>
-          </Border>
-          <BackgroundColor>#c8e7c9</BackgroundColor>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="direccion_cli1">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!direccion_cli.Value</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>direccion_cli1</rd:DefaultName>
-        <Top>3.89316cm</Top>
-        <Left>0.3937cm</Left>
-        <Height>0.6cm</Height>
-        <Width>4.70467cm</Width>
-        <ZIndex>18</ZIndex>
-        <Style>
-          <Border>
-            <Color>LightGrey</Color>
-            <Style>Solid</Style>
-          </Border>
-          <BackgroundColor>#c8e7c9</BackgroundColor>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="nombre_cli">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!nombre_cli.Value</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>nombre_cli</rd:DefaultName>
-        <Top>2.83427cm</Top>
-        <Left>2.94233cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
-        <ZIndex>19</ZIndex>
-        <Style>
-          <Border>
-            <Color>LightGrey</Color>
-            <Style>Solid</Style>
-          </Border>
-          <BackgroundColor>#c8e7c9</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -1195,11 +1064,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox138</rd:DefaultName>
-        <Top>4.28122cm</Top>
-        <Left>11.22265cm</Left>
+        <Top>3.47568cm</Top>
+        <Left>14.2294cm</Left>
         <Height>0.6cm</Height>
         <Width>1.01833cm</Width>
-        <ZIndex>20</ZIndex>
+        <ZIndex>16</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1225,11 +1094,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>NFC_com</rd:DefaultName>
-        <Top>4.28122cm</Top>
-        <Left>12.3821cm</Left>
+        <Top>3.47568cm</Top>
+        <Left>15.38885cm</Left>
         <Height>0.6cm</Height>
         <Width>3.88225cm</Width>
-        <ZIndex>21</ZIndex>
+        <ZIndex>17</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
@@ -1256,11 +1125,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>tipo_com</rd:DefaultName>
-        <Top>5.02233cm</Top>
-        <Left>11.22265cm</Left>
+        <Top>4.21679cm</Top>
+        <Left>14.2294cm</Left>
         <Height>0.6cm</Height>
         <Width>4.79064cm</Width>
-        <ZIndex>22</ZIndex>
+        <ZIndex>18</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
@@ -1289,11 +1158,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox138</rd:DefaultName>
-        <Top>5.65761cm</Top>
-        <Left>11.23518cm</Left>
+        <Top>4.85207cm</Top>
+        <Left>14.24193cm</Left>
         <Height>0.6cm</Height>
         <Width>1.39153cm</Width>
-        <ZIndex>23</ZIndex>
+        <ZIndex>19</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1319,16 +1188,164 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>fechaVencimiento_com</rd:DefaultName>
-        <Top>5.63143cm</Top>
-        <Left>12.6381cm</Left>
+        <Top>4.82589cm</Top>
+        <Left>15.64485cm</Left>
         <Height>0.6cm</Height>
         <Width>3.3752cm</Width>
-        <ZIndex>24</ZIndex>
+        <ZIndex>20</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
             <Style>None</Style>
           </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox38">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Facturar a:</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>RNC:</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox38</rd:DefaultName>
+        <Top>2.85191cm</Top>
+        <Left>1.39182cm</Left>
+        <Height>1.14523cm</Height>
+        <Width>2.40949cm</Width>
+        <ZIndex>21</ZIndex>
+        <Style>
+          <Border />
+          <BackgroundColor>#0288d1</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="nombre_cli">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!nombre_cli.Value</Value>
+                <Style>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>nombre_cli</rd:DefaultName>
+        <Top>2.87224cm</Top>
+        <Left>3.80131cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>22</ZIndex>
+        <Style>
+          <Border>
+            <Color>LightGrey</Color>
+            <Style>Solid</Style>
+          </Border>
+          <BackgroundColor>#0288d1</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="rnc_cli">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!rnc_cli.Value</Value>
+                <Style>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>rnc_cli</rd:DefaultName>
+        <Top>3.39714cm</Top>
+        <Left>3.80131cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>23</ZIndex>
+        <Style>
+          <Border>
+            <Color>LightGrey</Color>
+            <Style>Solid</Style>
+          </Border>
+          <BackgroundColor>#0288d1</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="direccion_cli">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!direccion_cli.Value</Value>
+                <Style>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>direccion_cli</rd:DefaultName>
+        <Top>3.99714cm</Top>
+        <Left>1.39182cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.90949cm</Width>
+        <ZIndex>24</ZIndex>
+        <Style>
+          <Border>
+            <Color>LightGrey</Color>
+            <Style>Solid</Style>
+          </Border>
+          <BackgroundColor>#0288d1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -1343,12 +1360,12 @@
       </Border>
     </Style>
   </Body>
-  <Width>7.64583in</Width>
+  <Width>8.30208in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
     <TopMargin>2cm</TopMargin>
     <BottomMargin>2cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
