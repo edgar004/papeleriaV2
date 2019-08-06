@@ -449,7 +449,7 @@
         <Top>3.13875cm</Top>
         <Left>1.37065cm</Left>
         <Height>1.39999cm</Height>
-        <Width>9.10831cm</Width>
+        <Width>2.32799cm</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border />
@@ -477,9 +477,9 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_cli</rd:DefaultName>
-        <Top>3.20671cm</Top>
-        <Left>3.74803cm</Left>
-        <Height>0.6cm</Height>
+        <Top>3.17143cm</Top>
+        <Left>3.69864cm</Left>
+        <Height>0.67056cm</Height>
         <Width>9.19882cm</Width>
         <ZIndex>12</ZIndex>
         <Style>
@@ -511,9 +511,9 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>rnc_cli</rd:DefaultName>
-        <Top>3.86287cm</Top>
-        <Left>3.7692cm</Left>
-        <Height>0.6cm</Height>
+        <Top>3.84199cm</Top>
+        <Left>3.69864cm</Left>
+        <Height>0.69675cm</Height>
         <Width>9.19882cm</Width>
         <ZIndex>13</ZIndex>
         <Style>
