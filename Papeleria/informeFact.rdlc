@@ -149,6 +149,7 @@
               <TextRun>
                 <Value>DISTRIBUIDORA GENAO HOEPELMAN, S.R.L</Value>
                 <Style>
+                  <FontSize>11pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <Color>White</Color>
                 </Style>
@@ -161,6 +162,7 @@
               <TextRun>
                 <Value />
                 <Style>
+                  <FontSize>11pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <Color>White</Color>
                 </Style>
@@ -173,6 +175,7 @@
               <TextRun>
                 <Value>1-31906567</Value>
                 <Style>
+                  <FontSize>11pt</FontSize>
                   <Color>White</Color>
                 </Style>
               </TextRun>
@@ -184,6 +187,7 @@
               <TextRun>
                 <Value>C/ PRINCIPAL SABANETA LAS PALOMAS, SANTIAGO</Value>
                 <Style>
+                  <FontSize>11pt</FontSize>
                   <Color>White</Color>
                 </Style>
               </TextRun>
@@ -196,6 +200,7 @@
                 <Value>Correo Electronico: DISTGENAOHOEPELMAN@GMAIL.COM
 829-842-6655/829-575-6083</Value>
                 <Style>
+                  <FontSize>11pt</FontSize>
                   <Color>White</Color>
                 </Style>
               </TextRun>
@@ -206,7 +211,7 @@
         <rd:DefaultName>Textbox35</rd:DefaultName>
         <Top>0.23755cm</Top>
         <Left>1.39182cm</Left>
-        <Height>2.63813cm</Height>
+        <Height>2.93388cm</Height>
         <Width>11.59737cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
@@ -441,10 +446,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox38</rd:DefaultName>
-        <Top>2.85191cm</Top>
-        <Left>1.39182cm</Left>
+        <Top>3.13875cm</Top>
+        <Left>1.37065cm</Left>
         <Height>1.39999cm</Height>
-        <Width>2.40949cm</Width>
+        <Width>9.10831cm</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border />
@@ -463,23 +468,26 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!nombre_cli.Value</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_cli</rd:DefaultName>
-        <Top>2.91987cm</Top>
-        <Left>3.7692cm</Left>
+        <Top>3.20671cm</Top>
+        <Left>3.74803cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Width>9.19882cm</Width>
         <ZIndex>12</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
             <Style>Solid</Style>
           </Border>
+          <BackgroundColor>#027ed1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -494,23 +502,26 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!rnc_cli.Value</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>rnc_cli</rd:DefaultName>
-        <Top>3.57603cm</Top>
-        <Left>3.79037cm</Left>
+        <Top>3.86287cm</Top>
+        <Left>3.7692cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Width>9.19882cm</Width>
         <ZIndex>13</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
             <Style>Solid</Style>
           </Border>
+          <BackgroundColor>#027ed1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -525,23 +536,26 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!direccion_cli.Value</Value>
-                <Style />
+                <Style>
+                  <Color>White</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>direccion_cli</rd:DefaultName>
-        <Top>4.27453cm</Top>
-        <Left>1.39182cm</Left>
+        <Top>4.49814cm</Top>
+        <Left>1.37065cm</Left>
         <Height>0.6cm</Height>
-        <Width>4.87738cm</Width>
+        <Width>11.5762cm</Width>
         <ZIndex>14</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
             <Style>Solid</Style>
           </Border>
+          <BackgroundColor>#027ed1</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -674,6 +688,7 @@
                   <CellContents>
                     <Textbox Name="Textbox107">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -691,8 +706,8 @@
                       <rd:DefaultName>Textbox107</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -706,6 +721,7 @@
                   <CellContents>
                     <Textbox Name="Textbox109">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -723,8 +739,8 @@
                       <rd:DefaultName>Textbox109</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -738,6 +754,7 @@
                   <CellContents>
                     <Textbox Name="Textbox111">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -766,8 +783,8 @@
                       <rd:DefaultName>Textbox111</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -781,6 +798,7 @@
                   <CellContents>
                     <Textbox Name="Textbox113">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -798,8 +816,8 @@
                       <rd:DefaultName>Textbox113</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -813,6 +831,7 @@
                   <CellContents>
                     <Textbox Name="Textbox115">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -830,8 +849,8 @@
                       <rd:DefaultName>Textbox115</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -845,6 +864,7 @@
                   <CellContents>
                     <Textbox Name="Textbox117">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -862,8 +882,8 @@
                       <rd:DefaultName>Textbox117</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -877,6 +897,7 @@
                   <CellContents>
                     <Textbox Name="Textbox119">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -894,8 +915,8 @@
                       <rd:DefaultName>Textbox119</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -914,6 +935,7 @@
                   <CellContents>
                     <Textbox Name="cantidad_pro1">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -929,8 +951,8 @@
                       <rd:DefaultName>cantidad_pro1</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -944,6 +966,7 @@
                   <CellContents>
                     <Textbox Name="codigo_pro1">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -959,8 +982,8 @@
                       <rd:DefaultName>codigo_pro1</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -974,6 +997,7 @@
                   <CellContents>
                     <Textbox Name="nom_pro1">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -989,8 +1013,8 @@
                       <rd:DefaultName>nom_pro1</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -1004,6 +1028,7 @@
                   <CellContents>
                     <Textbox Name="precio_proFormato1">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -1019,8 +1044,8 @@
                       <rd:DefaultName>precio_proFormato1</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -1034,6 +1059,7 @@
                   <CellContents>
                     <Textbox Name="porcientoItbis_proFormato1">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -1049,8 +1075,8 @@
                       <rd:DefaultName>porcientoItbis_proFormato1</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -1064,6 +1090,7 @@
                   <CellContents>
                     <Textbox Name="itbisFormato1">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -1079,8 +1106,8 @@
                       <rd:DefaultName>itbisFormato1</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -1094,6 +1121,7 @@
                   <CellContents>
                     <Textbox Name="totalFormato1">
                       <CanGrow>true</CanGrow>
+                      <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -1109,8 +1137,8 @@
                       <rd:DefaultName>totalFormato1</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
+                          <Width>2pt</Width>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -1153,7 +1181,8 @@
         <ZIndex>18</ZIndex>
         <Style>
           <Border>
-            <Style>None</Style>
+            <Style>Solid</Style>
+            <Width>2pt</Width>
           </Border>
         </Style>
       </Tablix>

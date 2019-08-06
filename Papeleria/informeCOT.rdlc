@@ -573,9 +573,9 @@
         </Paragraphs>
         <rd:DefaultName>nombre_cli</rd:DefaultName>
         <Top>2.92063cm</Top>
-        <Left>3.65413cm</Left>
+        <Left>3.37663cm</Left>
         <Height>0.56472cm</Height>
-        <Width>4.12736cm</Width>
+        <Width>10.5294cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -892,10 +892,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox38</rd:DefaultName>
-        <Top>2.92063cm</Top>
-        <Left>1.51683cm</Left>
-        <Height>1.02361cm</Height>
-        <Width>2.16833cm</Width>
+        <Top>2.88535cm</Top>
+        <Left>1.23933cm</Left>
+        <Height>1.09417cm</Height>
+        <Width>2.10202cm</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border />
@@ -1050,9 +1050,9 @@
         </Paragraphs>
         <rd:DefaultName>rnc_cli</rd:DefaultName>
         <Top>3.37952cm</Top>
-        <Left>3.65413cm</Left>
+        <Left>3.37663cm</Left>
         <Height>0.6cm</Height>
-        <Width>4.12736cm</Width>
+        <Width>10.5294cm</Width>
         <ZIndex>15</ZIndex>
         <Style>
           <Border>
@@ -1084,9 +1084,9 @@
         </Paragraphs>
         <rd:DefaultName>direccion_cli</rd:DefaultName>
         <Top>3.94424cm</Top>
-        <Left>1.51683cm</Left>
+        <Left>1.23933cm</Left>
         <Height>0.65292cm</Height>
-        <Width>6.26466cm</Width>
+        <Width>12.6667cm</Width>
         <ZIndex>16</ZIndex>
         <Style>
           <Border>
