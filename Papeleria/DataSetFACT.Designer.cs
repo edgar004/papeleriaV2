@@ -367,6 +367,22 @@ namespace Papeleria {
             
             private global::System.Data.DataColumn columntotal1;
             
+            private global::System.Data.DataColumn columnid_facFormato;
+            
+            private global::System.Data.DataColumn columnprecio_proFormato;
+            
+            private global::System.Data.DataColumn columnporcientoItbis_proFormato;
+            
+            private global::System.Data.DataColumn columnitbisFormato;
+            
+            private global::System.Data.DataColumn columntotalFormato;
+            
+            private global::System.Data.DataColumn columnsubtotal_facFormato;
+            
+            private global::System.Data.DataColumn columnitbisTotal_facFormato;
+            
+            private global::System.Data.DataColumn columntotal_facFormato;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FACTDataTable() {
@@ -754,6 +770,70 @@ namespace Papeleria {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn id_facFormatoColumn {
+                get {
+                    return this.columnid_facFormato;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn precio_proFormatoColumn {
+                get {
+                    return this.columnprecio_proFormato;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn porcientoItbis_proFormatoColumn {
+                get {
+                    return this.columnporcientoItbis_proFormato;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn itbisFormatoColumn {
+                get {
+                    return this.columnitbisFormato;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn totalFormatoColumn {
+                get {
+                    return this.columntotalFormato;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn subtotal_facFormatoColumn {
+                get {
+                    return this.columnsubtotal_facFormato;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn itbisTotal_facFormatoColumn {
+                get {
+                    return this.columnitbisTotal_facFormato;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn total_facFormatoColumn {
+                get {
+                    return this.columntotal_facFormato;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -831,7 +911,15 @@ namespace Papeleria {
                         int cantidadLimite_com, 
                         bool estado2, 
                         decimal itbis11, 
-                        double total1) {
+                        double total1, 
+                        string id_facFormato, 
+                        string precio_proFormato, 
+                        string porcientoItbis_proFormato, 
+                        string itbisFormato, 
+                        string totalFormato, 
+                        string subtotal_facFormato, 
+                        string itbisTotal_facFormato, 
+                        string total_facFormato) {
                 FACTRow rowFACTRow = ((FACTRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         nombre_cli,
@@ -877,7 +965,15 @@ namespace Papeleria {
                         cantidadLimite_com,
                         estado2,
                         itbis11,
-                        total1};
+                        total1,
+                        id_facFormato,
+                        precio_proFormato,
+                        porcientoItbis_proFormato,
+                        itbisFormato,
+                        totalFormato,
+                        subtotal_facFormato,
+                        itbisTotal_facFormato,
+                        total_facFormato};
                 rowFACTRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFACTRow);
                 return rowFACTRow;
@@ -951,6 +1047,14 @@ namespace Papeleria {
                 this.columnestado2 = base.Columns["estado2"];
                 this.columnitbis11 = base.Columns["itbis11"];
                 this.columntotal1 = base.Columns["total1"];
+                this.columnid_facFormato = base.Columns["id_facFormato"];
+                this.columnprecio_proFormato = base.Columns["precio_proFormato"];
+                this.columnporcientoItbis_proFormato = base.Columns["porcientoItbis_proFormato"];
+                this.columnitbisFormato = base.Columns["itbisFormato"];
+                this.columntotalFormato = base.Columns["totalFormato"];
+                this.columnsubtotal_facFormato = base.Columns["subtotal_facFormato"];
+                this.columnitbisTotal_facFormato = base.Columns["itbisTotal_facFormato"];
+                this.columntotal_facFormato = base.Columns["total_facFormato"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1044,6 +1148,22 @@ namespace Papeleria {
                 base.Columns.Add(this.columnitbis11);
                 this.columntotal1 = new global::System.Data.DataColumn("total1", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntotal1);
+                this.columnid_facFormato = new global::System.Data.DataColumn("id_facFormato", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_facFormato);
+                this.columnprecio_proFormato = new global::System.Data.DataColumn("precio_proFormato", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnprecio_proFormato);
+                this.columnporcientoItbis_proFormato = new global::System.Data.DataColumn("porcientoItbis_proFormato", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnporcientoItbis_proFormato);
+                this.columnitbisFormato = new global::System.Data.DataColumn("itbisFormato", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnitbisFormato);
+                this.columntotalFormato = new global::System.Data.DataColumn("totalFormato", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntotalFormato);
+                this.columnsubtotal_facFormato = new global::System.Data.DataColumn("subtotal_facFormato", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsubtotal_facFormato);
+                this.columnitbisTotal_facFormato = new global::System.Data.DataColumn("itbisTotal_facFormato", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnitbisTotal_facFormato);
+                this.columntotal_facFormato = new global::System.Data.DataColumn("total_facFormato", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntotal_facFormato);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_fac}, true));
                 this.columnnombre_cli.AllowDBNull = false;
@@ -1119,6 +1239,22 @@ namespace Papeleria {
                 this.columnitbis11.Caption = "itbis1";
                 this.columntotal1.ReadOnly = true;
                 this.columntotal1.Caption = "total";
+                this.columnid_facFormato.ReadOnly = true;
+                this.columnid_facFormato.MaxLength = 11;
+                this.columnprecio_proFormato.ReadOnly = true;
+                this.columnprecio_proFormato.MaxLength = 44;
+                this.columnporcientoItbis_proFormato.ReadOnly = true;
+                this.columnporcientoItbis_proFormato.MaxLength = 44;
+                this.columnitbisFormato.ReadOnly = true;
+                this.columnitbisFormato.MaxLength = 44;
+                this.columntotalFormato.ReadOnly = true;
+                this.columntotalFormato.MaxLength = 44;
+                this.columnsubtotal_facFormato.ReadOnly = true;
+                this.columnsubtotal_facFormato.MaxLength = 44;
+                this.columnitbisTotal_facFormato.ReadOnly = true;
+                this.columnitbisTotal_facFormato.MaxLength = 44;
+                this.columntotal_facFormato.ReadOnly = true;
+                this.columntotal_facFormato.MaxLength = 44;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1765,6 +1901,134 @@ namespace Papeleria {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string id_facFormato {
+                get {
+                    try {
+                        return ((string)(this[this.tableFACT.id_facFormatoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_facFormato\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.id_facFormatoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string precio_proFormato {
+                get {
+                    try {
+                        return ((string)(this[this.tableFACT.precio_proFormatoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'precio_proFormato\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.precio_proFormatoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string porcientoItbis_proFormato {
+                get {
+                    try {
+                        return ((string)(this[this.tableFACT.porcientoItbis_proFormatoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'porcientoItbis_proFormato\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.porcientoItbis_proFormatoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string itbisFormato {
+                get {
+                    try {
+                        return ((string)(this[this.tableFACT.itbisFormatoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'itbisFormato\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.itbisFormatoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string totalFormato {
+                get {
+                    try {
+                        return ((string)(this[this.tableFACT.totalFormatoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'totalFormato\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.totalFormatoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string subtotal_facFormato {
+                get {
+                    try {
+                        return ((string)(this[this.tableFACT.subtotal_facFormatoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'subtotal_facFormato\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.subtotal_facFormatoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string itbisTotal_facFormato {
+                get {
+                    try {
+                        return ((string)(this[this.tableFACT.itbisTotal_facFormatoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'itbisTotal_facFormato\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.itbisTotal_facFormatoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string total_facFormato {
+                get {
+                    try {
+                        return ((string)(this[this.tableFACT.total_facFormatoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'total_facFormato\' de la tabla \'FACT\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFACT.total_facFormatoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsitbisNull() {
                 return this.IsNull(this.tableFACT.itbisColumn);
             }
@@ -1809,6 +2073,102 @@ namespace Papeleria {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Settotal1Null() {
                 this[this.tableFACT.total1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isid_facFormatoNull() {
+                return this.IsNull(this.tableFACT.id_facFormatoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setid_facFormatoNull() {
+                this[this.tableFACT.id_facFormatoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isprecio_proFormatoNull() {
+                return this.IsNull(this.tableFACT.precio_proFormatoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setprecio_proFormatoNull() {
+                this[this.tableFACT.precio_proFormatoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsporcientoItbis_proFormatoNull() {
+                return this.IsNull(this.tableFACT.porcientoItbis_proFormatoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetporcientoItbis_proFormatoNull() {
+                this[this.tableFACT.porcientoItbis_proFormatoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsitbisFormatoNull() {
+                return this.IsNull(this.tableFACT.itbisFormatoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetitbisFormatoNull() {
+                this[this.tableFACT.itbisFormatoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IstotalFormatoNull() {
+                return this.IsNull(this.tableFACT.totalFormatoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SettotalFormatoNull() {
+                this[this.tableFACT.totalFormatoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Issubtotal_facFormatoNull() {
+                return this.IsNull(this.tableFACT.subtotal_facFormatoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setsubtotal_facFormatoNull() {
+                this[this.tableFACT.subtotal_facFormatoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsitbisTotal_facFormatoNull() {
+                return this.IsNull(this.tableFACT.itbisTotal_facFormatoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetitbisTotal_facFormatoNull() {
+                this[this.tableFACT.itbisTotal_facFormatoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Istotal_facFormatoNull() {
+                return this.IsNull(this.tableFACT.total_facFormatoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Settotal_facFormatoNull() {
+                this[this.tableFACT.total_facFormatoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2012,6 +2372,14 @@ namespace Papeleria.DataSetFACTTableAdapters {
             tableMapping.ColumnMappings.Add("subtotal_fac1", "subtotal_fac1");
             tableMapping.ColumnMappings.Add("itbisTotal_fac1", "itbisTotal_fac1");
             tableMapping.ColumnMappings.Add("total_fac1", "total_fac1");
+            tableMapping.ColumnMappings.Add("id_facFormato", "id_facFormato");
+            tableMapping.ColumnMappings.Add("precio_proFormato", "precio_proFormato");
+            tableMapping.ColumnMappings.Add("porcientoItbis_proFormato", "porcientoItbis_proFormato");
+            tableMapping.ColumnMappings.Add("itbisFormato", "itbisFormato");
+            tableMapping.ColumnMappings.Add("totalFormato", "totalFormato");
+            tableMapping.ColumnMappings.Add("subtotal_facFormato", "subtotal_facFormato");
+            tableMapping.ColumnMappings.Add("itbisTotal_facFormato", "itbisTotal_facFormato");
+            tableMapping.ColumnMappings.Add("total_facFormato", "total_facFormato");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

@@ -55,7 +55,6 @@ C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\bin\Debug\pt\Micros
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\Papeleria.csprojResolveAssemblyReference.cache
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\Papeleria.clientes.resources
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\Papeleria.comprobantes.resources
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\Papeleria.cotizacion.resources
@@ -73,3 +72,4 @@ C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\RdlCompil
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\bin\Debug\FuncionesGenerales.pdb
 C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\Papeleria\bin\Debug\Google.Protobuf.dll
 C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\Papeleria\bin\Debug\MySql.Data.xml
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\Papeleria.csprojResolveAssemblyReference.cache

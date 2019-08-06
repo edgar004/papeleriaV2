@@ -358,7 +358,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="precio_pro1">
+                    <Textbox Name="precio_proFormato">
                       <CanGrow>true</CanGrow>
                       <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
@@ -366,14 +366,14 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!precio_pro1.Value</Value>
+                              <Value>=Fields!precio_proFormato.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>precio_pro1</rd:DefaultName>
+                      <rd:DefaultName>precio_proFormato</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -389,7 +389,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="itbis">
+                    <Textbox Name="porcientoItbis_proFormato">
                       <CanGrow>true</CanGrow>
                       <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
@@ -397,14 +397,14 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!itbis.Value</Value>
+                              <Value>=Fields!porcientoItbis_proFormato.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>itbis</rd:DefaultName>
+                      <rd:DefaultName>porcientoItbis_proFormato</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -420,7 +420,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="itbis111">
+                    <Textbox Name="itbisFormato">
                       <CanGrow>true</CanGrow>
                       <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
@@ -428,14 +428,14 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!itbis11.Value</Value>
+                              <Value>=Fields!itbisFormato.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>itbis111</rd:DefaultName>
+                      <rd:DefaultName>itbisFormato</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -451,7 +451,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="total">
+                    <Textbox Name="totalFormato">
                       <CanGrow>true</CanGrow>
                       <DataElementStyle>Element</DataElementStyle>
                       <KeepTogether>true</KeepTogether>
@@ -459,14 +459,14 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!total.Value</Value>
+                              <Value>=Fields!totalFormato.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>total</rd:DefaultName>
+                      <rd:DefaultName>totalFormato</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -505,7 +505,7 @@
         <Top>5.71986cm</Top>
         <Left>0.78817cm</Left>
         <Height>1.2cm</Height>
-        <Width>18.6644cm</Width>
+        <Width>18.66439cm</Width>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -520,7 +520,9 @@
             <TextRuns>
               <TextRun>
                 <Value>Fecha:</Value>
-                <Style />
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -529,7 +531,9 @@
             <TextRuns>
               <TextRun>
                 <Value />
-                <Style />
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -593,7 +597,9 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!fecha_cot.Value</Value>
-                <Style />
+                <Style>
+                  <Format>d/M/yyyy</Format>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -1060,105 +1066,6 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="subtotal_fac1">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!subtotal_fac.Value</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>subtotal_fac1</rd:DefaultName>
-        <Top>8.54236cm</Top>
-        <Left>16.47632cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
-        <ZIndex>16</ZIndex>
-        <Style>
-          <Border>
-            <Color>LightGrey</Color>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="itbisTotal_cot1">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!itbisTotal_cot.Value</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>itbisTotal_cot1</rd:DefaultName>
-        <Top>9.31874cm</Top>
-        <Left>16.47632cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
-        <ZIndex>17</ZIndex>
-        <Style>
-          <Border>
-            <Color>LightGrey</Color>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="total_cot">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!total_cot.Value</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>total_cot</rd:DefaultName>
-        <Top>10.09513cm</Top>
-        <Left>16.4234cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
-        <ZIndex>18</ZIndex>
-        <Style>
-          <Border>
-            <Color>LightGrey</Color>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
       <Textbox Name="direccion_cli">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
@@ -1180,13 +1087,112 @@
         <Left>1.51683cm</Left>
         <Height>0.65292cm</Height>
         <Width>6.26466cm</Width>
-        <ZIndex>19</ZIndex>
+        <ZIndex>16</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
             <Style>None</Style>
           </Border>
           <BackgroundColor>#0288d1</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="subtotal_facFormato">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!subtotal_facFormato.Value</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>subtotal_facFormato</rd:DefaultName>
+        <Top>8.5502cm</Top>
+        <Left>16.5237cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>17</ZIndex>
+        <Style>
+          <Border>
+            <Color>LightGrey</Color>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="itbisFormato1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!itbisFormato.Value</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>itbisFormato1</rd:DefaultName>
+        <Top>9.35453cm</Top>
+        <Left>16.5872cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>18</ZIndex>
+        <Style>
+          <Border>
+            <Color>LightGrey</Color>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="total_cotFormato">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!total_cotFormato.Value</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>total_cotFormato</rd:DefaultName>
+        <Top>10.11653cm</Top>
+        <Left>16.5872cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>19</ZIndex>
+        <Style>
+          <Border>
+            <Color>LightGrey</Color>
+            <Style>Solid</Style>
+          </Border>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -1372,6 +1378,34 @@
         <Field Name="total1">
           <DataField>total</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="precio_proFormato">
+          <DataField>precio_proFormato</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="porcientoItbis_proFormato">
+          <DataField>porcientoItbis_proFormato</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="itbisFormato">
+          <DataField>itbisFormato</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="totalFormato">
+          <DataField>totalFormato</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="subtotal_facFormato">
+          <DataField>subtotal_facFormato</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="itbisTotal_cotFormato">
+          <DataField>itbisTotal_cotFormato</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="total_cotFormato">
+          <DataField>total_cotFormato</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>

@@ -63,6 +63,14 @@
               <Mapping SourceColumn="subtotal_fac1" DataSetColumn="subtotal_fac1" />
               <Mapping SourceColumn="itbisTotal_fac1" DataSetColumn="itbisTotal_fac1" />
               <Mapping SourceColumn="total_fac1" DataSetColumn="total_fac1" />
+              <Mapping SourceColumn="id_facFormato" DataSetColumn="id_facFormato" />
+              <Mapping SourceColumn="precio_proFormato" DataSetColumn="precio_proFormato" />
+              <Mapping SourceColumn="porcientoItbis_proFormato" DataSetColumn="porcientoItbis_proFormato" />
+              <Mapping SourceColumn="itbisFormato" DataSetColumn="itbisFormato" />
+              <Mapping SourceColumn="totalFormato" DataSetColumn="totalFormato" />
+              <Mapping SourceColumn="subtotal_facFormato" DataSetColumn="subtotal_facFormato" />
+              <Mapping SourceColumn="itbisTotal_facFormato" DataSetColumn="itbisTotal_facFormato" />
+              <Mapping SourceColumn="total_facFormato" DataSetColumn="total_facFormato" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -74,7 +82,7 @@
   <xs:element name="DataSetFACT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetFACT" msprop:Generator_UserDSName="DataSetFACT">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FACT" msprop:Generator_TableClassName="FACTDataTable" msprop:Generator_TableVarName="tableFACT" msprop:Generator_RowChangedName="FACTRowChanged" msprop:Generator_TablePropName="FACT" msprop:Generator_RowDeletingName="FACTRowDeleting" msprop:Generator_RowChangingName="FACTRowChanging" msprop:Generator_RowEvHandlerName="FACTRowChangeEventHandler" msprop:Generator_RowDeletedName="FACTRowDeleted" msprop:Generator_RowClassName="FACTRow" msprop:Generator_UserTableName="FACT" msprop:Generator_RowEvArgName="FACTRowChangeEvent">
+        <xs:element name="FACT" msprop:Generator_TableClassName="FACTDataTable" msprop:Generator_TableVarName="tableFACT" msprop:Generator_TablePropName="FACT" msprop:Generator_RowDeletingName="FACTRowDeleting" msprop:Generator_RowChangingName="FACTRowChanging" msprop:Generator_RowEvHandlerName="FACTRowChangeEventHandler" msprop:Generator_RowDeletedName="FACTRowDeleted" msprop:Generator_UserTableName="FACT" msprop:Generator_RowChangedName="FACTRowChanged" msprop:Generator_RowEvArgName="FACTRowChangeEvent" msprop:Generator_RowClassName="FACTRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="nombre_cli" msprop:Generator_ColumnVarNameInTable="columnnombre_cli" msprop:Generator_ColumnPropNameInRow="nombre_cli" msprop:Generator_ColumnPropNameInTable="nombre_cliColumn" msprop:Generator_UserColumnName="nombre_cli">
@@ -199,6 +207,62 @@
               <xs:element name="estado2" msprop:Generator_ColumnVarNameInTable="columnestado2" msprop:Generator_ColumnPropNameInRow="estado2" msprop:Generator_ColumnPropNameInTable="estado2Column" msprop:Generator_UserColumnName="estado2" type="xs:boolean" />
               <xs:element name="itbis11" msdata:ReadOnly="true" msdata:Caption="itbis1" msprop:Generator_ColumnVarNameInTable="columnitbis11" msprop:Generator_ColumnPropNameInRow="itbis11" msprop:Generator_ColumnPropNameInTable="itbis11Column" msprop:Generator_UserColumnName="itbis11" type="xs:decimal" minOccurs="0" />
               <xs:element name="total1" msdata:ReadOnly="true" msdata:Caption="total" msprop:Generator_ColumnVarNameInTable="columntotal1" msprop:Generator_ColumnPropNameInRow="total1" msprop:Generator_ColumnPropNameInTable="total1Column" msprop:Generator_UserColumnName="total1" type="xs:double" minOccurs="0" />
+              <xs:element name="id_facFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnid_facFormato" msprop:Generator_ColumnPropNameInRow="id_facFormato" msprop:Generator_ColumnPropNameInTable="id_facFormatoColumn" msprop:Generator_UserColumnName="id_facFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="precio_proFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnprecio_proFormato" msprop:Generator_ColumnPropNameInRow="precio_proFormato" msprop:Generator_ColumnPropNameInTable="precio_proFormatoColumn" msprop:Generator_UserColumnName="precio_proFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="porcientoItbis_proFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnporcientoItbis_proFormato" msprop:Generator_ColumnPropNameInRow="porcientoItbis_proFormato" msprop:Generator_ColumnPropNameInTable="porcientoItbis_proFormatoColumn" msprop:Generator_UserColumnName="porcientoItbis_proFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itbisFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnitbisFormato" msprop:Generator_ColumnPropNameInRow="itbisFormato" msprop:Generator_ColumnPropNameInTable="itbisFormatoColumn" msprop:Generator_UserColumnName="itbisFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="totalFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntotalFormato" msprop:Generator_ColumnPropNameInRow="totalFormato" msprop:Generator_ColumnPropNameInTable="totalFormatoColumn" msprop:Generator_UserColumnName="totalFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subtotal_facFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnsubtotal_facFormato" msprop:Generator_ColumnPropNameInRow="subtotal_facFormato" msprop:Generator_ColumnPropNameInTable="subtotal_facFormatoColumn" msprop:Generator_UserColumnName="subtotal_facFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itbisTotal_facFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnitbisTotal_facFormato" msprop:Generator_ColumnPropNameInRow="itbisTotal_facFormato" msprop:Generator_ColumnPropNameInTable="itbisTotal_facFormatoColumn" msprop:Generator_UserColumnName="itbisTotal_facFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="total_facFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntotal_facFormato" msprop:Generator_ColumnPropNameInRow="total_facFormato" msprop:Generator_ColumnPropNameInTable="total_facFormatoColumn" msprop:Generator_UserColumnName="total_facFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

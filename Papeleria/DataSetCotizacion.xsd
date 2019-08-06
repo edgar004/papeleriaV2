@@ -53,6 +53,13 @@
               <Mapping SourceColumn="subtotal_fac1" DataSetColumn="subtotal_fac1" />
               <Mapping SourceColumn="itbisTotal_cot1" DataSetColumn="itbisTotal_cot1" />
               <Mapping SourceColumn="total_cot1" DataSetColumn="total_cot1" />
+              <Mapping SourceColumn="precio_proFormato" DataSetColumn="precio_proFormato" />
+              <Mapping SourceColumn="porcientoItbis_proFormato" DataSetColumn="porcientoItbis_proFormato" />
+              <Mapping SourceColumn="itbisFormato" DataSetColumn="itbisFormato" />
+              <Mapping SourceColumn="totalFormato" DataSetColumn="totalFormato" />
+              <Mapping SourceColumn="subtotal_facFormato" DataSetColumn="subtotal_facFormato" />
+              <Mapping SourceColumn="itbisTotal_cotFormato" DataSetColumn="itbisTotal_cotFormato" />
+              <Mapping SourceColumn="total_cotFormato" DataSetColumn="total_cotFormato" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -64,7 +71,7 @@
   <xs:element name="DataSetCotizacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetCotizacion" msprop:Generator_UserDSName="DataSetCotizacion">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="COT" msprop:Generator_TableClassName="COTDataTable" msprop:Generator_TableVarName="tableCOT" msprop:Generator_RowChangedName="COTRowChanged" msprop:Generator_TablePropName="COT" msprop:Generator_RowDeletingName="COTRowDeleting" msprop:Generator_RowChangingName="COTRowChanging" msprop:Generator_RowEvHandlerName="COTRowChangeEventHandler" msprop:Generator_RowDeletedName="COTRowDeleted" msprop:Generator_RowClassName="COTRow" msprop:Generator_UserTableName="COT" msprop:Generator_RowEvArgName="COTRowChangeEvent">
+        <xs:element name="COT" msprop:Generator_TableClassName="COTDataTable" msprop:Generator_TableVarName="tableCOT" msprop:Generator_TablePropName="COT" msprop:Generator_RowDeletingName="COTRowDeleting" msprop:Generator_RowChangingName="COTRowChanging" msprop:Generator_RowEvHandlerName="COTRowChangeEventHandler" msprop:Generator_RowDeletedName="COTRowDeleted" msprop:Generator_UserTableName="COT" msprop:Generator_RowChangedName="COTRowChanged" msprop:Generator_RowEvArgName="COTRowChangeEvent" msprop:Generator_RowClassName="COTRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="nombre_cli" msprop:Generator_ColumnVarNameInTable="columnnombre_cli" msprop:Generator_ColumnPropNameInRow="nombre_cli" msprop:Generator_ColumnPropNameInTable="nombre_cliColumn" msprop:Generator_UserColumnName="nombre_cli">
@@ -175,6 +182,55 @@
               <xs:element name="estado1" msprop:Generator_ColumnVarNameInTable="columnestado1" msprop:Generator_ColumnPropNameInRow="estado1" msprop:Generator_ColumnPropNameInTable="estado1Column" msprop:Generator_UserColumnName="estado1" type="xs:boolean" />
               <xs:element name="itbis11" msdata:ReadOnly="true" msdata:Caption="itbis1" msprop:Generator_ColumnVarNameInTable="columnitbis11" msprop:Generator_ColumnPropNameInRow="itbis11" msprop:Generator_ColumnPropNameInTable="itbis11Column" msprop:Generator_UserColumnName="itbis11" type="xs:decimal" minOccurs="0" />
               <xs:element name="total1" msdata:ReadOnly="true" msdata:Caption="total" msprop:Generator_ColumnVarNameInTable="columntotal1" msprop:Generator_ColumnPropNameInRow="total1" msprop:Generator_ColumnPropNameInTable="total1Column" msprop:Generator_UserColumnName="total1" type="xs:double" minOccurs="0" />
+              <xs:element name="precio_proFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnprecio_proFormato" msprop:Generator_ColumnPropNameInRow="precio_proFormato" msprop:Generator_ColumnPropNameInTable="precio_proFormatoColumn" msprop:Generator_UserColumnName="precio_proFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="porcientoItbis_proFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnporcientoItbis_proFormato" msprop:Generator_ColumnPropNameInRow="porcientoItbis_proFormato" msprop:Generator_ColumnPropNameInTable="porcientoItbis_proFormatoColumn" msprop:Generator_UserColumnName="porcientoItbis_proFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itbisFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnitbisFormato" msprop:Generator_ColumnPropNameInRow="itbisFormato" msprop:Generator_ColumnPropNameInTable="itbisFormatoColumn" msprop:Generator_UserColumnName="itbisFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="totalFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntotalFormato" msprop:Generator_ColumnPropNameInRow="totalFormato" msprop:Generator_ColumnPropNameInTable="totalFormatoColumn" msprop:Generator_UserColumnName="totalFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subtotal_facFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnsubtotal_facFormato" msprop:Generator_ColumnPropNameInRow="subtotal_facFormato" msprop:Generator_ColumnPropNameInTable="subtotal_facFormatoColumn" msprop:Generator_UserColumnName="subtotal_facFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itbisTotal_cotFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnitbisTotal_cotFormato" msprop:Generator_ColumnPropNameInRow="itbisTotal_cotFormato" msprop:Generator_ColumnPropNameInTable="itbisTotal_cotFormatoColumn" msprop:Generator_UserColumnName="itbisTotal_cotFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="total_cotFormato" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntotal_cotFormato" msprop:Generator_ColumnPropNameInRow="total_cotFormato" msprop:Generator_ColumnPropNameInTable="total_cotFormatoColumn" msprop:Generator_UserColumnName="total_cotFormato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
