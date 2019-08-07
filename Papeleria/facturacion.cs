@@ -277,18 +277,29 @@ namespace Papeleria
 
                             if (key)
                             {
-                                dataGridViewFacturacion.Rows[num_fila].Cells[3].Value = (Convert.ToDouble(txtCantPro.Text) + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[3].Value)).ToString();
-                                dataGridViewFacturacion.Rows[num_fila].Cells[6].Value = (precioPro + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[6].Value)).ToString("N");
-                                dataGridViewFacturacion.Rows[num_fila].Cells[5].Value = (calItbis + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[5].Value)).ToString("N");
 
-                                sumItbis += calItbis;
-                                sumSubTotal += precioPro;
-                                sumTotal = 0;
-                                sumTotal = sumItbis + sumSubTotal;
+                                Double numeroNew = Convert.ToDouble(txtCantPro.Text) + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[3].Value);
 
-                                txtTotalItbis.Text = "RD$ " + sumItbis;
-                                txtSubTotal.Text = "RD$ " + sumSubTotal;
-                                txtTotal.Text = "RD$ " + sumTotal.ToString().Replace(',','.');
+                                if(cantidadPro > numeroNew)
+                                {
+                                    dataGridViewFacturacion.Rows[num_fila].Cells[3].Value = (Convert.ToDouble(txtCantPro.Text) + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[3].Value)).ToString();
+                                    dataGridViewFacturacion.Rows[num_fila].Cells[6].Value = (precioPro + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[6].Value)).ToString("N");
+                                    dataGridViewFacturacion.Rows[num_fila].Cells[5].Value = (calItbis + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[5].Value)).ToString("N");
+
+                                    sumItbis += calItbis;
+                                    sumSubTotal += precioPro;
+                                    sumTotal = 0;
+                                    sumTotal = sumItbis + sumSubTotal;
+
+                                    txtTotalItbis.Text = "RD$ " + sumItbis;
+                                    txtSubTotal.Text = "RD$ " + sumSubTotal;
+                                    txtTotal.Text = "RD$ " + sumTotal.ToString().Replace(',', '.');
+                                }
+                                else
+                                {
+                                    MessageBox.Show("La cantidad excede a la cantidad que usted tiene en el sistema");
+                                }
+                                
 
                                 key = false;
                             }
