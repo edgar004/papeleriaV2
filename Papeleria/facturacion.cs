@@ -250,16 +250,16 @@ namespace Papeleria
                             dataGridViewFacturacion.Rows[cont_fila].Cells[6].Value = precioPro.ToString("N");
                             dataGridViewFacturacion.Rows[cont_fila].Cells[7].Value = idProSelect;
 
-                            sumItbis += calItbis;
-                            sumSubTotal += precioPro;
+                            sumItbis = calItbis;
+                            sumSubTotal = precioPro;
                             subtotalSinDes = sumSubTotal;
                             sumTotal = 0;
                             sumTotal = sumItbis + sumSubTotal;
                             sumtotalSinDes = sumTotal;
 
-                            txtTotalItbis.Text = "$ " + sumItbis;
-                            txtSubTotal.Text = "$ " + sumSubTotal;
-                            txtTotal.Text = "$ " + sumTotal.ToString().Replace(',', '.');
+                            txtTotalItbis.Text = "RD$ " + sumItbis;
+                            txtSubTotal.Text = "RD$ " + sumSubTotal;
+                            txtTotal.Text = "RD$ " + sumTotal.ToString().Replace(',', '.');
 
                             cont_fila++;
                         }
@@ -286,11 +286,11 @@ namespace Papeleria
                                 sumTotal = 0;
                                 sumTotal = sumItbis + sumSubTotal;
 
-                                txtTotalItbis.Text = "$ " + sumItbis;
-                                txtSubTotal.Text = "$ " + sumSubTotal;
-                                txtTotal.Text = "$ " + sumTotal.ToString().Replace(',','.');
+                                txtTotalItbis.Text = "RD$ " + sumItbis;
+                                txtSubTotal.Text = "RD$ " + sumSubTotal;
+                                txtTotal.Text = "RD$ " + sumTotal.ToString().Replace(',','.');
 
-                                cont_fila++;
+                                key = false;
                             }
                             else
                             {
@@ -395,8 +395,8 @@ namespace Papeleria
             {
                 txtDescuento.Text = "";
                 txtDescuento.ReadOnly = true;
-                txtTotal.Text = "$ " + (subtotalSinDes+sumItbis);
-                txtSubTotal.Text = "$ "+subtotalSinDes.ToString();
+                txtTotal.Text = "RD$ " + (subtotalSinDes+sumItbis);
+                txtSubTotal.Text = "RD$ " + subtotalSinDes.ToString();
             }
         }
 
@@ -424,7 +424,7 @@ namespace Papeleria
                         sumSubTotal = totalaDesc - (totalaDesc * (desc / 100));
 
                         txtSubTotal.Text = "";
-                        txtSubTotal.Text = "$ " + sumSubTotal.ToString().Replace(',', '.');
+                        txtSubTotal.Text = "RD$ " + sumSubTotal.ToString().Replace(',', '.');
 
                         txtTotal.Text = "";
                         sumtotalSinDes = sumTotal;
@@ -432,7 +432,7 @@ namespace Papeleria
                         sumTotal = 0;
                         sumTotal = sumSubTotal + sumItbis;
 
-                        txtTotal.Text = "$ " + sumTotal.ToString().Replace(',', '.');
+                        txtTotal.Text = "RD$ " + sumTotal.ToString().Replace(',', '.');
                     }
                     
                 }
@@ -500,19 +500,21 @@ namespace Papeleria
                 totalfact = totalfact.Replace('D', ' ');
                 int respuesta = 0;
 
+                Double subProvi = Convert.ToDouble(txtSubTotal.Text.Replace("RD$", ""));
+
                 String fechaFormato = DateTime.Now.ToString("yyyy-MM-dd");
 
                 if(checkDescuento.Checked && !txtDescuento.Equals(""))
                 {
                     
 
-                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}',{idComprobante},{totalfact},{sumItbis.ToString().Replace(',','.')},{sumSubTotal.ToString().Replace(',', '.')},{txtDescuento.Text})";
+                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}',{idComprobante},{totalfact},{sumItbis.ToString().Replace(',','.')},{subProvi},{txtDescuento.Text})";
                     
                     respuesta = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql, "Error al guardar la factura");
                 }
                 else
                 {
-                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}',{idComprobante},{totalfact},{sumItbis.ToString().Replace(',', '.')},{subtotalSinDes.ToString().Replace(',', '.')},0)";
+                    String sql = $"INSERT INTO facturas (id_cli, fecha_fac, NFC_com, id_com, total_fac, itbisTotal_fac, subtotal_fac, descuento) VALUES ('{idCliente}','{fechaFormato}','{txtserieComprobante.Text}',{idComprobante},{totalfact},{sumItbis.ToString().Replace(',', '.')},{subProvi},0)";
                     
                     respuesta = FuncionesGenerales.FuncionesGenerales.EjecutarQuery(sql, "Error al guardar la factura");
                     
@@ -619,6 +621,11 @@ namespace Papeleria
             if (res == DialogResult.No)
             {
                 e.Cancel = true;
+            }
+            else
+            {
+                cont_fila = 0;
+                
             }
         }
     }
