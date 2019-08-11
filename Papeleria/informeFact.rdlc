@@ -570,7 +570,9 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!subtotal_facFormato.Value</Value>
-                <Style />
+                <Style>
+                  <Format>#,0.00;(#,0.00)</Format>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -601,7 +603,9 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!itbisTotal_facFormato.Value</Value>
-                <Style />
+                <Style>
+                  <Format>#,0.00;(#,0.00)</Format>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -632,7 +636,9 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!total_facFormato.Value</Value>
-                <Style />
+                <Style>
+                  <Format>#,0.00;(#,0.00)</Format>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />

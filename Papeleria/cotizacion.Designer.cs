@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.txt_totalFactura = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -120,12 +120,12 @@
             // txt_totalFactura
             // 
             this.txt_totalFactura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_totalFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_totalFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_totalFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
-            this.txt_totalFactura.Location = new System.Drawing.Point(4, 74);
+            this.txt_totalFactura.Location = new System.Drawing.Point(4, 77);
             this.txt_totalFactura.Margin = new System.Windows.Forms.Padding(4);
             this.txt_totalFactura.Name = "txt_totalFactura";
-            this.txt_totalFactura.Size = new System.Drawing.Size(175, 34);
+            this.txt_totalFactura.Size = new System.Drawing.Size(175, 28);
             this.txt_totalFactura.TabIndex = 6;
             // 
             // label13
@@ -244,19 +244,19 @@
             this.dataGridViewProducto.AllowUserToDeleteRows = false;
             this.dataGridViewProducto.AllowUserToResizeColumns = false;
             this.dataGridViewProducto.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewProducto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.dataGridViewProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewProducto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewProducto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewProducto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewProducto.ColumnHeadersHeight = 41;
             this.dataGridViewProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -269,14 +269,14 @@
             this.totalTable,
             this.idproducto});
             this.dataGridViewProducto.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewProducto.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewProducto.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewProducto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewProducto.EnableHeadersVisualStyles = false;
             this.dataGridViewProducto.GridColor = System.Drawing.Color.Black;
@@ -285,18 +285,18 @@
             this.dataGridViewProducto.MultiSelect = false;
             this.dataGridViewProducto.Name = "dataGridViewProducto";
             this.dataGridViewProducto.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewProducto.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewProducto.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewProducto.RowHeadersVisible = false;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            this.dataGridViewProducto.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.dataGridViewProducto.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewProducto.Size = new System.Drawing.Size(908, 373);
             this.dataGridViewProducto.TabIndex = 70;
@@ -378,11 +378,11 @@
             // txtTotalItbis
             // 
             this.txtTotalItbis.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtTotalItbis.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalItbis.Location = new System.Drawing.Point(123, 10);
+            this.txtTotalItbis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalItbis.Location = new System.Drawing.Point(123, 11);
             this.txtTotalItbis.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotalItbis.Name = "txtTotalItbis";
-            this.txtTotalItbis.Size = new System.Drawing.Size(120, 29);
+            this.txtTotalItbis.Size = new System.Drawing.Size(120, 27);
             this.txtTotalItbis.TabIndex = 8;
             // 
             // label12
@@ -407,7 +407,7 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.76596F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.422492F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.358663F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
             this.tableLayoutPanel7.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txt_cantidadPro, 5, 0);
             this.tableLayoutPanel7.Controls.Add(this.label11, 4, 0);
@@ -428,7 +428,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(15, 15);
+            this.label9.Location = new System.Drawing.Point(14, 15);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 24);
@@ -439,7 +439,7 @@
             // 
             this.txt_cantidadPro.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_cantidadPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cantidadPro.Location = new System.Drawing.Point(702, 13);
+            this.txt_cantidadPro.Location = new System.Drawing.Point(696, 13);
             this.txt_cantidadPro.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cantidadPro.Name = "txt_cantidadPro";
             this.txt_cantidadPro.Size = new System.Drawing.Size(51, 29);
@@ -452,7 +452,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(636, 15);
+            this.label11.Location = new System.Drawing.Point(630, 15);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(58, 24);
@@ -462,20 +462,20 @@
             // txt_precioPro
             // 
             this.txt_precioPro.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_precioPro.Enabled = false;
             this.txt_precioPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precioPro.Location = new System.Drawing.Point(534, 13);
+            this.txt_precioPro.Location = new System.Drawing.Point(529, 13);
             this.txt_precioPro.Margin = new System.Windows.Forms.Padding(4);
             this.txt_precioPro.Name = "txt_precioPro";
-            this.txt_precioPro.Size = new System.Drawing.Size(89, 29);
+            this.txt_precioPro.Size = new System.Drawing.Size(88, 29);
             this.txt_precioPro.TabIndex = 7;
+            this.txt_precioPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_precioPro_KeyPress);
             // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(457, 15);
+            this.label10.Location = new System.Drawing.Point(452, 15);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 24);
@@ -487,10 +487,10 @@
             this.flowLayoutPanel4.BackgroundImage = global::Papeleria.Properties.Resources.ok_mark;
             this.flowLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(765, 4);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(759, 4);
             this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(142, 47);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(148, 47);
             this.flowLayoutPanel4.TabIndex = 8;
             this.flowLayoutPanel4.Click += new System.EventHandler(this.flowLayoutPanel4_Click);
             this.flowLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel4_Paint);
@@ -501,10 +501,10 @@
             this.txt_nombrePro.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_nombrePro.Enabled = false;
             this.txt_nombrePro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombrePro.Location = new System.Drawing.Point(107, 13);
+            this.txt_nombrePro.Location = new System.Drawing.Point(106, 13);
             this.txt_nombrePro.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombrePro.Name = "txt_nombrePro";
-            this.txt_nombrePro.Size = new System.Drawing.Size(333, 29);
+            this.txt_nombrePro.Size = new System.Drawing.Size(330, 29);
             this.txt_nombrePro.TabIndex = 3;
             // 
             // tableLayoutPanel6
@@ -513,7 +513,7 @@
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.28169F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.71831F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.tableLayoutPanel6.Controls.Add(this.flowLayoutPanel3, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.txt_codigoPro, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.label8, 0, 0);
@@ -531,10 +531,10 @@
             this.flowLayoutPanel3.BackgroundImage = global::Papeleria.Properties.Resources.searchRed;
             this.flowLayoutPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(418, 4);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(416, 4);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(129, 35);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(131, 35);
             this.flowLayoutPanel3.TabIndex = 5;
             this.flowLayoutPanel3.Click += new System.EventHandler(this.flowLayoutPanel3_Click);
             this.flowLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel3_Paint);
@@ -543,10 +543,10 @@
             // 
             this.txt_codigoPro.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_codigoPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_codigoPro.Location = new System.Drawing.Point(171, 7);
+            this.txt_codigoPro.Location = new System.Drawing.Point(170, 7);
             this.txt_codigoPro.Margin = new System.Windows.Forms.Padding(4);
             this.txt_codigoPro.Name = "txt_codigoPro";
-            this.txt_codigoPro.Size = new System.Drawing.Size(239, 29);
+            this.txt_codigoPro.Size = new System.Drawing.Size(238, 29);
             this.txt_codigoPro.TabIndex = 3;
             this.txt_codigoPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_codigoPro_KeyPress);
             // 
@@ -555,7 +555,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 9);
+            this.label8.Location = new System.Drawing.Point(5, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(157, 24);

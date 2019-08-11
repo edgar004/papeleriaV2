@@ -69,6 +69,6 @@ C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\Papeleria
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\Papeleria.csproj.GenerateResource.Cache
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\RdlCompile.cache
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\RdlCompile.compiled
-C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\bin\Debug\FuncionesGenerales.pdb
-C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\Papeleria.csprojResolveAssemblyReference.cache
 C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\Papeleria\obj\Debug\Papeleria.csproj.Papeleria.exe.config
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Debug\Papeleria.csprojResolveAssemblyReference.cache
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\bin\Debug\FuncionesGenerales.pdb

@@ -14,22 +14,23 @@ namespace FuncionesGenerales
 {
     public class FuncionesGenerales
     {
-        public static string con = "Data Source=.;Initial Catalog=papeleria;Integrated Security=True";
-        public static SqlConnection db = new SqlConnection(con);
+       
 
         public static DataSet ExecuteReader(string cmd, string mensaje)
         {
             DataSet ds = new DataSet();
-
+            string con = "Data Source=.;Initial Catalog=papeleria;Integrated Security=True";
+            SqlConnection db = new SqlConnection(con);
             try
             {
+                  
+
                 try
                 {
                     db.Open();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show(ex.ToString());
                     MessageBox.Show("La base de datos no está encendida, por favor comunicarse con soporte.");
                     db.Close();
                     return ds;
@@ -50,9 +51,12 @@ namespace FuncionesGenerales
         public static string GenerarCodigoTabla(string prefijo, string tabla,string mensaje)
         {
             DataSet DS = new DataSet();
+            string con = "Data Source=.;Initial Catalog=papeleria;Integrated Security=True";
+            SqlConnection db = new SqlConnection(con);
 
             try
             {
+               
                 try
                 {
                     db.Open();
@@ -66,7 +70,11 @@ namespace FuncionesGenerales
                 string cmd = $"select CONCAT('{prefijo}', RIGHT(COUNT(*)+1, 8)) from {tabla}";
                 SqlDataAdapter DL = new SqlDataAdapter(cmd, db);
                 DL.Fill(DS);
-                if (DS.Tables.Count == 0) return "";
+                if (DS.Tables.Count == 0)
+                {
+                    db.Close();
+                    return "";
+                }
                 if (DS.Tables[0].Rows.Count > 0)
                 {
                     db.Close();
@@ -87,10 +95,13 @@ namespace FuncionesGenerales
         {
             DataSet Ds = new DataSet();
             int resp = 0;
-            SqlDataAdapter DL = new SqlDataAdapter(cmd, db);
+            string con = "Data Source=.;Initial Catalog=papeleria;Integrated Security=True";
+            SqlConnection db = new SqlConnection(con);
 
             try
             {
+                db.Close();
+
                 try
                 {
                     db.Open();
@@ -101,7 +112,7 @@ namespace FuncionesGenerales
                     db.Close();
                     return resp;
                 }
-
+                SqlDataAdapter DL = new SqlDataAdapter(cmd, db);
                 DL.Fill(Ds);
 
                 resp = 1;

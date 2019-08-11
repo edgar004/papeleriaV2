@@ -63,7 +63,6 @@ namespace Papeleria
                     txt_codigoPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[1].Value.ToString();
                     txt_nombrePro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[2].Value.ToString();
                     txt_precioPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[6].Value.ToString();
-                    txt_cantidadPro.Text = "1";
                     impuestoPro = Convert.ToDouble(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[4].Value.ToString());
                     maximaCant = Convert.ToInt32(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[3].Value.ToString());
 
@@ -275,7 +274,6 @@ namespace Papeleria
                             txt_codigoPro.Text = DS.Tables[0].Rows[0][3].ToString();
                             txt_nombrePro.Text = DS.Tables[0].Rows[0][1].ToString();
                             txt_precioPro.Text = DS.Tables[0].Rows[0][6].ToString();
-                            txt_cantidadPro.Text = "1";
                             impuestoPro = Convert.ToDouble(DS.Tables[0].Rows[0][4].ToString());
                             maximaCant = Convert.ToInt32(DS.Tables[0].Rows[0][3].ToString());
                             txt_codigoPro.Focus();
@@ -379,7 +377,6 @@ namespace Papeleria
                         txt_codigoPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[1].Value.ToString();
                         txt_nombrePro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[2].Value.ToString();
                         txt_precioPro.Text = pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[6].Value.ToString();
-                        txt_cantidadPro.Text = "1";
                         impuestoPro = Convert.ToDouble(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[4].Value.ToString());
                         maximaCant = Convert.ToInt32(pro.dataGridViewProducto.Rows[pro.dataGridViewProducto.CurrentCell.RowIndex].Cells[3].Value.ToString());
 
@@ -389,6 +386,19 @@ namespace Papeleria
                 {
                     MessageBox.Show("Erro al traer el producto, por favor intente de nuevo.");
                 }
+            }
+        }
+
+        private void txt_precioPro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+
+            if (e.KeyChar == '.' && (sender as TextBox).Text.IndexOf('.') > -1)
+            {
+                e.Handled = true;
             }
         }
     }

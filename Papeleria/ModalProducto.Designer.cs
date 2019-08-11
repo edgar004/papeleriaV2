@@ -107,6 +107,7 @@
             this.txt_precio.Name = "txt_precio";
             this.txt_precio.Size = new System.Drawing.Size(319, 35);
             this.txt_precio.TabIndex = 12;
+            this.txt_precio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_precio_KeyPress);
             // 
             // txt_itbis
             // 

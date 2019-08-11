@@ -78,7 +78,6 @@ namespace Papeleria
                     textBox3.Text = dato;
                     txtNomPro.Text = DS.Tables[0].Rows[0]["nom_pro"].ToString();
                     txtPrePro.Text = DS.Tables[0].Rows[0]["precio"].ToString();
-                    txtCantPro.Text = "1";
 
                     cantidadPro = Convert.ToInt32(DS.Tables[0].Rows[0]["cantidad"].ToString());
                     itbisPro = Convert.ToInt32(DS.Tables[0].Rows[0]["itbis"].ToString());
@@ -280,7 +279,7 @@ namespace Papeleria
 
                                 Double numeroNew = Convert.ToDouble(txtCantPro.Text) + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[3].Value);
 
-                                if(cantidadPro > numeroNew)
+                                if(cantidadPro >= numeroNew)
                                 {
                                     dataGridViewFacturacion.Rows[num_fila].Cells[3].Value = (Convert.ToDouble(txtCantPro.Text) + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[3].Value)).ToString();
                                     dataGridViewFacturacion.Rows[num_fila].Cells[6].Value = (precioPro + Convert.ToDouble(dataGridViewFacturacion.Rows[num_fila].Cells[6].Value)).ToString("N");
@@ -334,12 +333,14 @@ namespace Papeleria
                 }
                 else
                 {
+
                     MessageBox.Show("Debe poner la cantidad que desea de este producto");
                 }
             }
             else
             {
                 MessageBox.Show("Debe Buscar el producto que va a ser vendido!!");
+
             }
         }
 
@@ -356,9 +357,13 @@ namespace Papeleria
             sumSubTotal = 0;
             sumTotal = 0;
             cont_fila = 0;
-        }
+            total = 0;
+            sumtotalSinDes = 0;
+            subtotalSinDes = 0;
 
-        private void flowLayoutPanel7_Click(object sender, EventArgs e)
+    }
+
+    private void flowLayoutPanel7_Click(object sender, EventArgs e)
         {
             if (cont_fila > 0)
             {
@@ -462,6 +467,9 @@ namespace Papeleria
             sumSubTotal = 0;
             sumTotal = 0;
             cont_fila = 0;
+            total = 0;
+            sumtotalSinDes = 0;
+            subtotalSinDes = 0;
         }
 
         private void flowLayoutPanel8_Click_1(object sender, EventArgs e)
@@ -582,6 +590,9 @@ namespace Papeleria
                             sumSubTotal = 0;
                             sumTotal = 0;
                             cont_fila = 0;
+                            total = 0;
+                            sumtotalSinDes = 0;
+                            subtotalSinDes = 0;
 
                             comboComprobante.SelectedIndex = -1;
 
@@ -638,6 +649,24 @@ namespace Papeleria
                 cont_fila = 0;
                 
             }
+        }
+
+        private void txtPrePro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+
+            if (e.KeyChar == '.' && (sender as TextBox).Text.IndexOf('.') > -1)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void flowLayoutPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

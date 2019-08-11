@@ -72,3 +72,4 @@ C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\Papeleria\obj
 C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\Papeleria\obj\Release\Papeleria.csproj.GenerateResource.Cache
 C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\Papeleria\obj\Release\RdlCompile.cache
 C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\Papeleria\obj\Release\RdlCompile.compiled
+C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\Papeleria.csprojResolveAssemblyReference.cache
