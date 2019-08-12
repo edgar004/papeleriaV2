@@ -289,6 +289,7 @@ namespace Papeleria
                                     sumSubTotal += precioPro;
                                     sumTotal = 0;
                                     sumTotal = sumItbis + sumSubTotal;
+                                    sumtotalSinDes = sumTotal;
 
                                     txtTotalItbis.Text = "RD$ " + sumItbis;
                                     txtSubTotal.Text = "RD$ " + sumSubTotal;
@@ -314,6 +315,7 @@ namespace Papeleria
                                 sumSubTotal += precioPro;
                                 sumTotal = 0;
                                 sumTotal = sumItbis + sumSubTotal;
+                                sumtotalSinDes = sumTotal;
 
                                 txtTotalItbis.Text = "RD$ " + sumItbis;
                                 txtSubTotal.Text = "RD$ " + sumSubTotal;
@@ -378,6 +380,7 @@ namespace Papeleria
                 txtTotalItbis.Text = "RD$ " + sumItbis;
                 txtSubTotal.Text = "RD$ " + sumSubTotal;
                 txtTotal.Text = "RD$ " + sumTotal;
+                sumtotalSinDes = sumTotal;
 
                 cont_fila--;
             }
@@ -593,6 +596,7 @@ namespace Papeleria
                             total = 0;
                             sumtotalSinDes = 0;
                             subtotalSinDes = 0;
+                            
 
                             comboComprobante.SelectedIndex = -1;
 

@@ -5,3 +5,10 @@ C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Releas
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\bin\Release\MySql.Data.xml
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\obj\Release\FuncionesGenerales.dll
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\FuncionesGenerales\obj\Release\FuncionesGenerales.pdb
+C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\bin\Release\FuncionesGenerales.dll
+C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\bin\Release\FuncionesGenerales.pdb
+C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\bin\Release\MySql.Data.dll
+C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\bin\Release\MySql.Data.xml
+C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\obj\Release\FuncionesGenerales.csprojResolveAssemblyReference.cache
+C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\obj\Release\FuncionesGenerales.dll
+C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\FuncionesGenerales\obj\Release\FuncionesGenerales.pdb
