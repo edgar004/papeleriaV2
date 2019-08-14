@@ -70,3 +70,5 @@ C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\Papeler
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\Papeleria.csproj.GenerateResource.Cache
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\RdlCompile.cache
 C:\Users\Edgar Ariel Tavarez\Downloads\papeleriaV2\Papeleria\obj\Release\RdlCompile.compiled
+C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\Papeleria\bin\Release\Google.Protobuf.dll
+C:\Users\Randiel\Documents\Visual Studio 2015\Projects\papeleriaV2\Papeleria\bin\Release\MySql.Data.xml
