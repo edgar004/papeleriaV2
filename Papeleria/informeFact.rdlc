@@ -975,7 +975,9 @@
             <TextRuns>
               <TextRun>
                 <Value>=Fields!fecha_fac.Value</Value>
-                <Style />
+                <Style>
+                  <Format>d/M/yyyy</Format>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -1202,7 +1204,7 @@
               <Border>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>#027ed1</BackgroundColor>
+              <BackgroundColor>#0288d1</BackgroundColor>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
@@ -1282,7 +1284,7 @@
                 <Color>LightGrey</Color>
                 <Style>Solid</Style>
               </Border>
-              <BackgroundColor>#027ed1</BackgroundColor>
+              <BackgroundColor>#0288d1</BackgroundColor>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
@@ -1316,7 +1318,7 @@
                 <Color>LightGrey</Color>
                 <Style>Solid</Style>
               </Border>
-              <BackgroundColor>#027ed1</BackgroundColor>
+              <BackgroundColor>#0288d1</BackgroundColor>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
@@ -1340,7 +1342,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>direccion_cli</rd:DefaultName>
-            <Top>4.31503cm</Top>
+            <Top>4.33647cm</Top>
             <Left>0.01448cm</Left>
             <Height>0.54556cm</Height>
             <Width>11.61854cm</Width>
@@ -1350,7 +1352,7 @@
                 <Color>LightGrey</Color>
                 <Style>Solid</Style>
               </Border>
-              <BackgroundColor>#027ed1</BackgroundColor>
+              <BackgroundColor>#0288d1</BackgroundColor>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
@@ -1361,7 +1363,7 @@
         <KeepTogether>true</KeepTogether>
         <Top>0.41134cm</Top>
         <Left>1.35617cm</Left>
-        <Height>4.86059cm</Height>
+        <Height>4.88203cm</Height>
         <Width>11.63302cm</Width>
         <ZIndex>19</ZIndex>
         <Style>

@@ -377,7 +377,7 @@
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.28169F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.71831F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
             this.tableLayoutPanel6.Controls.Add(this.flowLayoutPanel3, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.textBox3, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.label8, 0, 0);
@@ -395,10 +395,10 @@
             this.flowLayoutPanel3.BackgroundImage = global::Papeleria.Properties.Resources.searchRed;
             this.flowLayoutPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(419, 4);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(418, 4);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(128, 35);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(129, 35);
             this.flowLayoutPanel3.TabIndex = 5;
             this.flowLayoutPanel3.Click += new System.EventHandler(this.flowLayoutPanel3_Click);
             this.flowLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel3_Paint);
@@ -410,7 +410,7 @@
             this.textBox3.Location = new System.Drawing.Point(171, 7);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(240, 29);
+            this.textBox3.Size = new System.Drawing.Size(239, 29);
             this.textBox3.TabIndex = 3;
             this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
@@ -436,7 +436,7 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.05442F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.523809F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.312925F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 227F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
             this.tableLayoutPanel7.Controls.Add(this.txtNomPro, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txtCantPro, 5, 0);
@@ -459,7 +459,7 @@
             this.txtNomPro.Location = new System.Drawing.Point(98, 11);
             this.txtNomPro.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomPro.Name = "txtNomPro";
-            this.txtNomPro.Size = new System.Drawing.Size(372, 29);
+            this.txtNomPro.Size = new System.Drawing.Size(370, 29);
             this.txtNomPro.TabIndex = 3;
             // 
             // label9
@@ -478,7 +478,7 @@
             // 
             this.txtCantPro.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtCantPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantPro.Location = new System.Drawing.Point(718, 11);
+            this.txtCantPro.Location = new System.Drawing.Point(716, 11);
             this.txtCantPro.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantPro.Name = "txtCantPro";
             this.txtCantPro.Size = new System.Drawing.Size(48, 29);
@@ -490,7 +490,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(652, 14);
+            this.label11.Location = new System.Drawing.Point(650, 14);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(58, 24);
@@ -501,7 +501,7 @@
             // 
             this.txtPrePro.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtPrePro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrePro.Location = new System.Drawing.Point(560, 11);
+            this.txtPrePro.Location = new System.Drawing.Point(558, 11);
             this.txtPrePro.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrePro.Name = "txtPrePro";
             this.txtPrePro.Size = new System.Drawing.Size(77, 29);
@@ -513,7 +513,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(483, 14);
+            this.label10.Location = new System.Drawing.Point(481, 14);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 24);
@@ -525,10 +525,10 @@
             this.flowLayoutPanel4.BackgroundImage = global::Papeleria.Properties.Resources.ok_mark;
             this.flowLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(774, 4);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(772, 4);
             this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(222, 44);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(224, 44);
             this.flowLayoutPanel4.TabIndex = 8;
             this.flowLayoutPanel4.Click += new System.EventHandler(this.flowLayoutPanel4_Click);
             // 
@@ -734,6 +734,7 @@
             this.flowLayoutPanel5.Size = new System.Drawing.Size(168, 82);
             this.flowLayoutPanel5.TabIndex = 0;
             this.flowLayoutPanel5.Click += new System.EventHandler(this.flowLayoutPanel5_Click);
+            this.flowLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel5_Paint);
             // 
             // tableLayoutPanel11
             // 

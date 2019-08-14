@@ -672,6 +672,11 @@ namespace Papeleria
         {
 
         }
+
+        private void flowLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 
