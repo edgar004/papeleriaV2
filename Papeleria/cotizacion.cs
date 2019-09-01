@@ -271,7 +271,7 @@ namespace Papeleria
                         if (DS.Tables.Count > 0 && DS.Tables[0].Rows.Count > 0)
                         {
                             idPro = DS.Tables[0].Rows[0][0].ToString();
-                            txt_codigoPro.Text = DS.Tables[0].Rows[0][3].ToString();
+                            txt_codigoPro.Text = DS.Tables[0].Rows[0][2].ToString();
                             txt_nombrePro.Text = DS.Tables[0].Rows[0][1].ToString();
                             txt_precioPro.Text = DS.Tables[0].Rows[0][6].ToString();
                             impuestoPro = Convert.ToDouble(DS.Tables[0].Rows[0][4].ToString());
